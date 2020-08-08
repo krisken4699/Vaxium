@@ -1,0 +1,268 @@
+----------------------------------------------
+------------FEHax Gui By kwert----------------
+----------Updated Since 30/12/2017------------
+---Credits Harkinian for the Annoy script!----
+----------------------------------------------
+local FEHax = Instance.new("ScreenGui")
+local FeHaxFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Annoy = Instance.new("TextButton")
+local QuakePro = Instance.new("TextButton")
+local Goto = Instance.new("TextButton")
+local FEGod = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local NoLimbs = Instance.new("TextButton")
+local DropHat = Instance.new("TextButton")
+local CheckIfCommand = Instance.new("TextLabel")
+local CloseGui = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Normal = Instance.new("TextButton")
+local UnNoclip = Instance.new("TextButton")
+local sssss = Instance.new("TextButton")
+local ddddd = Instance.new("TextButton")
+est = game.Workspace.FilteringEnabled
+FEHax.Name = "FEHax"
+FEHax.Parent = game.CoreGui
+FeHaxFrame.Name = "FeHaxFrame"
+FeHaxFrame.Parent = FEHax
+FeHaxFrame.Active = true
+FeHaxFrame.BackgroundColor3 = Color3.new(0.34902, 0.345098, 0.352941)
+FeHaxFrame.BorderSizePixel = 0
+FeHaxFrame.Draggable = true
+FeHaxFrame.Position = UDim2.new(0.5, 42, 0.5, 0)
+FeHaxFrame.Size = UDim2.new(0, 335, 0, 241)
+TextLabel.Parent = FeHaxFrame
+TextLabel.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0, 16)
+TextLabel.Size = UDim2.new(0, 335, 0, 35)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "FEHax Gui"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 35
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+Annoy.Name = "Annoy"
+Annoy.Parent = FeHaxFrame
+Annoy.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+Annoy.BorderSizePixel = 0
+Annoy.Position = UDim2.new(0, 112, 0, 55)
+Annoy.Size = UDim2.new(0, 110, 0, 26)
+Annoy.Font = Enum.Font.SciFi
+Annoy.Text = "Annoy"
+Annoy.TextColor3 = Color3.new(1, 1, 1)
+Annoy.TextSize = 14
+QuakePro.Name = "QuakePro"
+QuakePro.Parent = FeHaxFrame
+QuakePro.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+QuakePro.BorderSizePixel = 0
+QuakePro.Position = UDim2.new(0, 0, 0, 55)
+QuakePro.Size = UDim2.new(0, 110, 0, 26)
+QuakePro.Font = Enum.Font.SciFi
+QuakePro.Text = "QuakePro"
+QuakePro.TextColor3 = Color3.new(1, 1, 1)
+QuakePro.TextSize = 14
+Goto.Name = "Goto"
+Goto.Parent = FeHaxFrame
+Goto.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+Goto.BorderSizePixel = 0
+Goto.Position = UDim2.new(0, 110, 0, 180)
+Goto.Size = UDim2.new(0, 114, 0, 26)
+Goto.Font = Enum.Font.SciFi
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.new(1, 1, 1)
+Goto.TextSize = 14
+FEGod.Name = "FEGod"
+FEGod.Parent = FeHaxFrame
+FEGod.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+FEGod.BorderSizePixel = 0
+FEGod.Position = UDim2.new(0, 224, 0, 55)
+FEGod.Size = UDim2.new(0, 111, 0, 26)
+FEGod.Font = Enum.Font.SciFi
+FEGod.Text = "FE God"
+FEGod.TextColor3 = Color3.new(1, 1, 1)
+FEGod.TextSize = 14
+TextBox.Parent = FeHaxFrame
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 52, 0, 150)
+TextBox.Size = UDim2.new(0, 231, 0, 25)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Username"
+TextBox.TextColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+TextBox.TextSize = 16
+NoLimbs.Name = "NoLimbs"
+NoLimbs.Parent = FeHaxFrame
+NoLimbs.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+NoLimbs.BorderSizePixel = 0
+NoLimbs.Position = UDim2.new(0, 0, 0, 83)
+NoLimbs.Size = UDim2.new(0, 110, 0, 26)
+NoLimbs.Font = Enum.Font.SciFi
+NoLimbs.Text = "No Limbs"
+NoLimbs.TextColor3 = Color3.new(1, 1, 1)
+NoLimbs.TextSize = 14
+DropHat.Name = "Drop Hat"
+DropHat.Parent = FeHaxFrame
+DropHat.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+DropHat.BorderSizePixel = 0
+DropHat.Position = UDim2.new(0, 224, 0, 83)
+DropHat.Size = UDim2.new(0, 111, 0, 26)
+DropHat.Font = Enum.Font.SciFi
+DropHat.Text = "Drop Hat"
+DropHat.TextColor3 = Color3.new(1, 1, 1)
+DropHat.TextSize = 14
+CheckIfCommand.Name = "CheckIfCommand"
+CheckIfCommand.Parent = FeHaxFrame
+CheckIfCommand.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+CheckIfCommand.BackgroundTransparency = 1
+CheckIfCommand.BorderSizePixel = 0
+CheckIfCommand.Position = UDim2.new(0, 0, 0, 217)
+CheckIfCommand.Size = UDim2.new(0, 335, 0, 24)
+CheckIfCommand.Font = Enum.Font.SourceSansLight
+CheckIfCommand.Text = "Loading"
+CheckIfCommand.TextColor3 = Color3.new(1, 1, 1)
+CheckIfCommand.TextSize = 20
+CheckIfCommand.TextYAlignment = Enum.TextYAlignment.Top
+CloseGui.Name = "CloseGui"
+CloseGui.Parent = FeHaxFrame
+CloseGui.BackgroundColor3 = Color3.new(0.505882, 0.505882, 0.509804)
+CloseGui.BorderSizePixel = 0
+CloseGui.Size = UDim2.new(0, 335, 0, 16)
+CloseGui.Font = Enum.Font.SciFi
+CloseGui.Text = "- "
+CloseGui.TextColor3 = Color3.new(1, 1, 1)
+CloseGui.TextSize = 20
+CloseGui.TextXAlignment = Enum.TextXAlignment.Right
+Noclip.Name = "Noclip"
+Noclip.Parent = FeHaxFrame
+Noclip.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0, 112, 0, 83)
+Noclip.Size = UDim2.new(0, 110, 0, 26)
+Noclip.Font = Enum.Font.SciFi
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextSize = 14
+Normal.Name = "Normal"
+Normal.Parent = FeHaxFrame
+Normal.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+Normal.BorderSizePixel = 0
+Normal.Position = UDim2.new(0, 0, 0, 55)
+Normal.Size = UDim2.new(0, 110, 0, 26)
+Normal.Visible = false
+Normal.Font = Enum.Font.SciFi
+Normal.Text = "Normal"
+Normal.TextColor3 = Color3.new(1, 1, 1)
+Normal.TextSize = 14
+UnNoclip.Name = "UnNoclip"
+UnNoclip.Parent = FeHaxFrame
+UnNoclip.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+UnNoclip.BorderSizePixel = 0
+UnNoclip.Position = UDim2.new(0, 112, 0, 87)
+UnNoclip.Size = UDim2.new(0, 110, 0, 26)
+UnNoclip.Visible = false
+UnNoclip.Font = Enum.Font.SciFi
+UnNoclip.Text = "UnNoclip"
+UnNoclip.TextColor3 = Color3.new(1, 1, 1)
+UnNoclip.TextSize = 14
+sssss.Name = "sssss"
+sssss.Parent = FeHaxFrame
+sssss.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+sssss.BorderSizePixel = 0
+sssss.Position = UDim2.new(0, 224, 0, 111)
+sssss.Size = UDim2.new(0, 111, 0, 26)
+sssss.Font = Enum.Font.SciFi
+sssss.Text = "????"
+sssss.TextColor3 = Color3.new(1, 1, 1)
+sssss.TextSize = 14
+ddddd.Name = "ddddd"
+ddddd.Parent = FeHaxFrame
+ddddd.BackgroundColor3 = Color3.new(0.529412, 0.52549, 0.533333)
+ddddd.BorderSizePixel = 0
+ddddd.Position = UDim2.new(0, 0, 0, 111)
+ddddd.Size = UDim2.new(0, 110, 0, 26)
+ddddd.Font = Enum.Font.SciFi
+ddddd.Text = "????"
+ddddd.TextColor3 = Color3.new(1, 1, 1)
+ddddd.TextSize = 14
+Annoy.MouseButton1Click:connect(function()
+while wait() do
+  for i,v in pairs(game:GetService'Players':GetPlayers()) do
+      if v.Character ~= nil and v.Character:FindFirstChild'Head' then
+          for _,x in pairs(v.Character.Head:GetChildren()) do
+              if x:IsA'Sound' then x.Playing = true end
+          end
+      end
+  end
+end
+while wait() do
+  for i,v in pairs(game:GetService'Players':GetPlayers()) do
+      if v.Character ~= nil and v.Character:FindFirstChild'Head' then
+          for _,x in pairs(v.Character.Head:GetChildren()) do
+              if x:IsA'Sound' then x.Playing = false end
+          end
+      end
+  end
+end
+end)
+QuakePro.MouseButton1Click:connect(function()
+game.Workspace.Camera.FieldOfView = 120
+game.CoreGui.FEHax.FeHaxFrame.QuakePro.Visible = false
+game.CoreGui.FEHax.FeHaxFrame.Normal.Visible = true
+end)
+Normal.MouseButton1Click:connect(function()
+game.Workspace.Camera.FieldOfView = 80
+game.CoreGui.FEHax.FeHaxFrame.QuakePro.Visible = true
+game.CoreGui.FEHax.FeHaxFrame.Normal.Visible = false
+end)
+Goto.MouseButton1Click:connect(function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(TextBox.Text).Character.HumanoidRootPart.Position)
+end)
+FEGod.MouseButton1Down:connect(function()
+local player=game.Players.LocalPlayer.Character
+player.Humanoid:Remove()
+Instance.new('Humanoid',player)
+end)
+NoLimbs.MouseButton1Click:connect(function()
+game.Players.LocalPlayer.Character["Left Leg"]:Destroy()
+game.Players.LocalPlayer.Character["Left Arm"]:Destroy()
+game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
+game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+end)
+DropHat.MouseButton1Click:connect(function()
+j=game.Players.LocalPlayer;
+for k,l in pairs(j.Character:GetChildren()
+)do if l:IsA'Accoutrement'then
+l.Parent=game.Workspace
+end
+end
+end)
+Noclip.MouseButton1Click:connect(function()
+game:GetService('RunService').Stepped:connect(function()
+Noclip.BackgroundColor3 = loc
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.Torso.CanCollide = false
+game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+game.CoreGui.FEHax.FeHaxFrame.UnNoclip.Visible = true
+    game.CoreGui.FEHax.FeHaxFrame.Noclip.Visible = false
+end)
+end)
+UnNoclip.MouseButton1Click:connect(function()
+game:GetService('RunService').Stepped:connect(function()
+Noclip.BackgroundColor3 = loc
+game.Players.LocalPlayer.Character.Head.CanCollide = true
+game.Players.LocalPlayer.Character.Torso.CanCollide = true
+game.Players.LocalPlayer.Character["Left Leg"].CanCollide = true
+game.Players.LocalPlayer.Character["Right Leg"].CanCollide = true
+game.CoreGui.FEHax.FeHaxFrame.UnNoclip.Visible = false
+    game.CoreGui.FEHax.FeHaxFrame.Noclip.Visible = true
+end)
+end)
+if est == true then
+   CheckIfCommand.Text = "Loaded Succesfully!"
+elseif est == false then
+   CheckIfCommand.Text = "Couldnt Load Succesfully"
+end
+CloseGui.MouseButton1Click:connect(function()
+FEHax:Destroy()
+end)

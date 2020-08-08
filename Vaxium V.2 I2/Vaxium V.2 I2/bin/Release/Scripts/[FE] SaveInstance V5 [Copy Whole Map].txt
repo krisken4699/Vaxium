@@ -1,0 +1,253 @@
+['GlobalShadows'] = 'BoolValue',
+['GlobalShadows'] = 'BoolValue',
+['OutdoorAmbient'] = 'Color3Value',
+['Outlines'] = 'BoolValue',
+['ShadowColor'] = 'Color3Value',
+['TimeOfDay'] = 'StringValue',
+}
+StarterProp = {
+['AutoJumpEnabled'] = 'BoolValue',
+['CameraMaxZoomDistance'] = 'StringValue',
+['CameraMinZoomDistance'] = 'StringValue',
+['CameraMode'] = 'StringValue',
+['DevCameraOcclusionMode'] = 'StringValue',
+['DevComputerCameraMovementMode'] = 'StringValue',
+['DevComputerMovementMode'] = 'StringValue',
+['DevTouchCameraMovementMode'] = 'StringValue',
+['DevTouchMovementMode'] = 'StringValue',
+['EnableMouseLockOption'] = 'BoolValue',
+['HealthDisplayDistance'] = 'StringValue',
+['LoadCharacterAppearance'] = 'BoolValue',
+['NameDisplayDistance'] = 'StringValue',
+}
+WorkspaceProp = {
+['FilteringEnabled'] = 'BoolValue',
+['Gravity'] = 'StringValue',
+}
+done = false
+lgui = Instance.new("ScreenGui", game:GetService'CoreGui':FindFirstChildOfClass'ScreenGui')
+spawn(function()
+--Loading GUI + Animation by Unverified
+lgui.Name = "Loading Screen"
+local lFrame = Instance.new("Frame",lgui)
+lFrame.BackgroundColor3 = Color3.new(85/255,85/255,85/255)
+lFrame.Size = UDim2.new(1,0,1,0)
+lFrame.BackgroundTransparency = 1 --closed
+local lBar = Instance.new("TextLabel",lFrame)
+lBar.BackgroundColor3 = Color3.new(27/255,42/255,53/255)
+lBar.BorderSizePixel = 0
+lBar.Position = UDim2.new(0.5,0,0.5,-27) --closed
+lBar.Size = UDim2.new(0,0,0,2) --closed
+lBar.Text = ""
+local lLoading = Instance.new("TextLabel",lFrame)
+lLoading.BackgroundTransparency = 1
+lLoading.Position = UDim2.new(0.5,-100,0.5,-75) --closed
+lLoading.Size = UDim2.new(0,200,0,50)
+lLoading.Font = Enum.Font.SourceSansItalic
+lLoading.Text = "Loading"
+lLoading.TextSize = 50
+lLoading.TextStrokeColor3 = Color3.new(71/255,71/255,71/255)
+lLoading.TextStrokeTransparency = 1 --closed
+lLoading.TextTransparency = 1 --closed
+local lTitle = Instance.new("TextLabel",lFrame)
+lTitle.BackgroundTransparency = 1
+lTitle.Position = UDim2.new(0.5,-200,0.5,-25) --closed
+lTitle.Size = UDim2.new(0,400,0,75)
+lTitle.Font = Enum.Font.SourceSans
+lTitle.Text = "SaveInstance V5"
+lTitle.TextSize = 60
+lTitle.TextStrokeColor3 = Color3.new(80/255,80/255,80/255)
+lTitle.TextStrokeTransparency = 1 --closed
+lTitle.TextTransparency = 1 --closed
+local lCredits = Instance.new("TextLabel",lFrame)
+lCredits.BackgroundTransparency = 1
+lCredits.Position = UDim2.new(0.5,-100,1,-60)
+lCredits.Size = UDim2.new(0,200,0,50)
+lCredits.Font = Enum.Font.SourceSans
+lCredits.Text = "Made by Harkinian and Moon with help of Unverified and xFunnieuss"
+lCredits.TextSize = 21
+lCredits.TextStrokeColor3 = Color3.new(47/255,47/255,47/255)
+lCredits.TextStrokeTransparency = 1 --closed
+lCredits.TextTransparency = 1 --closed
+lCredits.TextYAlignment = Enum.TextYAlignment.Bottom
+
+--Animation part--
+for i=100,0,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lFrame.BackgroundTransparency = i/100
+end
+wait(0.4)
+lBar:TweenSizeAndPosition(UDim2.new(0,300,0,2),UDim2.new(0.5,-150,0.5,-27),"Out","Quad",1,true)
+wait(1.1)
+lTitle:TweenPosition(UDim2.new(0.5,-200,0.5,-100),"Out","Quad",1,true)
+spawn(function()
+for i=100,0,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lTitle.TextTransparency = i/100
+lTitle.TextStrokeTransparency = i/100
+end
+end)
+wait(1.5)
+lLoading:TweenPosition(UDim2.new(0.5,-100,0.5,-25),"Out","Quad",1,true)
+spawn(function()
+for i=1000,800,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lLoading.TextStrokeTransparency = i/1000
+end
+end)
+spawn(function()
+for i=100,0,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lLoading.TextTransparency = i/100
+end
+end)
+wait(1)
+spawn(function()
+for i=1000,900,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lCredits.TextStrokeTransparency = i/1000
+end
+end)
+for i=100,0,-1 do
+game:GetService("RunService").RenderStepped:wait()
+lCredits.TextTransparency = i/100
+end
+done = true
+end)
+function makePropertyValues(tablepls, servicepls)
+local servprops = Instance.new('Folder', mainFolder)
+servprops.Name = servicepls..' Properties'
+for i,v in pairs(tablepls) do
+local meme = Instance.new(v, servprops)
+meme.Name = i
+if v == 'StringValue' then
+meme.Value = tostring(game:GetService(servicepls)[i])
+else
+meme.Value = game:GetService(servicepls)[i]
+end
+end
+end
+function createFolderWithParts(serv)
+local fold = Instance.new('Folder', mainFolder)
+fold.Name = serv.ClassName
+for i,v in pairs(serv:GetChildren()) do
+if not game:GetService'Players':GetPlayerFromCharacter(v) then
+pcall(function()
+if v:IsA'Terrain' then 
+for x,d in pairs(v:GetChildren()) do
+d:Clone().Parent = fold
+end
+return
+end
+v:Clone().Parent = fold
+end)
+end
+end
+end
+function screwYouArchivable(same)
+pcall(function()
+same.Archivable = true
+end)
+for i,v in pairs(same:GetChildren()) do
+screwYouArchivable(v)
+end
+end
+function checkScript(inst)
+if inst:IsA'LocalScript' or inst:IsA'ModuleScript' then
+if ELYSIAN_INITIATED then
+local valuecount = 1
+local count = 1
+local sadmeme = tostring(decompile(inst))
+repeat
+local kek = Instance.new('StringValue', inst)
+kek.Name = 'Source'..valuecount
+kek.Value = string.sub(sadmeme,count,count + 99999)
+count = count + 100000
+valuecount = valuecount + 1
+until string.sub(sadmeme,count,count + 99999) == ''
+end
+end
+for i,v in pairs(inst:GetChildren()) do
+checkScript(v)
+end
+end
+mainFolder = Instance.new'Folder'
+mainFolder.Name = 'Place'
+screwYouArchivable(game)
+for i,v in pairs(game:GetChildren()) do
+createFolderWithParts(v)
+end
+if getnilinstances then
+local nilf = Instance.new('Folder', mainFolder)
+nilf.Name = 'NIL INSTANCES'
+for i,v in pairs(getnilinstances()) do
+screwYouArchivable(v)
+pcall(function()
+if v == mainFolder then return end
+v:Clone().Parent = nilf
+end)
+end
+end
+repeat wait'' until done == true
+if decompiler then
+checkScript(mainFolder)
+end
+terraind = Instance.new('Folder', mainFolder)
+terraind.Name = 'TerrainData'
+workspace:FindFirstChildOfClass'Terrain':CopyRegion(workspace:FindFirstChildOfClass'Terrain'.MaxExtents).Parent = terraind
+makePropertyValues(LightingProp, 'Lighting')
+makePropertyValues(StarterProp, 'StarterPlayer')
+makePropertyValues(WorkspaceProp, 'Workspace')
+local materials = {
+    "Asphalt",
+    "Basalt",
+    "Brick",
+    "Cobblestone",
+    "Concrete",
+    "CrackedLava",
+    "Glacier",
+    "Grass",
+    "Ground",
+    "Ice",
+    "LeafyGrass",
+    "Limestone",
+    "Mud",
+    "Pavement",
+    "Rock",
+    "Salt",
+    "Sand",
+    "Sandstone",
+    "Slate",
+    "Snow",
+    "WoodPlanks"
+}
+
+local terrainColors = Instance.new("Folder",mainFolder)
+terrainColors.Name = "TerrainColors"
+for i,v in pairs(materials) do
+    local newColor = Instance.new("Color3Value",terrainColors)
+    newColor.Name = v
+    newColor.Value = workspace.Terrain:GetMaterialColor(Enum.Material[v])
+end
+
+local TerrainProp = {
+['WaterColor'] = 'Color3Value',
+['WaterReflectance'] = 'StringValue',
+['WaterTransparency'] = 'StringValue',
+['WaterWaveSize'] = 'StringValue',
+['WaterWaveSpeed'] = 'StringValue',
+}
+
+local terrainProps = Instance.new("Folder",mainFolder)
+terrainProps.Name = "TerrainProps"
+for i,v in pairs(TerrainProp) do
+    local val = Instance.new(v,terrainProps)
+    val.Name = i
+    if v == "StringValue" then
+        val.Value = tostring(workspace.Terrain[i])
+    else
+        val.Value = workspace.Terrain[i]
+    end
+end
+game:GetService'TeleportService':SetTeleportSetting('SaveInstanceData', mainFolder)
+game:GetService'TeleportService':Teleport(gameId,nil,nil,lgui)

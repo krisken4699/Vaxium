@@ -1,0 +1,39 @@
+local me = game.Players.LocalPlayer
+local spinRemote = game:GetService("ReplicatedStorage").Remotes.Spin
+
+function getFolder()
+for i,v in pairs(workspace:GetChildren()) do 
+if v:IsA("Folder") and v:FindFirstChild("Spin") then 
+return v
+end
+end
+end
+
+while getFolder().PlayerData[me.Name].Quirk.Value ~= 2 do --replace 0 with the quirk id you want
+spinRemote:FireServer("CommonSpin")
+wait(1)
+end
+--0 - Engine
+--1 - HHHC
+--2 - OneForAll
+--3 - Quirkless
+--4 - Zero Gravity
+--5 - Regen
+--6 - Explosion
+--7 - Electrification
+--8 - Warp Gate
+--9 - Gigantification
+--10 - Voice
+--11 - Air Propulsion
+--12 - Shock Absorption
+--13 -
+--14 - Hardening
+--15 - HellFlame
+--16 - OverHaul
+--17 - Jet
+--18 - Black Hole
+--19 - Cremation
+--20 - Dark Shadow
+--21 -
+--22 -  Premation
+--23 - Pop Off

@@ -1,0 +1,188 @@
+-- Made by JackMcJagger15
+
+local TargetFEKill = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Kill = Instance.new("TextButton")
+local Target = Instance.new("TextBox")
+local God = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+
+-- Properties
+
+TargetFEKill.Name = "TargetFEKill"
+TargetFEKill.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = TargetFEKill
+Main.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.553832114, 0, 0.375494063, 0)
+Main.Size = UDim2.new(0, 252, 0, 255)
+Main.Selectable = true
+Main.Draggable = true
+Main.Active = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 252, 0, 36)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "  Target FE Kill By JackMcJagger15"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.141176477, 0)
+TextLabel_2.Size = UDim2.new(0, 252, 0, 10)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Kill.Name = "Kill"
+Kill.Parent = Main
+Kill.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0.204365075, 0, 0.258823514, 0)
+Kill.Size = UDim2.new(0, 149, 0, 33)
+Kill.Font = Enum.Font.Cartoon
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.new(0, 0, 0)
+Kill.TextSize = 14
+
+Target.Name = "Target"
+Target.Parent = Main
+Target.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Target.BorderSizePixel = 0
+Target.Position = UDim2.new(0.162698418, 0, 0.694117665, 0)
+Target.Size = UDim2.new(0, 170, 0, 47)
+Target.Font = Enum.Font.Cartoon
+Target.Text = "Target"
+Target.TextColor3 = Color3.new(0, 0, 0)
+Target.TextSize = 14
+
+God.Name = "God"
+God.Parent = Main
+God.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+God.BorderSizePixel = 0
+God.Position = UDim2.new(0.204365075, 0, 0.46274507, 0)
+God.Size = UDim2.new(0, 149, 0, 33)
+God.Font = Enum.Font.Cartoon
+God.Text = "FE God"
+God.TextColor3 = Color3.new(0, 0, 0)
+God.TextSize = 14
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.new(1, 1, 1)
+Exit.BackgroundTransparency = 1
+Exit.Position = UDim2.new(0.837301612, 0, 0, 0)
+Exit.Size = UDim2.new(0, 41, 0, 36)
+Exit.Font = Enum.Font.Cartoon
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(0, 0, 0)
+Exit.TextSize = 14
+
+function GetPlayer(String)
+    local Found = {}
+    local strl = String:lower()
+    if strl == "all" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            table.insert(Found,v)
+        end
+    elseif strl == "others" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name ~= game.Players.LocalPlayer.Name then
+                table.insert(Found,v)
+            end
+        end    
+    else
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                table.insert(Found,v)
+            end
+        end    
+    end
+    return Found    
+end
+
+Kill.MouseButton1Click:connect(function()
+game:GetService('RunService').Stepped:connect(function()
+        if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+            game.Players.LocalPlayer.Character.Head.CanCollide = false
+            game.Players.LocalPlayer.Character.Torso.CanCollide = false
+            game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+            game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+        else
+            if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+        game.Players.LocalPlayer.Character.Head.CanCollide = false
+                game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+                game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+            end
+        end
+end)
+    for i,v in pairs(GetPlayer(Target.Text))do
+        local player = game.Players.LocalPlayer
+local char = player.Character
+local a1 = Instance.new("BodyThrust")
+local a2 = Instance.new("BodyPosition")
+local function hi()
+    while true do
+        wait()
+        a2.Position = game.Workspace[v.Name].HumanoidRootPart.Position
+    end
+end
+a1.Parent = char.HumanoidRootPart
+a1.Force = Vector3.new(8000,0,8000)
+a1.Location = char.HumanoidRootPart.Position
+a2.Parent = char.HumanoidRootPart
+a2.P = 100000
+a2.MaxForce = Vector3.new(1021231,123210,1123120)
+hi()
+    end
+end)
+
+Exit.MouseButton1Click:connect(function()
+    TargetFEKill:Destroy()
+end)
+
+local plr = game:GetService("Players").LocalPlayer
+local human = plr.Character:FindFirstChildOfClass("Humanoid")
+local humclone
+local fold = Instance.new("Folder",game)
+local godded = false
+fold.Name = "fegodguistorage"
+
+plr.CharacterAdded:Connect(function()
+    print("New character detected.")
+    wait()
+    human = plr.Character:FindFirstChildOfClass("Humanoid")
+    for _,v in next, fold:GetChildren() do
+        v:Destroy()
+    end
+    godded = false
+end)
+
+God.MouseButton1Click:connect(function()
+    if godded == false then
+        godded = true
+        God.BackgroundColor3 = Color3.fromRGB(212, 0, 0)
+        humclone = Instance.new("Humanoid")
+        human.Parent = fold
+        humclone.Parent = plr.Character
+    else
+        if godded == true then
+        godded = false
+        God.BackgroundColor3 = Color3.fromRGB(189, 195, 199)
+        humclone:Destroy()
+        human.Parent = plr.Character
+    end
+    end
+end)

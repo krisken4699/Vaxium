@@ -1,0 +1,84 @@
+-- Objects
+
+local flingn00b = Instance.new("ScreenGui")
+local fraem = Instance.new("Frame")
+local user = Instance.new("TextBox")
+local button = Instance.new("TextButton")
+
+-- Properties
+
+flingn00b.Name = "fling n00b"
+flingn00b.Parent = game.CoreGui
+
+function GetPlayer(String) -- Credit to Timeless/xFunnieuss
+    local Found = {}
+    local strl = String:lower()
+    if strl == "all" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            table.insert(Found,v)
+        end
+    elseif strl == "others" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name ~= game.Players.LocalPlayer.Name then
+                table.insert(Found,v)
+            end
+        end    
+    else
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                table.insert(Found,v)
+            end
+        end    
+    end
+    return Found    
+end
+
+fraem.Name = "fraem"
+fraem.Parent = flingn00b
+fraem.BackgroundColor3 = Color3.new(1, 1, 1)
+fraem.BorderColor3 = Color3.new(1, 0, 0)
+fraem.Position = UDim2.new(0, 0, 0, 450)
+fraem.Size = UDim2.new(0, 198, 0, 43)
+
+user.Name = "user"
+user.Parent = fraem
+user.BackgroundColor3 = Color3.new(0, 0, 0)
+user.BorderColor3 = Color3.new(1, 0, 0)
+user.Size = UDim2.new(0, 200, 0, 22)
+user.Font = Enum.Font.SourceSans
+user.Text = "Username"
+user.TextColor3 = Color3.new(1, 0, 0)
+user.TextScaled = true
+user.TextSize = 14
+user.TextWrapped = true
+
+button.Name = "button"
+button.Parent = fraem
+button.BackgroundColor3 = Color3.new(0, 0, 0)
+button.BorderColor3 = Color3.new(1, 0, 0)
+button.Position = UDim2.new(0, 0, 0, 22)
+button.Size = UDim2.new(0, 200, 0, 21)
+button.Font = Enum.Font.SourceSans
+button.Text = "Fling"
+button.TextColor3 = Color3.new(1, 0, 0)
+button.TextSize = 20
+button.MouseButton1Down:connect(function()
+for i,v in pairs(GetPlayer(user.Text))do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v.Name].Character.HumanoidRootPart.CFrame
+wait( )
+game:GetService('RunService').Stepped:connect(function()
+   game.Players.LocalPlayer.Character.Head.CanCollide = false
+   game.Players.LocalPlayer.Character.Torso.CanCollide = false
+   game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+   game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+end)
+b = Instance.new("RocketPropulsion")
+b.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+b.Target = game.Players[v.Name].Character.HumanoidRootPart
+b.TurnP = 20000
+b.MaxThrust = 20000
+b.MaxSpeed = 1000
+b.ThrustP = 13000
+b:Fire()
+end
+end)

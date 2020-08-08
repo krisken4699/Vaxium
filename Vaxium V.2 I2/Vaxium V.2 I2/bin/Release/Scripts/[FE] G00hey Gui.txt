@@ -1,0 +1,1227 @@
+local ecksdee = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local SideTab = Instance.new("Frame")
+local HOME = Instance.new("TextButton")
+local SCRIPT = Instance.new("TextButton")
+local PLAYER = Instance.new("TextButton")
+local GETOBJECTS = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TAB_SCRIPT = Instance.new("Frame")
+local RAINBOWMAN = Instance.new("TextButton")
+local DABTOOL = Instance.new("TextButton")
+local DRAW3D = Instance.new("TextButton")
+local GRABKNIFE = Instance.new("TextButton")
+local EISSBREAKER = Instance.new("TextButton")
+local _666 = Instance.new("TextButton")
+local AXR = Instance.new("TextButton")
+local TAB_PLAYER = Instance.new("Frame")
+local COMINGSOON = Instance.new("TextButton")
+local PLAYERNAME = Instance.new("TextBox")
+local TAB_GETOBJECTS = Instance.new("Frame")
+local GET = Instance.new("TextButton")
+local MODELID = Instance.new("TextBox")
+local PARENT = Instance.new("TextBox")
+
+ecksdee.Name = "ecksdee"
+ecksdee.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ecksdee
+Main.Active = true
+Main.Draggable = true
+Main.BackgroundColor3 = Color3.new(0.827451, 0.282353, 0.2)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.199207127, 0, 0.423547387, 0)
+Main.Size = UDim2.new(0, 267, 0, 259)
+
+SideTab.Name = "SideTab"
+SideTab.Parent = Main
+SideTab.BackgroundColor3 = Color3.new(0.690196, 0.223529, 0.164706)
+SideTab.BorderSizePixel = 0
+SideTab.Position = UDim2.new(0, 0, 0.127413124, 0)
+SideTab.Size = UDim2.new(0, 44, 0, 226)
+
+HOME.Name = "HOME"
+HOME.Parent = SideTab
+HOME.BackgroundColor3 = Color3.new(0.580392, 0.0470588, 0)
+HOME.BorderSizePixel = 0
+HOME.Position = UDim2.new(0, 0, -0.000905454159, 0)
+HOME.Size = UDim2.new(0, 44, 0, 37)
+HOME.Font = Enum.Font.SourceSansLight
+HOME.Text = "HOME"
+HOME.TextColor3 = Color3.new(1, 1, 1)
+HOME.TextScaled = true
+HOME.TextSize = 14
+HOME.TextWrapped = true
+
+SCRIPT.Name = "SCRIPT"
+SCRIPT.Parent = SideTab
+SCRIPT.BackgroundColor3 = Color3.new(0.580392, 0.0470588, 0)
+SCRIPT.BorderSizePixel = 0
+SCRIPT.Position = UDim2.new(0, 0, 0.189360023, 0)
+SCRIPT.Size = UDim2.new(0, 44, 0, 37)
+SCRIPT.Font = Enum.Font.SourceSansLight
+SCRIPT.Text = "SCRIPT"
+SCRIPT.TextColor3 = Color3.new(1, 1, 1)
+SCRIPT.TextScaled = true
+SCRIPT.TextSize = 14
+SCRIPT.TextWrapped = true
+
+PLAYER.Name = "PLAYER"
+PLAYER.Parent = SideTab
+PLAYER.BackgroundColor3 = Color3.new(0.580392, 0.0470588, 0)
+PLAYER.BorderSizePixel = 0
+PLAYER.Position = UDim2.new(0, 0, 0.386262685, 0)
+PLAYER.Size = UDim2.new(0, 44, 0, 37)
+PLAYER.Font = Enum.Font.SourceSansLight
+PLAYER.Text = "PLAYER"
+PLAYER.TextColor3 = Color3.new(1, 1, 1)
+PLAYER.TextSize = 14
+PLAYER.TextWrapped = true
+
+GETOBJECTS.Name = "GETOBJECTS"
+GETOBJECTS.Parent = SideTab
+GETOBJECTS.BackgroundColor3 = Color3.new(0.580392, 0.0470588, 0)
+GETOBJECTS.BorderSizePixel = 0
+GETOBJECTS.Position = UDim2.new(0, 0, 0.578740597, 0)
+GETOBJECTS.Size = UDim2.new(0, 44, 0, 37)
+GETOBJECTS.Font = Enum.Font.SourceSansLight
+GETOBJECTS.Text = "GETOBJECTS"
+GETOBJECTS.TextColor3 = Color3.new(1, 1, 1)
+GETOBJECTS.TextSize = 14
+GETOBJECTS.TextWrapped = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.new(0.811765, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 267, 0, 33)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "g00hey v1.0"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TAB_SCRIPT.Name = "TAB_SCRIPT"
+TAB_SCRIPT.Parent = Main
+TAB_SCRIPT.BackgroundColor3 = Color3.new(0.827451, 0.282353, 0.2)
+TAB_SCRIPT.BorderSizePixel = 0
+TAB_SCRIPT.Position = UDim2.new(0.164794013, 0, 0.127413124, 0)
+TAB_SCRIPT.Size = UDim2.new(0, 223, 0, 226)
+TAB_SCRIPT.Visible = false
+
+RAINBOWMAN.Name = "RAINBOWMAN"
+RAINBOWMAN.Parent = TAB_SCRIPT
+RAINBOWMAN.BackgroundColor3 = Color3.new(1, 1, 1)
+RAINBOWMAN.BorderSizePixel = 0
+RAINBOWMAN.Position = UDim2.new(0.0582959652, 0, 0.0663716793, 0)
+RAINBOWMAN.Size = UDim2.new(0, 97, 0, 22)
+RAINBOWMAN.Font = Enum.Font.SourceSans
+RAINBOWMAN.Text = "Rainbow Man"
+RAINBOWMAN.TextColor3 = Color3.new(0, 0, 0)
+RAINBOWMAN.TextSize = 14
+
+DABTOOL.Name = "DABTOOL"
+DABTOOL.Parent = TAB_SCRIPT
+DABTOOL.BackgroundColor3 = Color3.new(1, 1, 1)
+DABTOOL.BorderSizePixel = 0
+DABTOOL.Position = UDim2.new(0.569506705, 0, 0.0663716793, 0)
+DABTOOL.Size = UDim2.new(0, 80, 0, 22)
+DABTOOL.Font = Enum.Font.SourceSans
+DABTOOL.Text = "Dab Tool"
+DABTOOL.TextColor3 = Color3.new(0, 0, 0)
+DABTOOL.TextSize = 14
+
+DRAW3D.Name = "DRAW3D"
+DRAW3D.Parent = TAB_SCRIPT
+DRAW3D.BackgroundColor3 = Color3.new(1, 1, 1)
+DRAW3D.BorderSizePixel = 0
+DRAW3D.Position = UDim2.new(0.0582959652, 0, 0.190265492, 0)
+DRAW3D.Size = UDim2.new(0, 66, 0, 18)
+DRAW3D.Font = Enum.Font.SourceSans
+DRAW3D.Text = "Draw3D"
+DRAW3D.TextColor3 = Color3.new(0, 0, 0)
+DRAW3D.TextSize = 14
+
+GRABKNIFE.Name = "GRABKNIFE"
+GRABKNIFE.Parent = TAB_SCRIPT
+GRABKNIFE.BackgroundColor3 = Color3.new(1, 1, 1)
+GRABKNIFE.BorderSizePixel = 0
+GRABKNIFE.Position = UDim2.new(0.390134543, 0, 0.190265492, 0)
+GRABKNIFE.Size = UDim2.new(0, 80, 0, 18)
+GRABKNIFE.Font = Enum.Font.SourceSans
+GRABKNIFE.Text = "Grab Knife"
+GRABKNIFE.TextColor3 = Color3.new(0, 0, 0)
+GRABKNIFE.TextSize = 14
+
+EISSBREAKER.Name = "EISSBREAKER"
+EISSBREAKER.Parent = TAB_SCRIPT
+EISSBREAKER.BackgroundColor3 = Color3.new(1, 1, 1)
+EISSBREAKER.BorderSizePixel = 0
+EISSBREAKER.Position = UDim2.new(0.0582959652, 0, 0.305309743, 0)
+EISSBREAKER.Size = UDim2.new(0, 97, 0, 18)
+EISSBREAKER.Font = Enum.Font.SourceSans
+EISSBREAKER.Text = "EISS Breaker"
+EISSBREAKER.TextColor3 = Color3.new(0, 0, 0)
+EISSBREAKER.TextSize = 14
+
+_666.Name = "_666"
+_666.Parent = TAB_SCRIPT
+_666.BackgroundColor3 = Color3.new(1, 1, 1)
+_666.BorderSizePixel = 0
+_666.Position = UDim2.new(0.533632278, 0, 0.305309743, 0)
+_666.Size = UDim2.new(0, 36, 0, 18)
+_666.Font = Enum.Font.SourceSans
+_666.Text = "666"
+_666.TextColor3 = Color3.new(0, 0, 0)
+_666.TextSize = 14
+
+AXR.Name = "AXR"
+AXR.Parent = TAB_SCRIPT
+AXR.BackgroundColor3 = Color3.new(1, 1, 1)
+AXR.BorderSizePixel = 0
+AXR.Position = UDim2.new(0.748878896, 0, 0.305309743, 0)
+AXR.Size = UDim2.new(0, 40, 0, 18)
+AXR.Font = Enum.Font.SourceSans
+AXR.Text = "A.X.R."
+AXR.TextColor3 = Color3.new(0, 0, 0)
+AXR.TextSize = 14
+
+TAB_PLAYER.Name = "TAB_PLAYER"
+TAB_PLAYER.Parent = Main
+TAB_PLAYER.BackgroundColor3 = Color3.new(0.827451, 0.282353, 0.2)
+TAB_PLAYER.BorderSizePixel = 0
+TAB_PLAYER.Position = UDim2.new(0.164794013, 0, 0.127413124, 0)
+TAB_PLAYER.Size = UDim2.new(0, 223, 0, 226)
+TAB_PLAYER.Visible = false
+
+COMINGSOON.Name = "COMINGSOON"
+COMINGSOON.Parent = TAB_PLAYER
+COMINGSOON.BackgroundColor3 = Color3.new(1, 1, 1)
+COMINGSOON.BorderSizePixel = 0
+COMINGSOON.Position = UDim2.new(0.107623324, 0, 0.292035401, 0)
+COMINGSOON.Size = UDim2.new(0, 176, 0, 78)
+COMINGSOON.Font = Enum.Font.SourceSans
+COMINGSOON.Text = "COMING SOON"
+COMINGSOON.TextColor3 = Color3.new(0, 0, 0)
+COMINGSOON.TextScaled = true
+COMINGSOON.TextSize = 14
+COMINGSOON.TextWrapped = true
+
+PLAYERNAME.Name = "PLAYERNAME"
+PLAYERNAME.Parent = TAB_PLAYER
+PLAYERNAME.BackgroundColor3 = Color3.new(0.85098, 0.85098, 0.85098)
+PLAYERNAME.BorderSizePixel = 0
+PLAYERNAME.Position = UDim2.new(0.197309405, 0, 0.0840708017, 0)
+PLAYERNAME.Size = UDim2.new(0, 136, 0, 24)
+PLAYERNAME.Font = Enum.Font.SourceSans
+PLAYERNAME.Text = "PLAYER"
+PLAYERNAME.TextColor3 = Color3.new(0, 0, 0)
+PLAYERNAME.TextSize = 14
+
+TAB_GETOBJECTS.Name = "TAB_GETOBJECTS"
+TAB_GETOBJECTS.Parent = Main
+TAB_GETOBJECTS.BackgroundColor3 = Color3.new(0.827451, 0.282353, 0.2)
+TAB_GETOBJECTS.BorderSizePixel = 0
+TAB_GETOBJECTS.Position = UDim2.new(0.164794013, 0, 0.127413124, 0)
+TAB_GETOBJECTS.Size = UDim2.new(0, 223, 0, 226)
+TAB_GETOBJECTS.Visible = false
+
+GET.Name = "GET"
+GET.Parent = TAB_GETOBJECTS
+GET.BackgroundColor3 = Color3.new(1, 1, 1)
+GET.BorderSizePixel = 0
+GET.Position = UDim2.new(0.343049347, 0, 0.460177004, 0)
+GET.Size = UDim2.new(0, 71, 0, 18)
+GET.Font = Enum.Font.SourceSans
+GET.Text = "GET"
+GET.TextColor3 = Color3.new(0, 0, 0)
+GET.TextSize = 14
+
+MODELID.Name = "MODELID"
+MODELID.Parent = TAB_GETOBJECTS
+MODELID.BackgroundColor3 = Color3.new(0.85098, 0.85098, 0.85098)
+MODELID.BorderSizePixel = 0
+MODELID.Position = UDim2.new(0.195067257, 0, 0.163716808, 0)
+MODELID.Size = UDim2.new(0, 136, 0, 24)
+MODELID.Font = Enum.Font.SourceSans
+MODELID.Text = "MODEL ID"
+MODELID.TextColor3 = Color3.new(0, 0, 0)
+MODELID.TextSize = 14
+
+PARENT.Name = "PARENT"
+PARENT.Parent = TAB_GETOBJECTS
+PARENT.BackgroundColor3 = Color3.new(0.85098, 0.85098, 0.85098)
+PARENT.BorderSizePixel = 0
+PARENT.Position = UDim2.new(0.195067257, 0, 0.305309743, 0)
+PARENT.Size = UDim2.new(0, 136, 0, 24)
+PARENT.Font = Enum.Font.SourceSans
+PARENT.Text = "PARENT"
+PARENT.TextColor3 = Color3.new(0, 0, 0)
+PARENT.TextSize = 14
+
+--stuff down here 
+
+RAINBOWMAN.MouseButton1Down:connect(function()
+	Parts={}
+	function GetDiscoColor(hue)
+	    local section = hue % 1 * 3
+	    local secondary = 0.5 * math.pi * (section % 1)
+	    if section < 1 then
+	        return Vector3.new(1, 1 - math.cos(secondary), 1 - math.sin(secondary))
+	    elseif section < 2 then
+	        return Vector3.new(1 - math.sin(secondary), 1, 1 - math.cos(secondary))
+	    else
+	        return Vector3.new(1 - math.cos(secondary), 1 - math.sin(secondary), 1)
+	    end
+	end
+	Part = function(x,y,z,color,tr,cc,an,parent)
+	    local p = Instance.new('Part',parent or Weapon)
+	    p.formFactor = 'Custom'
+	    p.Size = Vector3.new(x,y,z)
+	    p.BrickColor = BrickColor.new(color)
+	    p.CanCollide = cc
+	    p.Transparency = tr
+	    p.Anchored = an
+	    p.TopSurface,p.BottomSurface = 0,0
+	    p:BreakJoints''
+	    table.insert(Parts,p)
+	    return p
+	end
+	Weld = function(p0,p1)
+	    local w = Instance.new('Motor',p0)
+	    w.Part0 = p0
+	    w.Part1 = p1
+	    return w 
+	end
+	Mesh = function(par,num,x,y,z)
+	    local msh = 0
+	    if num == 1 then
+	        msh = Instance.new("SpecialMesh",par)
+	        msh.MeshId='rbxasset://fonts/torso.mesh'
+	        msh.TextureId='rbxasset://25701026'
+	    end
+	    if num == 2 then
+	        msh = Instance.new("SpecialMesh",par)
+	        msh.MeshId='rbxasset://fonts/head.mesh'
+	        msh.TextureId='rbxassetid://25701026'
+	    end
+	    msh.Scale = Vector3.new(x,y,z)
+	    return msh
+	end
+	plr=Game.Players.LocalPlayer
+	char=plr.Character
+	for _,v in pairs(char:GetChildren()) do
+	    if v.ClassName=="Part" then
+	        v.Transparency=1
+	    elseif v.ClassName=="Hat" then
+	        v.Handle.Mesh.TextureId='rbxassetid://25701026'
+	        table.insert(Parts,v.Handle)
+	    end
+	end
+	t=Part(1,1,1,'',0,false,false,char)
+	Mesh(t,1,1,1,1)
+	Weld(char.Torso,t)
+	a=Part(1,1,1,'',0,false,false,char)
+	Mesh(a,1,.5,1,1)
+	Weld(char['Right Arm'],a)
+	a=Part(1,1,1,'',0,false,false,char)
+	Mesh(a,1,.5,1,1)
+	Weld(char['Left Arm'],a)
+	l=Part(1,1,1,'',0,false,false,char)
+	Mesh(l,1,.5,1,1)
+	Weld(char['Right Leg'],l)
+	l=Part(1,1,1,'',0,false,false,char)
+	Mesh(l,1,.5,1,1)
+	Weld(char['Left Leg'],l)
+	h=Part(1,1,1,'',0,false,false,char)
+	Mesh(h,2,1,1,1)
+	Weld(char.Head,h)
+	Spawn(function()
+	    while(coroutine.yield())do
+	        for i=1,#Parts do
+	            Parts[i].Mesh.VertexColor=GetDiscoColor(tick()*.5)--vertex 4 lyfe
+	        end
+	    end;
+	end);
+end)
+
+DABTOOL.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local mouse = plr:GetMouse()
+	
+	q = Instance.new('HopperBin', plr.Backpack)
+	q.Name = 'Dab'
+	Bin=q
+	
+	
+	dabbing=Instance.new('Sound', plr.Character.Torso)
+	dabbing.Volume = 5
+	dabbing.Pitch = 0.7
+	dabbing.SoundId = 'rbxassetid://437235476'
+	
+	function stopAnimations()
+	for _,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+	v:Stop()
+	end
+	end
+	
+	Bin.Selected:connect(function(mouse) 
+	mouse.Button1Down:connect(function() 
+	local chr = game.Players.LocalPlayer.Character
+	chr.Animate.Disabled = true
+	chr.Torso["Left Shoulder"].C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+	chr.Torso["Right Shoulder"].C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+	game:GetService("Chat"):Chat(plr.Character.Head, "DAAAB", Enum.ChatColor.Blue)
+	chr.Torso["Neck"].C1 = CFrame.new(0, -0.5, 0, -1, -0, -0, 0, 0, 1, 0, 1, 0)
+	dabbing:Play()
+	wait(0.3)
+	local chr = game.Players.LocalPlayer.Character
+	stopAnimations()
+	chr.Animate.Disabled = true
+	chr.Torso["Left Shoulder"].C1 = CFrame.new(0, 0.699999988, 0, 0.939692616, 0, -0.342020124, -0.330366075, -0.258819044, -0.907673359, -0.0885213241, 0.965925813, -0.243210346)
+	chr.Torso["Right Shoulder"].C1 = CFrame.new(-0.600000024, 0.5, -0.200000003, 0.664462984, 0.241844743, 0.707106769, -0.664462984, -0.241844788, 0.707106769, 0.342020154, -0.939692616, -3.09086197e-008)
+	chr.Torso["Neck"].C1 = CFrame.new(0, -0.600000024, 0, -0.866025388, 0.5, 0, -0.171010137, -0.29619807, 0.939692616, 0.469846278, 0.813797653, 0.342020124)
+	wait(2)
+	stopAnimations()
+	chr.Torso["Left Shoulder"].C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+	chr.Torso["Right Shoulder"].C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+	chr.Torso["Neck"].C1 = CFrame.new(0, -0.5, 0, -1, -0, -0, 0, 0, 1, 0, 1, 0)
+	chr.Animate.Disabled = false
+	end) 
+	end)
+end)
+
+GRABKNIFE.MouseButton1Down:connect(function()
+	me = game.Players.LocalPlayer
+
+	char = me.Character
+	
+	selected = false
+	
+	attacking = false
+	
+	hurt = false
+	
+	grabbed = nil
+	
+	mode = "drop"
+	
+	bloodcolors = {"Really red", "Bright red"}
+	
+	function prop(part, parent, collide, tran, ref, x, y, z, color, anchor, form)
+	
+	part.Parent = parent
+	
+	part.formFactor = form
+	
+	part.CanCollide = collide
+	
+	part.Transparency = tran
+	
+	part.Reflectance = ref
+	
+	part.Size = Vector3.new(x,y,z)
+	
+	part.BrickColor = BrickColor.new(color)
+	
+	part.TopSurface = 0
+	
+	part.BottomSurface = 0
+	
+	part.Anchored = anchor
+	
+	part.Locked = true
+	
+	part:BreakJoints()
+	
+	end
+	
+	
+	function weld(w, p, p1, a, b, c, x, y, z)
+	
+	w.Parent = p
+	
+	w.Part0 = p
+	
+	w.Part1 = p1
+	
+	w.C1 = CFrame.fromEulerAnglesXYZ(a,b,c) * CFrame.new(x,y,z)
+	
+	end
+	
+	
+	function mesh(mesh, parent, x, y, z, type)
+	
+	mesh.Parent = parent
+	
+	mesh.Scale = Vector3.new(x, y, z)
+	
+	mesh.MeshType = type
+	
+	end
+	
+	
+	function remgui()
+	
+	for _,v in pairs(me.PlayerGui:GetChildren()) do
+	
+	if v.Name == "Modeshow" then
+	
+	v:remove()
+	
+	end
+	
+	end
+	
+	end
+	
+	
+	function inform(text,delay)
+	
+	remgui()
+	
+	local sc = Instance.new("ScreenGui")
+	
+	sc.Parent = me.PlayerGui
+	
+	sc.Name = "Modeshow"
+	
+	local bak = Instance.new("Frame",sc)
+	
+	bak.BackgroundColor3 = Color3.new(1,1,1)
+	
+	bak.Size = UDim2.new(0.94,0,0.1,0)
+	
+	bak.Position = UDim2.new(0.03,0,0.037,0)
+	
+	bak.BorderSizePixel = 0
+	
+	local gi = Instance.new("TextLabel",sc)
+	
+	gi.Size = UDim2.new(0.92,0,0.09,0)
+	
+	gi.BackgroundColor3 = Color3.new(0,0,0)
+	
+	gi.Position = UDim2.new(0.04,0,0.042,0)
+	
+	gi.TextColor3 = Color3.new(1,1,1)
+	
+	gi.FontSize = "Size12"
+	
+	gi.Text = text
+	
+	coroutine.resume(coroutine.create(function()
+	
+	wait(delay)
+	
+	sc:remove()
+	
+	end))
+	
+	end
+	
+	
+	if char:findFirstChild("Bricks",true) then
+	
+	char:findFirstChild("Bricks",true):remove()
+	
+	end
+	
+	
+	bricks = Instance.new("Model",me.Character)
+	
+	bricks.Name = "Bricks"
+	
+	
+	--Parts-------------------------Parts-------------------------Parts-------------------------Parts----------------------
+	
+	
+	rarm = char:findFirstChild("Right Arm")
+	
+	larm = char:findFirstChild("Left Arm")
+	
+	lleg = char:findFirstChild("Left Leg")
+	
+	torso = char:findFirstChild("Torso")
+	
+	hum = char:findFirstChild("Humanoid")
+	
+	
+	righthold = Instance.new("Part")
+	
+	prop(righthold, bricks, false, 1, 0, 0.1, 0.1, 0.1, "White", false, "Custom")
+	
+	w11 = Instance.new("Weld")
+	
+	weld(w11, rarm, righthold, 0, 0, 0, 0, 1, 0)
+	
+	
+	lefthold = Instance.new("Part")
+	
+	prop(lefthold, bricks, false, 1, 0, 0.1, 0.1, 0.1, "White", false, "Custom")
+	
+	w12 = Instance.new("Weld")
+	
+	weld(w12, larm, lefthold, 0, 0, 0, 0, 1, 0)
+	
+	
+	hold = Instance.new("Part")
+	
+	prop(hold, bricks, false, 0, 0, 0.2, 0.4, 0.7, "Really red", false, "Custom")
+	
+	oh = Instance.new("Weld")
+	
+	weld(oh, lleg, hold, -math.pi/1.4, 0, math.rad(35), 0.55, -0.9, 0.3)
+	
+	
+	knife = Instance.new("Part")
+	
+	prop(knife, bricks, false, 0, 0, 0.35, 1.1, 0.5, "Really black", false, "Custom")
+	
+	orr = Instance.new("Weld")
+	
+	weld(orr, hold, knife, 0, 0, 0, 0, 0.7, 0)
+	
+	ar = Instance.new("Weld")
+	
+	weld(ar, lefthold, nil, math.pi/2, 0, math.pi, 0, 0, 0)
+	
+	
+	
+	blade = Instance.new("Part")
+	
+	prop(blade, bricks, false, 0, 0, 0.1, 1.5, 0.4, "New Yeller", false, "Custom")
+	
+	Instance.new("BlockMesh",blade).Scale = Vector3.new(0.3,1,1)
+	
+	w2 = Instance.new("Weld")
+	
+	weld(w2, knife, blade, 0, 0, 0, 0, -1.2, 0)
+	
+	
+	blade2 = Instance.new("Part")
+	
+	prop(blade2, bricks, false, 0, 0, 0.1, 0.5, 0.4, "New Yeller", false, "Custom")
+	
+	local mew = Instance.new("SpecialMesh",blade2)
+	
+	mew.MeshType = "Wedge"
+	
+	mew.Scale = Vector3.new(0.3,1,1)
+	
+	w3 = Instance.new("Weld")
+	
+	weld(w3, blade, blade2, 0, 0, 0, 0, -1, 0)
+	
+	
+	
+	
+	
+	rb = Instance.new("Part")
+	
+	prop(rb, bricks, false, 1, 0, 0.1, 0.1, 0.1, "White", false, "Custom")
+	
+	w13 = Instance.new("Weld")
+	
+	weld(w13, torso, rb, 0, 0, 0, -1.5, -0.5, 0)
+	
+	
+	lb = Instance.new("Part")
+	
+	prop(lb, bricks, false, 1, 0, 0.1, 0.1, 0.1, "White", false, "Custom")
+	
+	w14 = Instance.new("Weld")
+	
+	weld(w14, torso, lb, 0, 0, 0, 1.5, -0.5, 0)
+	
+	
+	rw = Instance.new("Weld")
+	
+	weld(rw, rb, nil, 0, 0, 0, 0, 0.5, 0)
+	
+	
+	lw = Instance.new("Weld")
+	
+	weld(lw, lb, nil, 0, 0, 0, 0, 0.5, 0)
+	
+	
+	grabweld = nil
+	
+	platlol = nil
+	
+	lolhum = nil
+	
+	
+	function touch(h)
+	
+	if hurt then
+	
+	if grabbed == nil then
+	
+	local hu = h.Parent:findFirstChild("Humanoid")
+	
+	local head = h.Parent:findFirstChild("Head")
+	
+	local torz = h.Parent:findFirstChild("Torso")
+	
+	if hu ~= nil and head ~= nil and torz ~= nil and h.Parent.Name ~= name then
+	
+	if hu.Health > 0 then
+	
+	grabbed = torz
+	
+	hu.PlatformStand = true
+	
+	local w = Instance.new("Weld")
+	
+	weld(w,righthold,grabbed,math.pi/2,0.2,0,0.7,-0.9,-0.6)
+	
+	grabweld = w
+	
+	lolhum = hu
+	
+	local lolxd = true
+	
+	platlol = lolxd
+	
+	hu.Changed:connect(function(prop)
+	
+	if prop == "PlatformStand" and platlol then
+	
+	hu.PlatformStand = true
+	
+	end
+	
+	end)
+	
+	end
+	
+	end
+	
+	end
+	
+	end
+	
+	end
+	
+	
+	righthold.Touched:connect(touch)
+	
+	lefthold.Touched:connect(touch)
+	
+	
+	function bleed(part,po)
+	
+	local lol1 = math.random(5,30)/100
+	
+	local lol2 = math.random(5,30)/100
+	
+	local lol3 =math.random(5,30)/100
+	
+	local lol4 = math.random(1,#bloodcolors)
+	
+	local p = Instance.new("Part")
+	
+	prop(p,part.Parent,false,0,0,lol1,lol2,lol3,bloodcolors[lol4],false,"Custom")
+	
+	p.CFrame = part.CFrame * CFrame.new(math.random(-5,5)/10,po,math.random(-5,5)/10)
+	
+	p.Velocity = Vector3.new(math.random(-190,190)/10,math.random(-190,190)/10,math.random(-190,190)/10)
+	
+	p.RotVelocity = Vector3.new(math.random(-400,400)/10,math.random(-400,400)/10,math.random(-400,400)/10)
+	
+	coroutine.resume(coroutine.create(function()
+	
+	wait(3)
+	
+	p:remove()
+	
+	end))
+	
+	end
+	
+	
+	h = Instance.new("HopperBin",me.Backpack)
+	
+	h.Name = "Grab"
+	
+	
+	bin = h
+	
+	
+	local function select(mouse)
+	
+	orr.Part1 = nil
+	
+	ar.Part1 = knife
+	
+	mouse.Button1Down:connect(function()
+	
+	if attacking == false then
+	
+	attacking = true
+	
+	lw.Part1 = larm
+	
+	rw.Part1 = rarm
+	
+	hurt = true
+	
+	for i=1, 8 do
+	
+	rw.C0 = rw.C0 * CFrame.new(-0.03,0,-0.08) * CFrame.fromEulerAnglesXYZ(0.18,0.04,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(0.06,0,-0.06) * CFrame.fromEulerAnglesXYZ(0.15,-0.11,-0.05)
+	
+	wait(0.1)
+	
+	end
+	
+	wait(1)
+	
+	hurt = false
+	
+	if grabbed == nil then
+	
+	for i=1, 4 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0.06,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.36,-0.08,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(-0.12,0,0.12) * CFrame.fromEulerAnglesXYZ(-0.3,0.22,0.05)
+	
+	wait(0.1)
+	
+	end
+	
+	lw.C0 = CFrame.new(0,0,0)
+	
+	rw.C0 = CFrame.new(0,0,0)
+	
+	lw.Part1 = nil
+	
+	rw.Part1 = nil
+	
+	attacking = false
+	
+	end
+	
+	elseif hurt == false and grabbed ~= nil and mode == "drop" then
+	
+	grabweld:remove()
+	
+	grabweld = nil
+	
+	platlol = false
+	
+	grabbed = nil
+	
+	lolhum.PlatformStand = false
+	
+	lolhum = nil
+	
+	for i=1, 4 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0.06,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.36,-0.08,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(-0.12,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.3,0.2,0)
+	
+	wait(0.1)
+	
+	end
+	
+	lw.C0 = CFrame.new(0,0,0)
+	
+	rw.C0 = CFrame.new(0,0,0)
+	
+	lw.Part1 = nil
+	
+	rw.Part1 = nil
+	
+	attacking = false
+	
+	platlol = nil
+	
+	elseif hurt == false and grabbed ~= nil and grabweld ~= nil and mode == "throw" then
+	
+	grabweld:remove()
+	
+	grabweld = nil
+	
+	local bf = Instance.new("BodyForce",grabbed)
+	
+	bf.force = torso.CFrame.lookVector * 8500
+	
+	bf.force = bf.force + Vector3.new(0,7400,0)
+	
+	coroutine.resume(coroutine.create(function()
+	
+	wait(0.12)
+	
+	bf:remove()
+	
+	end))
+	
+	for i=1, 6 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0,0,0) * CFrame.fromEulerAnglesXYZ(0.35,0,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(0,0,0) * CFrame.fromEulerAnglesXYZ(-0.18,0,0)
+	
+	wait(0.1)
+	
+	end
+	
+	for i=1, 4 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0,0,0) * CFrame.fromEulerAnglesXYZ(-0.47,0,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(0,0,0) * CFrame.fromEulerAnglesXYZ(0.2,0,0)
+	
+	wait(0.1)
+	
+	end
+	
+	wait(0.2)
+	
+	platlol = false
+	
+	grabbed = nil
+	
+	lolhum.PlatformStand = false
+	
+	lolhum = nil
+	
+	for i=1, 4 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0.06,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.36,-0.08,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(-0.12,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.3,0.2,0)
+	
+	wait(0.1)
+	
+	end
+	
+	lw.C0 = CFrame.new(0,0,0)
+	
+	rw.C0 = CFrame.new(0,0,0)
+	
+	lw.Part1 = nil
+	
+	rw.Part1 = nil
+	
+	attacking = false
+	
+	platlol = nil
+	
+	elseif hurt == false and grabbed ~= nil and lolhum ~= nil and grabweld ~= nil and mode == "kill" then
+	
+	for i=1, 5 do
+	
+	lw.C0 = lw.C0 * CFrame.new(0.02,0.12,0.1) * CFrame.fromEulerAnglesXYZ(-0.05,0,-0.03)
+	
+	wait(0.1)
+	
+	end
+	
+	local ne = grabbed:findFirstChild("Neck")
+	
+	coroutine.resume(coroutine.create(function()
+	
+	local duh = grabbed
+	
+	local duh2 = grabbed.Parent.Head
+	
+	local lolas = lolhum
+	
+	duh.RotVelocity = Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20))
+	
+	for i=1, 60 do
+	
+	wait(0.1)
+	
+	local hm = math.random(1,9)
+	
+	pcall(function()
+	
+	if hm == 1 then
+	
+	duh2.Sound.Pitch = math.random(90,110)/100
+	
+	duh2.Sound:play()
+	
+	end
+	
+	end)
+	
+	if hm > 0 and hm < 3 then
+	
+	bleed(duh,1)
+	
+	bleed(duh2,-0.5)
+	
+	end
+	
+	end
+	
+	lolas.Health = 0
+	
+	for i=1, 85 do
+	
+	wait(0.1)
+	
+	local hm = math.random(1,9)
+	
+	pcall(function()
+	
+	if hm == 1 then
+	
+	duh2.Sound.Pitch = math.random(90,110)/100
+	
+	duh2.Sound:play()
+	
+	end
+	
+	end)
+	
+	if hm > 0 and hm < 3 then
+	
+	bleed(duh,1)
+	
+	bleed(duh2,-0.5)
+	
+	end
+	
+	end
+	
+	end))
+	
+	for i=1, 3 do
+	
+	lw.C0 = lw.C0 * CFrame.new(0.02,0.12,0.1) * CFrame.fromEulerAnglesXYZ(-0.05,0,-0.03)
+	
+	if ne ~= nil then
+	
+	grabbed.Neck.C0 = grabbed.Neck.C0 * CFrame.fromEulerAnglesXYZ(-0.35,0,0)
+	
+	end
+	
+	wait(0.1)
+	
+	end
+	
+	grabweld:remove()
+	
+	grabweld = nil
+	
+	for i=1, 4 do
+	
+	lw.C0 = lw.C0 * CFrame.new(-0.04,-0.24,-0.2) * CFrame.fromEulerAnglesXYZ(0.1,0,0.06)
+	
+	wait(0.1)
+	
+	end
+	
+	for i=1, 4 do
+	
+	rw.C0 = rw.C0 * CFrame.new(0.06,0,0.16) * CFrame.fromEulerAnglesXYZ(-0.36,-0.08,0)
+	
+	lw.C0 = lw.C0 * CFrame.new(-0.12,0,0.12) * CFrame.fromEulerAnglesXYZ(-0.3,0.22,0.05)
+	
+	wait(0.1)
+	
+	end
+	
+	lw.C0 = CFrame.new(0,0,0)
+	
+	rw.C0 = CFrame.new(0,0,0)
+	
+	lw.Part1 = nil
+	
+	rw.Part1 = nil
+	
+	platlol = false
+	
+	grabbed = nil
+	
+	lolhum = nil
+	
+	attacking = false
+	
+	platlol = nil
+	
+	end
+	
+	end)
+	
+	mouse.KeyDown:connect(function(kai)
+	
+	key = kai:lower()
+	
+	if key == "q" then
+	
+	mode = "drop"
+	
+	inform("Mode: Drop",2)
+	
+	elseif key == "e" then
+	
+	mode = "throw"
+	
+	inform("Mode: Throw",2)
+	
+	elseif key == "f" then
+	
+	mode = "kill"
+	
+	inform("Mode: Kill",2)
+	
+	end
+	
+	end)
+	
+	end
+	
+	
+	function desel()
+	
+	repeat wait(0.1) until attacking == false
+	
+	orr.Part1 = knife
+	
+	ar.Part1 = nil
+	
+	end
+	
+	
+	bin.Selected:connect(select)
+	
+	bin.Deselected:connect(desel)
+	
+	
+	char.Humanoid.Died:connect(function()
+	
+	pcall(function()
+	
+	grabweld:remove()
+	
+	grabweld = nil
+	
+	grabbed = nil
+	
+	platlol = false
+	
+	platlol = nil
+	
+	end)
+	
+	end)
+	
+	inform("Grab Knife loaded.",2)
+end)
+
+EISSBREAKER.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RobloxLocked = true
+end)
+
+_666.MouseButton1Down:connect(function()
+	for i,v in next,workspace:children''do
+	  if(v:IsA'BasePart')then
+	    me=v;
+	    bbg=Instance.new('BillboardGui',me);
+	    bbg.Name='stuf';
+	    bbg.Adornee=me;
+	    bbg.Size=UDim2.new(2.5,0,2.5,0)
+	    --bbg.StudsOffset=Vector3.new(0,2,0)
+	    tlb=Instance.new'TextLabel';
+	    tlb.Text='666 666 666 666 666 666';
+	    tlb.Font='SourceSansBold';
+	    tlb.FontSize='Size48';
+	    tlb.TextColor3=Color3.new(1,0,0);
+	    tlb.Size=UDim2.new(1.25,0,1.25,0);
+	    tlb.Position=UDim2.new(-0.125,-22,-1.1,0);
+	    tlb.BackgroundTransparency=1;
+	    tlb.Parent=bbg;
+	    end;end;
+	    --coroutine.wrap(function()while wait''do
+	      s=Instance.new'Sound';
+	      s.Parent=workspace;
+	      s.SoundId='rbxassetid://152840862';
+	      s.Pitch=1;
+	      s.Volume=1;
+	      s.Looped=true;
+	      s:play();
+	      --end;end)();
+	      function xds(dd)
+	        for i,v in next,dd:children''do
+	          if(v:IsA'BasePart')then
+	            v.BrickColor=BrickColor.new'Really black';
+	            v.TopSurface='Smooth';
+	            v.BottomSurface='Smooth';
+	            s=Instance.new('SelectionBox',v);
+	            s.Adornee=v;
+	            s.Color=BrickColor.new'Really red';
+	            a=Instance.new('PointLight',v);
+	            a.Color=Color3.new(1,0,0);
+	            a.Range=15;
+	            a.Brightness=5;
+	            f=Instance.new('Fire',v);
+	            f.Size=19;
+	            f.Heat=22;
+	            end;
+	            game.Lighting.TimeOfDay=0;
+	            game.Lighting.Brightness=0;
+	            game.Lighting.ShadowColor=Color3.new(0,0,0);
+	            game.Lighting.Ambient=Color3.new(1,0,0);
+	            game.Lighting.FogEnd=200;
+	            game.Lighting.FogColor=Color3.new(0,0,0);
+	        local dec = 'http://www.roblox.com/asset/?id=19399245';
+	            local fac = {'Front', 'Back', 'Left', 'Right', 'Top', 'Bottom'}
+	            if #(v:GetChildren())>0 then
+	                   xds(v)
+	              end
+	         end
+	    end
+	xds(game.Workspace)
+end)
+
+AXR.MouseButton1Down:connect(function()
+	local playerLeaderstats = {}
+	for i, v in pairs(game.Players:GetChildren()) do
+	table.insert(playerLeaderstats, v)
+	end
+	for i, v in pairs(playerLeaderstats) do
+	pe = Instance.new("ParticleEmitter",v.Character.Torso)
+	pe.Texture = "http://www.roblox.com/asset/?id=127476787"
+	pe.VelocitySpread = 50
+	end
+end)
+
+HOME.MouseButton1Down:connect(function()
+	TAB_SCRIPT.Visible = false
+	TAB_PLAYER.Visible = false
+	TAB_GETOBJECTS.Visible = false
+end)
+
+SCRIPT.MouseButton1Down:connect(function()
+	TAB_SCRIPT.Visible = true
+	TAB_PLAYER.Visible = false
+	TAB_GETOBJECTS.Visible = false
+end)
+
+PLAYER.MouseButton1Down:connect(function()
+	TAB_SCRIPT.Visible = false
+	TAB_PLAYER.Visible = true
+	TAB_GETOBJECTS.Visible = false
+end)
+
+GETOBJECTS.MouseButton1Down:connect(function()
+	TAB_SCRIPT.Visible = false
+	TAB_PLAYER.Visible = false
+	TAB_GETOBJECTS.Visible = true
+end)
+
+GET.MouseButton1Down:connect(function()
+	game:GetObjects("rbxassetid://"..MODELID.Text)[1].Parent = PARENT.Text
+end)

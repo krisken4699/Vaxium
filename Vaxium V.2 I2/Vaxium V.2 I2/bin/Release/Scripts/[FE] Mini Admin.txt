@@ -1,0 +1,85 @@
+game.Players.LocalPlayer.Chatted:connect(function(chat)
+if string.sub(chat,1,11) == ";AddPoints " then
+local name = matchplr(string.sub(chat,12))
+if name == nil then return end
+add(tostring(name))
+elseif string.sub(chat,1,14) == ";RemovePoints " then
+local name = matchplr(string.sub(chat,15))
+if name == nil then return end
+remove(tostring(name))
+elseif string.sub(chat,1,6) == ";Kill " then
+local name = matchplr(string.sub(chat,7))
+if name == nil then return end
+kill(tostring(name))
+elseif string.sub(chat,1,8) == ";Punish " then
+local name = matchplr(string.sub(chat,9))
+if name == nil then return end
+punish(tostring(name))
+elseif string.sub(chat,1,8) == ";Btools" then
+btools()
+end
+end)
+
+function matchplr(toMatch)
+for i, player in pairs(game.Players:GetChildren()) do
+local tomat = string.lower(toMatch)
+local plr = string.lower(player.Name)
+if string.match(plr,tomat) then return player end
+end
+end
+
+function add(name)
+for i=1, 100 do
+game.Workspace.GiveSystem.AddPoint:FireServer(name)
+end
+end
+
+function remove(name)
+for i=1, 100 do
+game.Workspace.GiveSystem.RevokePoint:FireServer(name)
+end
+end
+
+function kill(name)
+game.Workspace.GiveSystem.GiveItem:FireServer(workspace, game.Workspace[name].Torso)
+end
+
+function punish(name)
+game.Workspace.GiveSystem.GiveItem:FireServer(workspace, game.Workspace[name])
+end
+
+function btools()
+local tool = Instance.new'Tool'
+local plr = game.Players.LocalPlayer
+tool.RequiresHandle = false
+tool.TextureId = 'http://www.roblox.com/asset/?id=12223874'
+tool.Name = "FE Btools"
+tool.Parent = plr.Backpack
+buttonf = nil
+tool.Equipped:connect(function()
+   local mouse = game:GetService'Players'.LocalPlayer:GetMouse()
+   mouse.Icon = 'rbxasset://textures/HammerCursor.png'
+   buttonf = mouse.Button1Down:connect(function()
+       if mouse.Target == nil then return end
+       local ob = mouse.Target
+       if ob:IsA'BasePart' or ob:IsA'WedgePart' then
+           if ob:IsDescendantOf(plr.Character) then return end
+           mouse.Icon = 'rbxasset://textures/HammerOverCursor.png'
+           local ex = Instance.new'Explosion'
+           ex.BlastRadius = 0
+           ex.Position = ob.Position
+           ex.Parent = workspace
+           game.Workspace.GiveSystem.GiveItem:FireServer(workspace, ob)
+           wait()
+           mouse.Icon = 'rbxasset://textures/HammerCursor.png'
+       end
+   end)
+end)
+tool.Unequipped:connect(function()
+   if buttonf ~= nil then
+       buttonf:Disconnect()
+       buttonf = nil
+   end
+   local mouse = game.Players.LocalPlayer:GetMouse()
+   mouse.Icon = ''
+end)

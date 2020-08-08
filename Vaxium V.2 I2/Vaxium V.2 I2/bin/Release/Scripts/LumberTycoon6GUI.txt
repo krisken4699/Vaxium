@@ -1,0 +1,1412 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local LumberCracker = Instance.new("ScreenGui")
+local MenuFrame = Instance.new("Frame")
+local WayPointsButton = Instance.new("TextButton")
+local PlayerButton = Instance.new("TextButton")
+local OtherButton = Instance.new("TextButton")
+local Name = Instance.new("TextLabel")
+local Close1 = Instance.new("TextButton")
+local OwnerText = Instance.new("TextLabel")
+local OpenFrame = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+local WayPoints = Instance.new("Frame")
+local BobsShackButton = Instance.new("TextButton")
+local BoxedCarsButton = Instance.new("TextButton")
+local Close2 = Instance.new("TextButton")
+local FineArtButton = Instance.new("TextButton")
+local LinksLogicButton = Instance.new("TextButton")
+local SpawnButton = Instance.new("TextButton")
+local WoodRUSButton = Instance.new("TextButton")
+local WayPointsText = Instance.new("TextLabel")
+local DenButton = Instance.new("TextButton")
+local StrangeManButton = Instance.new("TextButton")
+local SkiiLodgeButton = Instance.new("TextButton")
+local PlayerFrame = Instance.new("Frame")
+local SpeedButton = Instance.new("TextButton")
+local JumpPowerButton = Instance.new("TextButton")
+local PaintToolButton = Instance.new("TextButton")
+local MaxLandButton = Instance.new("TextButton")
+local TpToolButton = Instance.new("TextButton")
+local NoClipButton = Instance.new("TextButton")
+local GoldAxeButton = Instance.new("TextButton")
+local EspButton = Instance.new("TextButton")
+local FlyButton = Instance.new("TextButton")
+local CarSpeedButton = Instance.new("TextButton")
+local Close3 = Instance.new("TextButton")
+local OtherFrame = Instance.new("Frame")
+local GetBluePrintsButton = Instance.new("TextButton")
+local PaintToolButton_2 = Instance.new("TextButton")
+local BringWoodButton = Instance.new("TextButton")
+local BringPlanksButton = Instance.new("TextButton")
+local TpLooseButton = Instance.new("TextButton")
+local TpGiftsButton = Instance.new("TextButton")
+local TpAxesButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Close4 = Instance.new("TextButton")
+--Properties:
+LumberCracker.Name = "LumberCracker"
+LumberCracker.Parent = game.CoreGui
+LumberCracker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = LumberCracker
+MenuFrame.Active = true
+MenuFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MenuFrame.Position = UDim2.new(0.178901911, 0, 0.336065561, 0)
+MenuFrame.Size = UDim2.new(0, 300, 0, 250)
+MenuFrame.Style = Enum.FrameStyle.DropShadow
+MenuFrame.Visible = false
+MenuFrame.Draggable = true
+
+WayPointsButton.Name = "WayPointsButton"
+WayPointsButton.Parent = MenuFrame
+WayPointsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+WayPointsButton.Position = UDim2.new(0.146666661, 0, 0.115999997, 0)
+WayPointsButton.Size = UDim2.new(0, 200, 0, 50)
+WayPointsButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+WayPointsButton.Font = Enum.Font.SourceSans
+WayPointsButton.Text = "WayPoints"
+WayPointsButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+WayPointsButton.TextSize = 30
+WayPointsButton.TextWrapped = true
+WayPointsButton.MouseButton1Down:connect(function()
+	WayPoints.Visible = true
+end)
+
+PlayerButton.Name = "PlayerButton"
+PlayerButton.Parent = MenuFrame
+PlayerButton.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerButton.Position = UDim2.new(0.146666661, 0, 0.39199999, 0)
+PlayerButton.Size = UDim2.new(0, 200, 0, 50)
+PlayerButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+PlayerButton.Font = Enum.Font.SourceSans
+PlayerButton.Text = "Player"
+PlayerButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+PlayerButton.TextSize = 30
+PlayerButton.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = true
+end)
+
+OtherButton.Name = "OtherButton"
+OtherButton.Parent = MenuFrame
+OtherButton.BackgroundColor3 = Color3.new(1, 1, 1)
+OtherButton.Position = UDim2.new(0.146666661, 0, 0.684000015, 0)
+OtherButton.Size = UDim2.new(0, 200, 0, 50)
+OtherButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+OtherButton.Font = Enum.Font.SourceSans
+OtherButton.Text = "Other"
+OtherButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+OtherButton.TextSize = 30
+OtherButton.MouseButton1Down:connect(function()
+	OtherFrame.Visible = true
+end)
+
+Name.Name = "Name"
+Name.Parent = MenuFrame
+Name.BackgroundColor3 = Color3.new(1, 1, 1)
+Name.BackgroundTransparency = 1
+Name.Position = UDim2.new(0.144762278, 0, -0.0199999996, 0)
+Name.Size = UDim2.new(0, 200, 0, 32)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "LumberCracker V.1"
+Name.TextColor3 = Color3.new(1, 1, 1)
+Name.TextSize = 25
+
+Close1.Name = "Close1"
+Close1.Parent = MenuFrame
+Close1.BackgroundColor3 = Color3.new(0.513726, 0.0352941, 0.0823529)
+Close1.BackgroundTransparency = 1
+Close1.Position = UDim2.new(0.901734412, 0, -0.0173251927, 0)
+Close1.Size = UDim2.new(0, 35, 0, 32)
+Close1.Font = Enum.Font.SourceSans
+Close1.Text = "X"
+Close1.TextColor3 = Color3.new(1, 1, 1)
+Close1.TextSize = 50
+Close1.TextWrapped = true
+Close1.MouseButton1Down:connect(function()
+	MenuFrame.Visible = false
+	OpenFrame.Visible = true
+end)
+
+OwnerText.Name = "OwnerText"
+OwnerText.Parent = MenuFrame
+OwnerText.BackgroundColor3 = Color3.new(1, 1, 1)
+OwnerText.BackgroundTransparency = 1
+OwnerText.Position = UDim2.new(0.030465899, 0, 0.876401603, 0)
+OwnerText.Size = UDim2.new(0, 266, 0, 31)
+OwnerText.Font = Enum.Font.SourceSans
+OwnerText.Text = "Made by: AmazonBox#4551"
+OwnerText.TextColor3 = Color3.new(1, 1, 1)
+OwnerText.TextSize = 25
+OwnerText.TextWrapped = true
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = LumberCracker
+OpenFrame.Active = true
+OpenFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenFrame.Position = UDim2.new(0.0259099323, 0, 0.699063241, 0)
+OpenFrame.Size = UDim2.new(0, 173, 0, 62)
+OpenFrame.Style = Enum.FrameStyle.DropShadow
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = OpenFrame
+OpenButton.BackgroundColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+OpenButton.BorderColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+OpenButton.Position = UDim2.new(-0.0102792047, 0, 0.0616706014, 0)
+OpenButton.Size = UDim2.new(0, 160, 0, 41)
+OpenButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+OpenButton.Font = Enum.Font.SourceSans
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+OpenButton.TextSize = 30
+OpenButton.MouseButton1Down:connect(function()
+	OpenFrame.Visible = false
+	MenuFrame.Visible = true
+end)
+
+WayPoints.Name = "WayPoints"
+WayPoints.Parent = LumberCracker
+WayPoints.Active = true
+WayPoints.BackgroundColor3 = Color3.new(1, 1, 1)
+WayPoints.Position = UDim2.new(0.413325101, 0, 0.33957845, 0)
+WayPoints.Size = UDim2.new(0, 150, 0, 400)
+WayPoints.Style = Enum.FrameStyle.DropShadow
+WayPoints.Visible = false
+WayPoints.Draggable = true
+
+BobsShackButton.Name = "BobsShackButton"
+BobsShackButton.Parent = WayPoints
+BobsShackButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BobsShackButton.Position = UDim2.new(-0.00149495527, 0, 0.507714689, 0)
+BobsShackButton.Size = UDim2.new(0, 135, 0, 39)
+BobsShackButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BobsShackButton.Font = Enum.Font.SourceSans
+BobsShackButton.Text = "Bobs Shack"
+BobsShackButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+BobsShackButton.TextSize = 20
+BobsShackButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(260, 8, -2542))
+end)
+
+BoxedCarsButton.Name = "BoxedCarsButton"
+BoxedCarsButton.Parent = WayPoints
+BoxedCarsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BoxedCarsButton.Position = UDim2.new(-0.00149495527, 0, 0.40895468, 0)
+BoxedCarsButton.Size = UDim2.new(0, 135, 0, 39)
+BoxedCarsButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BoxedCarsButton.Font = Enum.Font.SourceSans
+BoxedCarsButton.Text = "Boxed Cars"
+BoxedCarsButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+BoxedCarsButton.TextSize = 20
+BoxedCarsButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(509, 3, -1463))
+end)
+
+Close2.Name = "Close2"
+Close2.Parent = WayPoints
+Close2.BackgroundColor3 = Color3.new(1, 1, 1)
+Close2.BackgroundTransparency = 1
+Close2.Position = UDim2.new(0.832788944, 0, -0.00569925178, 0)
+Close2.Size = UDim2.new(0, 30, 0, 29)
+Close2.Font = Enum.Font.SourceSans
+Close2.Text = "X"
+Close2.TextColor3 = Color3.new(1, 1, 1)
+Close2.TextSize = 25
+Close2.MouseButton1Down:connect(function()
+	WayPoints.Visible = false
+end)
+
+FineArtButton.Name = "FineArtButton"
+FineArtButton.Parent = WayPoints
+FineArtButton.BackgroundColor3 = Color3.new(1, 1, 1)
+FineArtButton.Position = UDim2.new(-0.00149495527, 0, 0.608974457, 0)
+FineArtButton.Size = UDim2.new(0, 135, 0, 39)
+FineArtButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+FineArtButton.Font = Enum.Font.SourceSans
+FineArtButton.Text = "Fine Art"
+FineArtButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+FineArtButton.TextSize = 20
+FineArtButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5207, -166, 719))
+end)
+
+LinksLogicButton.Name = "LinksLogicButton"
+LinksLogicButton.Parent = WayPoints
+LinksLogicButton.BackgroundColor3 = Color3.new(1, 1, 1)
+LinksLogicButton.Position = UDim2.new(-0.00149495527, 0, 0.211434707, 0)
+LinksLogicButton.Size = UDim2.new(0, 135, 0, 39)
+LinksLogicButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+LinksLogicButton.Font = Enum.Font.SourceSans
+LinksLogicButton.Text = "Links Logic"
+LinksLogicButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+LinksLogicButton.TextSize = 20
+LinksLogicButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(4607,7.5,-798))
+end)
+
+SpawnButton.Name = "SpawnButton"
+SpawnButton.Parent = WayPoints
+SpawnButton.BackgroundColor3 = Color3.new(1, 1, 1)
+SpawnButton.Position = UDim2.new(-0.00149495527, 0, 0.112674788, 0)
+SpawnButton.Size = UDim2.new(0, 135, 0, 39)
+SpawnButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+SpawnButton.Font = Enum.Font.SourceSans
+SpawnButton.Text = "Spawn"
+SpawnButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+SpawnButton.TextSize = 20
+SpawnButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(155,3,74))
+end)
+
+WoodRUSButton.Name = "WoodRUSButton"
+WoodRUSButton.Parent = WayPoints
+WoodRUSButton.BackgroundColor3 = Color3.new(1, 1, 1)
+WoodRUSButton.Position = UDim2.new(-0.00149495527, 0, 0.310194701, 0)
+WoodRUSButton.Size = UDim2.new(0, 135, 0, 39)
+WoodRUSButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+WoodRUSButton.Font = Enum.Font.SourceSans
+WoodRUSButton.Text = "WoodRUS"
+WoodRUSButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+WoodRUSButton.TextSize = 20
+WoodRUSButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(265,3,57))
+end)
+
+WayPointsText.Name = "WayPointsText"
+WayPointsText.Parent = WayPoints
+WayPointsText.BackgroundColor3 = Color3.new(1, 1, 1)
+WayPointsText.BackgroundTransparency = 1
+WayPointsText.Position = UDim2.new(-0.00593791064, 0, -0.0060591409, 0)
+WayPointsText.Size = UDim2.new(0, 135, 0, 40)
+WayPointsText.Font = Enum.Font.SourceSans
+WayPointsText.Text = "WayPoints"
+WayPointsText.TextColor3 = Color3.new(1, 1, 1)
+WayPointsText.TextSize = 30
+
+DenButton.Name = "DenButton"
+DenButton.Parent = WayPoints
+DenButton.BackgroundColor3 = Color3.new(1, 1, 1)
+DenButton.Position = UDim2.new(-0.00149495527, 0, 0.711793661, 0)
+DenButton.Size = UDim2.new(0, 135, 0, 39)
+DenButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+DenButton.Font = Enum.Font.SourceSans
+DenButton.Text = "Den"
+DenButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+DenButton.TextSize = 20
+DenButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(331, 45, 1941))
+end)
+
+StrangeManButton.Name = "StrangeManButton"
+StrangeManButton.Parent = WayPoints
+StrangeManButton.BackgroundColor3 = Color3.new(1, 1, 1)
+StrangeManButton.Position = UDim2.new(-0.00149495527, 0, 0.809760392, 0)
+StrangeManButton.Size = UDim2.new(0, 135, 0, 39)
+StrangeManButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+StrangeManButton.Font = Enum.Font.SourceSans
+StrangeManButton.Text = "Strange Man"
+StrangeManButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+StrangeManButton.TextSize = 20
+StrangeManButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1061, 16, 1131))
+end)
+
+SkiiLodgeButton.Name = "SkiiLodgeButton"
+SkiiLodgeButton.Parent = WayPoints
+SkiiLodgeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+SkiiLodgeButton.Position = UDim2.new(-0.00745076686, 0, 0.910079181, 0)
+SkiiLodgeButton.Size = UDim2.new(0, 135, 0, 39)
+SkiiLodgeButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+SkiiLodgeButton.Font = Enum.Font.SourceSans
+SkiiLodgeButton.Text = "SkiiLodge"
+SkiiLodgeButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+SkiiLodgeButton.TextSize = 20
+SkiiLodgeButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1244, 62, 2306))
+end)
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = LumberCracker
+PlayerFrame.Active = true
+PlayerFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerFrame.Position = UDim2.new(0.178901896, 0, 0.641686201, 0)
+PlayerFrame.Size = UDim2.new(0, 300, 0, 250)
+PlayerFrame.Style = Enum.FrameStyle.DropShadow
+PlayerFrame.Visible = false
+PlayerFrame.Draggable = true
+
+SpeedButton.Name = "SpeedButton"
+SpeedButton.Parent = PlayerFrame
+SpeedButton.BackgroundColor3 = Color3.new(1, 1, 1)
+SpeedButton.Position = UDim2.new(0.0285803229, 0, 0.0221560057, 0)
+SpeedButton.Size = UDim2.new(0, 125, 0, 40)
+SpeedButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+SpeedButton.Font = Enum.Font.SourceSans
+SpeedButton.Text = "Speed"
+SpeedButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+SpeedButton.TextSize = 30
+SpeedButton.MouseButton1Down:connect(function()
+while true do
+    wait()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+end
+end)
+
+JumpPowerButton.Name = "JumpPowerButton"
+JumpPowerButton.Parent = PlayerFrame
+JumpPowerButton.BackgroundColor3 = Color3.new(1, 1, 1)
+JumpPowerButton.Position = UDim2.new(0.525246978, 0, 0.0181560051, 0)
+JumpPowerButton.Size = UDim2.new(0, 125, 0, 40)
+JumpPowerButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+JumpPowerButton.Font = Enum.Font.SourceSans
+JumpPowerButton.Text = "JumpPower"
+JumpPowerButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+JumpPowerButton.TextSize = 28
+JumpPowerButton.MouseButton1Down:connect(function()
+while true do
+    wait()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+end
+end)
+
+PaintToolButton.Name = "PaintToolButton"
+PaintToolButton.Parent = PlayerFrame
+PaintToolButton.BackgroundColor3 = Color3.new(1, 1, 1)
+PaintToolButton.Position = UDim2.new(0.0285803229, 0, 0.222156003, 0)
+PaintToolButton.Size = UDim2.new(0, 125, 0, 40)
+PaintToolButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+PaintToolButton.Font = Enum.Font.SourceSans
+PaintToolButton.Text = "Day"
+PaintToolButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+PaintToolButton.TextSize = 25
+PaintToolButton.MouseButton1Down:connect(function()
+	game.ServerScriptService.Lighting.DayCycle:Destroy()
+	game.Lighting.TimeOfDay = 14
+end)
+
+MaxLandButton.Name = "MaxLandButton"
+MaxLandButton.Parent = PlayerFrame
+MaxLandButton.BackgroundColor3 = Color3.new(1, 1, 1)
+MaxLandButton.Position = UDim2.new(0.525246978, 0, 0.218155995, 0)
+MaxLandButton.Size = UDim2.new(0, 125, 0, 40)
+MaxLandButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+MaxLandButton.Font = Enum.Font.SourceSans
+MaxLandButton.Text = "Max Land"
+MaxLandButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+MaxLandButton.TextSize = 30
+MaxLandButton.MouseButton1Down:connect(function()
+	for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+		if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+			base = v
+			square = v.OriginSquare
+			end
+		end
+	function makebase(pos)
+		local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+		Event:FireServer(base, pos)
+		end
+	spos = square.Position
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+--Corners--
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+--Corners--
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+end)
+
+
+TpToolButton.Name = "TpToolButton"
+TpToolButton.Parent = PlayerFrame
+TpToolButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TpToolButton.Position = UDim2.new(0.521913648, 0, 0.41415599, 0)
+TpToolButton.Size = UDim2.new(0, 125, 0, 40)
+TpToolButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+TpToolButton.Font = Enum.Font.SourceSans
+TpToolButton.Text = "TpTool (q)"
+TpToolButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+TpToolButton.TextSize = 30
+TpToolButton.MouseButton1Down:connect(function()
+plr = game.Players.LocalPlayer
+
+hum = plr.Character.HumanoidRootPart
+
+mouse = plr:GetMouse()
+
+
+
+mouse.KeyDown:connect(function(key)
+
+if key == "q" then
+
+if mouse.Target then
+
+hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+end
+
+end
+end)
+end)
+
+NoClipButton.Name = "NoClipButton"
+NoClipButton.Parent = PlayerFrame
+NoClipButton.BackgroundColor3 = Color3.new(1, 1, 1)
+NoClipButton.Position = UDim2.new(0.025246989, 0, 0.418155998, 0)
+NoClipButton.Size = UDim2.new(0, 125, 0, 40)
+NoClipButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+NoClipButton.Font = Enum.Font.SourceSans
+NoClipButton.Text = "NoClip(F)"
+NoClipButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+NoClipButton.TextSize = 30
+NoClipButton.MouseButton1Down:connect(function()
+	local noclipplayer = game:GetService("Players").LocalPlayer
+local noclipmouse = noclipplayer:GetMouse()
+
+local donoclip = false
+local noclip = false
+
+function b_noclip(key)
+if (key == "f") then
+if noclip == false then
+donoclip = true
+
+noclip = true
+elseif noclip == true then
+donoclip = false
+
+noclip = false
+end
+end
+end
+
+noclipmouse.KeyDown:connect(b_noclip)
+
+game:GetService("Players").LocalPlayer.Character.Head.Touched:connect(function(obj)
+if obj ~= workspace.Terrain then
+if donoclip == true then
+obj.CanCollide = false
+else
+obj.CanCollide = true
+end
+end
+end)
+end)
+
+GoldAxeButton.Name = "GoldAxeButton"
+GoldAxeButton.Parent = PlayerFrame
+GoldAxeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+GoldAxeButton.Position = UDim2.new(0.025246989, 0, 0.610156059, 0)
+GoldAxeButton.Size = UDim2.new(0, 125, 0, 40)
+GoldAxeButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+GoldAxeButton.Font = Enum.Font.SourceSans
+GoldAxeButton.Text = "GoldAxe"
+GoldAxeButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+GoldAxeButton.TextSize = 30
+GoldAxeButton.MouseButton1Down:connect(function()
+	local a=game:GetService("Players").LocalPlayer:GetMouse()a.Button1Down:connect(function(b)Pressing=false end)function GetAxe()if game.Players.LocalPlayer.Character:FindFirstChild("Tool")then return game.Players.LocalPlayer.Character:FindFirstChild("Tool")end end;local c={['GoldAxe']=50,['BasicHatchet']=0.2,['Axe1']=0.55,['Axe2']=0.93,['AxeAlphaTesters']=1.5,['Rukiryaxe']=1.68,['Axe3']=1.45,['AxeBetaTesters']=1.45,['FireAxe']=0.6,['SilverAxe']=1.6,['EndTimesAxe']=10000000,['AxeChicken']=0.1,['CandyCaneAxe']=0}local Pressing=false;local a=game:GetService("Players").LocalPlayer:GetMouse()a.Button1Down:connect(function(b)Pressing=false end)a.Button1Down:connect(function(b)Pressing=true;poop(GetAxe())end)function cut(d)local e=game.Players.LocalPlayer:GetMouse().Target;local f=game.Players.LocalPlayer:GetMouse().Hit;local g=e.CFrame:pointToObjectSpace(f.p).Y+e.Size.Y/2;if e.Parent:WaitForChild("CutEvent",0.1)then game.ReplicatedStorage.Interaction.RemoteProxy:FireServer(e.Parent.CutEvent,{["cuttingClass"]="Axe",["cooldown"]=0,["hitPoints"]=c[d.ToolName.Value],["sectionId"]=e.ID.Value,["tool"]=d,["faceVector"]=Vector3.new(-1,0,0),["height"]=g})end end;function poop(d)for h=1,100 do if Pressing==true then cut(d)end end end
+end)
+
+EspButton.Name = "EspButton"
+EspButton.Parent = PlayerFrame
+EspButton.BackgroundColor3 = Color3.new(1, 1, 1)
+EspButton.Position = UDim2.new(0.521913648, 0, 0.606155992, 0)
+EspButton.Size = UDim2.new(0, 125, 0, 40)
+EspButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+EspButton.Font = Enum.Font.SourceSans
+EspButton.Text = "Volcano Win"
+EspButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+EspButton.TextSize = 25
+EspButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1668.047, 351.38, 1475.389))
+	wait(1)
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(155,3,74))
+end)
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = PlayerFrame
+FlyButton.BackgroundColor3 = Color3.new(1, 1, 1)
+FlyButton.Position = UDim2.new(0.525246978, 0, 0.80615598, 0)
+FlyButton.Size = UDim2.new(0, 125, 0, 40)
+FlyButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+FlyButton.Font = Enum.Font.SourceSans
+FlyButton.Text = "Fly(Tool)"
+FlyButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+FlyButton.TextSize = 30
+FlyButton.MouseButton1Down:connect(function()
+	wait();
+
+local MaxFlySpeed = 1 -- change this as needed
+
+local UIS = game:GetService("UserInputService")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Torso = (LocalPlayer.Character and LocalPlayer.Character:WaitForChild("Torso"))
+local Mouse = LocalPlayer:GetMouse()
+local Tool = Instance.new("Tool")
+Tool.RequiresHandle = false
+Tool.Name = "Fly tool"
+
+assert(Torso.ClassName == "Part", "Yikes! Torso is not a part.")
+
+local ToolUtils do
+	ToolUtils = {
+		Enabled = false,
+        WindowFocused = true,
+
+        Keys = {},        
+        InternalVars = {
+            FlyForward = 0,
+            FlyBackward = 0
+        }		
+	}
+end
+
+local ToolEvents do
+	Tool.Equipped:connect(function(Mouse)
+		ToolUtils.Enabled = true
+		Torso.Anchored = true
+	end)
+	Tool.Unequipped:connect(function(...)
+		ToolUtils.Enabled = false
+		Torso.Anchored = false
+    end)
+    UIS.InputBegan:connect(function(input, processedEvent)
+        ToolUtils.Keys[input.KeyCode] = true 
+    end)
+    UIS.InputEnded:connect(function(input, processedEvent)
+        ToolUtils.Keys[input.KeyCode] = nil
+    end)
+    UIS.WindowFocusReleased:connect(function()
+        ToolUtils.WindowFocused = false
+    end)
+    UIS.WindowFocused:connect(function()
+        ToolUtils.WindowFocused = true
+    end)
+end
+
+game:GetService("RunService").RenderStepped:connect(function(...)
+	if ToolUtils.WindowFocused and ToolUtils.Enabled then
+		if ToolUtils.Keys[Enum.KeyCode.W] then
+			if ToolUtils.InternalVars.FlyForward < MaxFlySpeed then
+				ToolUtils.InternalVars.FlyForward = ToolUtils.InternalVars.FlyForward + 0.1
+			end
+		else
+			ToolUtils.InternalVars.FlyForward = ToolUtils.InternalVars.FlyForward * 0.9
+		end
+		if ToolUtils.Keys[Enum.KeyCode.S] then
+			if ToolUtils.InternalVars.FlyBackward < MaxFlySpeed then
+				ToolUtils.InternalVars.FlyBackward = ToolUtils.InternalVars.FlyBackward + 0.1
+			end
+		else
+			ToolUtils.InternalVars.FlyBackward = ToolUtils.InternalVars.FlyBackward * 0.9			
+		end
+		
+		local Camera = workspace.CurrentCamera
+		Torso.CFrame = Torso.CFrame:lerp(
+			CFrame.new(Torso.Position, Camera.CFrame.p)
+			   * CFrame.Angles(0, math.rad(180), 0)
+               * CFrame.new(0, 0, -(ToolUtils.InternalVars.FlyForward - ToolUtils.InternalVars.FlyBackward))
+			   * CFrame.Angles(-(math.rad(10 * (ToolUtils.InternalVars.FlyForward / MaxFlySpeed)) - math.rad(10 * (ToolUtils.InternalVars.FlyBackward / MaxFlySpeed))), 0, 0)
+		, 0.9)
+	end
+end)
+
+Tool.Parent = LocalPlayer:findFirstChild("Backpack") or Instance.new("Backpack", LocalPlayer)
+end)
+
+CarSpeedButton.Name = "CarSpeedButton"
+CarSpeedButton.Parent = PlayerFrame
+CarSpeedButton.BackgroundColor3 = Color3.new(1, 1, 1)
+CarSpeedButton.Position = UDim2.new(0.0285803229, 0, 0.810156047, 0)
+CarSpeedButton.Size = UDim2.new(0, 125, 0, 40)
+CarSpeedButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+CarSpeedButton.Font = Enum.Font.SourceSans
+CarSpeedButton.Text = "Frozen Water"
+CarSpeedButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+CarSpeedButton.TextSize = 23
+CarSpeedButton.MouseButton1Down:connect(function()
+	for _,v in pairs(game.Workspace.Water:GetChildren()) do
+v.CanCollide = true
+end
+end)
+
+Close3.Name = "Close3"
+Close3.Parent = PlayerFrame
+Close3.BackgroundColor3 = Color3.new(1, 1, 1)
+Close3.BackgroundTransparency = 1
+Close3.Position = UDim2.new(0.912070632, 0, -0.0312619619, 0)
+Close3.Size = UDim2.new(0, 41, 0, 36)
+Close3.Font = Enum.Font.SourceSans
+Close3.Text = "X"
+Close3.TextColor3 = Color3.new(1, 1, 1)
+Close3.TextSize = 25
+Close3.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = false
+end)
+
+OtherFrame.Name = "OtherFrame"
+OtherFrame.Parent = LumberCracker
+OtherFrame.Active = true
+OtherFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+OtherFrame.Position = UDim2.new(0.5373227, 0, 0.345433265, 0)
+OtherFrame.Size = UDim2.new(0, 300, 0, 280)
+OtherFrame.Style = Enum.FrameStyle.DropShadow
+OtherFrame.Visible = false
+OtherFrame.Draggable = true
+
+GetBluePrintsButton.Name = "GetBluePrintsButton"
+GetBluePrintsButton.Parent = OtherFrame
+GetBluePrintsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+GetBluePrintsButton.Position = UDim2.new(0.0233333334, 0, 0.00357142836, 0)
+GetBluePrintsButton.Size = UDim2.new(0, 125, 0, 40)
+GetBluePrintsButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+GetBluePrintsButton.Font = Enum.Font.SourceSans
+GetBluePrintsButton.Text = "Get BluePrints"
+GetBluePrintsButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+GetBluePrintsButton.TextSize = 20
+GetBluePrintsButton.TextWrapped = true
+GetBluePrintsButton.MouseButton1Down:connect(function()
+	for i,v in pairs(game.ReplicatedStorage.Purchasables.Structures.BlueprintStructures:GetChildren()) do
+local clone = v:Clone()
+clone.Parent = game.Players.LocalPlayer.PlayerBlueprints.Blueprints
+end
+end)
+
+PaintToolButton_2.Name = "PaintToolButton"
+PaintToolButton_2.Parent = OtherFrame
+PaintToolButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+PaintToolButton_2.Position = UDim2.new(0.530000031, 0, 0.00357142836, 0)
+PaintToolButton_2.Size = UDim2.new(0, 125, 0, 40)
+PaintToolButton_2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+PaintToolButton_2.Font = Enum.Font.SourceSans
+PaintToolButton_2.Text = "Paint Tool"
+PaintToolButton_2.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+PaintToolButton_2.TextSize = 25
+PaintToolButton_2.TextWrapped = true
+PaintToolButton_2.MouseButton1Down:connect(function()
+	-- Instances:
+local ColorPicker = Instance.new("ScreenGui")
+local ChangeColor = Instance.new("Frame")
+local CurrentColor = Instance.new("ImageButton")
+local Picker = Instance.new("ScrollingFrame")
+local Birch = Instance.new("ImageButton")
+local DropShadow = Instance.new("Frame")
+local Grey = Instance.new("ImageButton")
+local DropShadow_2 = Instance.new("Frame")
+local Walnut = Instance.new("ImageButton")
+local DropShadow_3 = Instance.new("Frame")
+local Generic = Instance.new("ImageButton")
+local DropShadow_4 = Instance.new("Frame")
+local Oak = Instance.new("ImageButton")
+local DropShadow_5 = Instance.new("Frame")
+local Pine = Instance.new("ImageButton")
+local DropShadow_6 = Instance.new("Frame")
+local Palm = Instance.new("ImageButton")
+local DropShadow_7 = Instance.new("Frame")
+local Cherry = Instance.new("ImageButton")
+local DropShadow_8 = Instance.new("Frame")
+local Koa = Instance.new("ImageButton")
+local DropShadow_9 = Instance.new("Frame")
+local Volcano = Instance.new("ImageButton")
+local DropShadow_10 = Instance.new("Frame")
+local GreenSwampy = Instance.new("ImageButton")
+local DropShadow_11 = Instance.new("Frame")
+local GoldSwampy = Instance.new("ImageButton")
+local DropShadow_12 = Instance.new("Frame")
+local GenericSpecial = Instance.new("ImageButton")
+local DropShadow_13 = Instance.new("Frame")
+local SnowGlow = Instance.new("ImageButton")
+local DropShadow_14 = Instance.new("Frame")
+local Frost = Instance.new("ImageButton")
+local DropShadow_15 = Instance.new("Frame")
+local CaveCrawler = Instance.new("ImageButton")
+local DropShadow_16 = Instance.new("Frame")
+local LoneCave = Instance.new("ImageButton")
+local DropShadow_17 = Instance.new("Frame")
+local Spooky = Instance.new("ImageButton")
+local DropShadow_18 = Instance.new("Frame")
+local SpookyNeon = Instance.new("ImageButton")
+local DropShadow_19 = Instance.new("Frame")
+--Properties:
+ColorPicker.Name = "ColorPicker"
+ColorPicker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ChangeColor.Name = "ChangeColor"
+ChangeColor.Parent = ColorPicker
+ChangeColor.BackgroundColor3 = Color3.new(0.176471, 0.254902, 0.427451)
+ChangeColor.BorderColor3 = Color3.new(0, 0, 0)
+ChangeColor.BorderSizePixel = 2
+ChangeColor.Position = UDim2.new(0, 10, 1, -110)
+ChangeColor.Size = UDim2.new(0, 100, 0, 100)
+ChangeColor.ZIndex = 2
+ColorPicker.Enabled = false
+
+CurrentColor.Name = "CurrentColor"
+CurrentColor.Parent = ChangeColor
+CurrentColor.BackgroundColor3 = Color3.new(0.176471, 0.254902, 0.427451)
+CurrentColor.BorderColor3 = Color3.new(0, 0, 0)
+CurrentColor.BorderSizePixel = 2
+CurrentColor.Position = UDim2.new(0, 10, 0, 10)
+CurrentColor.Size = UDim2.new(0, 80, 0, 80)
+CurrentColor.ZIndex = 2
+CurrentColor.Image = "rbxassetid://2712547918"
+CurrentColor.ScaleType = Enum.ScaleType.Crop
+
+Picker.Name = "Picker"
+Picker.Parent = ColorPicker
+Picker.BackgroundColor3 = Color3.new(0.176471, 0.254902, 0.427451)
+Picker.BorderColor3 = Color3.new(0, 0, 0)
+Picker.BorderSizePixel = 2
+Picker.Position = UDim2.new(0, 10, 1, -320)
+Picker.Size = UDim2.new(0, 100, 0, 200)
+Picker.CanvasPosition = Vector2.new(0, 700)
+Picker.CanvasSize = UDim2.new(0, 0, 0, 900)
+Picker.ScrollBarThickness = 7
+Picker.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+Picker.Visible = false
+
+Birch.Name = "Birch"
+Birch.Parent = Picker
+Birch.BackgroundColor3 = Color3.new(1, 1, 1)
+Birch.BorderColor3 = Color3.new(0, 0, 0)
+Birch.Position = UDim2.new(0, 10, 0, 5)
+Birch.Size = UDim2.new(0, 80, 0, 40)
+Birch.ZIndex = 3
+Birch.Image = "rbxassetid://2712547918"
+Birch.ScaleType = Enum.ScaleType.Crop
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = Birch
+DropShadow.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0, 4, 0, 4)
+DropShadow.Size = UDim2.new(1, 0, 1, 0)
+DropShadow.ZIndex = 2
+
+Grey.Name = "Grey"
+Grey.Parent = Picker
+Grey.BackgroundColor3 = Color3.new(1, 1, 1)
+Grey.BorderColor3 = Color3.new(0, 0, 0)
+Grey.Position = UDim2.new(0, 10, 0, 55)
+Grey.Size = UDim2.new(0, 80, 0, 40)
+Grey.ZIndex = 3
+Grey.Image = "rbxassetid://924320031"
+Grey.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_2.Name = "DropShadow"
+DropShadow_2.Parent = Grey
+DropShadow_2.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_2.BorderSizePixel = 0
+DropShadow_2.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_2.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_2.ZIndex = 2
+
+Walnut.Name = "Walnut"
+Walnut.Parent = Picker
+Walnut.BackgroundColor3 = Color3.new(1, 1, 1)
+Walnut.BorderColor3 = Color3.new(0, 0, 0)
+Walnut.Position = UDim2.new(0, 10, 0, 105)
+Walnut.Size = UDim2.new(0, 80, 0, 40)
+Walnut.ZIndex = 3
+Walnut.Image = "rbxassetid://2712559790"
+Walnut.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_3.Name = "DropShadow"
+DropShadow_3.Parent = Walnut
+DropShadow_3.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_3.BorderSizePixel = 0
+DropShadow_3.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_3.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_3.ZIndex = 2
+
+Generic.Name = "Generic"
+Generic.Parent = Picker
+Generic.BackgroundColor3 = Color3.new(1, 1, 1)
+Generic.BorderColor3 = Color3.new(0, 0, 0)
+Generic.Position = UDim2.new(0, 10, 0, 155)
+Generic.Size = UDim2.new(0, 80, 0, 40)
+Generic.ZIndex = 3
+Generic.Image = "rbxassetid://2712568624"
+Generic.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_4.Name = "DropShadow"
+DropShadow_4.Parent = Generic
+DropShadow_4.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_4.BorderSizePixel = 0
+DropShadow_4.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_4.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_4.ZIndex = 2
+
+Oak.Name = "Oak"
+Oak.Parent = Picker
+Oak.BackgroundColor3 = Color3.new(1, 1, 1)
+Oak.BorderColor3 = Color3.new(0, 0, 0)
+Oak.Position = UDim2.new(0, 10, 0, 205)
+Oak.Size = UDim2.new(0, 80, 0, 40)
+Oak.ZIndex = 3
+Oak.Image = "rbxassetid://2712579185"
+Oak.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_5.Name = "DropShadow"
+DropShadow_5.Parent = Oak
+DropShadow_5.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_5.BorderSizePixel = 0
+DropShadow_5.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_5.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_5.ZIndex = 2
+
+Pine.Name = "Pine"
+Pine.Parent = Picker
+Pine.BackgroundColor3 = Color3.new(1, 1, 1)
+Pine.BorderColor3 = Color3.new(0, 0, 0)
+Pine.Position = UDim2.new(0, 10, 0, 255)
+Pine.Size = UDim2.new(0, 80, 0, 40)
+Pine.ZIndex = 3
+Pine.Image = "rbxassetid://2712591183"
+Pine.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_6.Name = "DropShadow"
+DropShadow_6.Parent = Pine
+DropShadow_6.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_6.BorderSizePixel = 0
+DropShadow_6.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_6.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_6.ZIndex = 2
+
+Palm.Name = "Palm"
+Palm.Parent = Picker
+Palm.BackgroundColor3 = Color3.new(1, 1, 1)
+Palm.BorderColor3 = Color3.new(0, 0, 0)
+Palm.Position = UDim2.new(0, 10, 0, 305)
+Palm.Size = UDim2.new(0, 80, 0, 40)
+Palm.ZIndex = 3
+Palm.Image = "rbxassetid://2712597395"
+Palm.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_7.Name = "DropShadow"
+DropShadow_7.Parent = Palm
+DropShadow_7.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_7.BorderSizePixel = 0
+DropShadow_7.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_7.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_7.ZIndex = 2
+
+Cherry.Name = "Cherry"
+Cherry.Parent = Picker
+Cherry.BackgroundColor3 = Color3.new(1, 1, 1)
+Cherry.BorderColor3 = Color3.new(0, 0, 0)
+Cherry.Position = UDim2.new(0, 10, 0, 355)
+Cherry.Size = UDim2.new(0, 80, 0, 40)
+Cherry.ZIndex = 3
+Cherry.Image = "rbxassetid://2712608599"
+Cherry.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_8.Name = "DropShadow"
+DropShadow_8.Parent = Cherry
+DropShadow_8.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_8.BorderSizePixel = 0
+DropShadow_8.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_8.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_8.ZIndex = 2
+
+Koa.Name = "Koa"
+Koa.Parent = Picker
+Koa.BackgroundColor3 = Color3.new(1, 1, 1)
+Koa.BorderColor3 = Color3.new(0, 0, 0)
+Koa.Position = UDim2.new(0, 10, 0, 355)
+Koa.Size = UDim2.new(0, 80, 0, 40)
+Koa.ZIndex = 3
+Koa.Image = "rbxassetid://2712612798"
+Koa.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_9.Name = "DropShadow"
+DropShadow_9.Parent = Koa
+DropShadow_9.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_9.BorderSizePixel = 0
+DropShadow_9.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_9.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_9.ZIndex = 2
+
+Volcano.Name = "Volcano"
+Volcano.Parent = Picker
+Volcano.BackgroundColor3 = Color3.new(1, 1, 1)
+Volcano.BorderColor3 = Color3.new(0, 0, 0)
+Volcano.Position = UDim2.new(0, 10, 0, 405)
+Volcano.Size = UDim2.new(0, 80, 0, 40)
+Volcano.ZIndex = 3
+Volcano.Image = "rbxassetid://2712618609"
+Volcano.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_10.Name = "DropShadow"
+DropShadow_10.Parent = Volcano
+DropShadow_10.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_10.BorderSizePixel = 0
+DropShadow_10.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_10.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_10.ZIndex = 2
+
+GreenSwampy.Name = "GreenSwampy"
+GreenSwampy.Parent = Picker
+GreenSwampy.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenSwampy.BorderColor3 = Color3.new(0, 0, 0)
+GreenSwampy.Position = UDim2.new(0, 10, 0, 455)
+GreenSwampy.Size = UDim2.new(0, 80, 0, 40)
+GreenSwampy.ZIndex = 3
+GreenSwampy.Image = "rbxassetid://2712623896"
+GreenSwampy.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_11.Name = "DropShadow"
+DropShadow_11.Parent = GreenSwampy
+DropShadow_11.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_11.BorderSizePixel = 0
+DropShadow_11.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_11.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_11.ZIndex = 2
+
+GoldSwampy.Name = "GoldSwampy"
+GoldSwampy.Parent = Picker
+GoldSwampy.BackgroundColor3 = Color3.new(1, 1, 1)
+GoldSwampy.BorderColor3 = Color3.new(0, 0, 0)
+GoldSwampy.Position = UDim2.new(0, 10, 0, 505)
+GoldSwampy.Size = UDim2.new(0, 80, 0, 40)
+GoldSwampy.ZIndex = 3
+GoldSwampy.Image = "rbxassetid://2712631457"
+GoldSwampy.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_12.Name = "DropShadow"
+DropShadow_12.Parent = GoldSwampy
+DropShadow_12.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_12.BorderSizePixel = 0
+DropShadow_12.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_12.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_12.ZIndex = 2
+
+GenericSpecial.Name = "GenericSpecial"
+GenericSpecial.Parent = Picker
+GenericSpecial.BackgroundColor3 = Color3.new(1, 1, 1)
+GenericSpecial.BorderColor3 = Color3.new(0, 0, 0)
+GenericSpecial.Position = UDim2.new(0, 10, 0, 555)
+GenericSpecial.Size = UDim2.new(0, 80, 0, 40)
+GenericSpecial.ZIndex = 3
+GenericSpecial.Image = "rbxassetid://2712639396"
+GenericSpecial.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_13.Name = "DropShadow"
+DropShadow_13.Parent = GenericSpecial
+DropShadow_13.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_13.BorderSizePixel = 0
+DropShadow_13.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_13.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_13.ZIndex = 2
+
+SnowGlow.Name = "SnowGlow"
+SnowGlow.Parent = Picker
+SnowGlow.BackgroundColor3 = Color3.new(1, 1, 1)
+SnowGlow.BorderColor3 = Color3.new(0, 0, 0)
+SnowGlow.Position = UDim2.new(0, 10, 0, 605)
+SnowGlow.Size = UDim2.new(0, 80, 0, 40)
+SnowGlow.ZIndex = 3
+SnowGlow.Image = "rbxassetid://2712651454"
+SnowGlow.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_14.Name = "DropShadow"
+DropShadow_14.Parent = SnowGlow
+DropShadow_14.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_14.BorderSizePixel = 0
+DropShadow_14.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_14.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_14.ZIndex = 2
+
+Frost.Name = "Frost"
+Frost.Parent = Picker
+Frost.BackgroundColor3 = Color3.new(1, 1, 1)
+Frost.BorderColor3 = Color3.new(0, 0, 0)
+Frost.Position = UDim2.new(0, 10, 0, 655)
+Frost.Size = UDim2.new(0, 80, 0, 40)
+Frost.ZIndex = 3
+Frost.Image = "rbxassetid://2712667804"
+Frost.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_15.Name = "DropShadow"
+DropShadow_15.Parent = Frost
+DropShadow_15.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_15.BorderSizePixel = 0
+DropShadow_15.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_15.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_15.ZIndex = 2
+
+CaveCrawler.Name = "CaveCrawler"
+CaveCrawler.Parent = Picker
+CaveCrawler.BackgroundColor3 = Color3.new(1, 1, 1)
+CaveCrawler.BorderColor3 = Color3.new(0, 0, 0)
+CaveCrawler.Position = UDim2.new(0, 10, 0, 705)
+CaveCrawler.Size = UDim2.new(0, 80, 0, 40)
+CaveCrawler.ZIndex = 3
+CaveCrawler.Image = "rbxassetid://2712673980"
+CaveCrawler.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_16.Name = "DropShadow"
+DropShadow_16.Parent = CaveCrawler
+DropShadow_16.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_16.BorderSizePixel = 0
+DropShadow_16.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_16.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_16.ZIndex = 2
+
+LoneCave.Name = "LoneCave"
+LoneCave.Parent = Picker
+LoneCave.BackgroundColor3 = Color3.new(1, 1, 1)
+LoneCave.BorderColor3 = Color3.new(0, 0, 0)
+LoneCave.Position = UDim2.new(0, 10, 0, 755)
+LoneCave.Size = UDim2.new(0, 80, 0, 40)
+LoneCave.ZIndex = 3
+LoneCave.Image = "rbxassetid://2712693147"
+LoneCave.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_17.Name = "DropShadow"
+DropShadow_17.Parent = LoneCave
+DropShadow_17.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_17.BorderSizePixel = 0
+DropShadow_17.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_17.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_17.ZIndex = 2
+
+Spooky.Name = "Spooky"
+Spooky.Parent = Picker
+Spooky.BackgroundColor3 = Color3.new(1, 1, 1)
+Spooky.BorderColor3 = Color3.new(0, 0, 0)
+Spooky.Position = UDim2.new(0, 10, 0, 805)
+Spooky.Size = UDim2.new(0, 80, 0, 40)
+Spooky.ZIndex = 3
+Spooky.Image = "rbxassetid://2712696822"
+Spooky.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_18.Name = "DropShadow"
+DropShadow_18.Parent = Spooky
+DropShadow_18.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_18.BorderSizePixel = 0
+DropShadow_18.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_18.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_18.ZIndex = 2
+
+SpookyNeon.Name = "SpookyNeon"
+SpookyNeon.Parent = Picker
+SpookyNeon.BackgroundColor3 = Color3.new(1, 1, 1)
+SpookyNeon.BorderColor3 = Color3.new(0, 0, 0)
+SpookyNeon.Position = UDim2.new(0, 10, 0, 855)
+SpookyNeon.Size = UDim2.new(0, 80, 0, 40)
+SpookyNeon.ZIndex = 3
+SpookyNeon.Image = "rbxassetid://2712700047"
+SpookyNeon.ScaleType = Enum.ScaleType.Crop
+
+DropShadow_19.Name = "DropShadow"
+DropShadow_19.Parent = SpookyNeon
+DropShadow_19.BackgroundColor3 = Color3.new(0, 0, 0)
+DropShadow_19.BorderSizePixel = 0
+DropShadow_19.Position = UDim2.new(0, 4, 0, 4)
+DropShadow_19.Size = UDim2.new(1, 0, 1, 0)
+DropShadow_19.ZIndex = 2
+-- Scripts:
+woodtype = "Birch"
+
+local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+tool.RequiresHandle = false
+--tool.RobloxLocked = true
+tool.Name = "Paint"
+tool.ToolTip = "Changes A Stucture's Wood Type"
+tool.Equipped:connect(function(Mouse)
+ColorPicker.Enabled = true
+Mouse.Button1Down:connect(function()
+if Mouse.Target.Parent:FindFirstChild("Type") or Mouse.Target.Parent:FindFirstChild("BlueprintWoodClass") then
+local Cframe
+if Mouse.Target.Parent:FindFirstChild("MainCFrame") then
+Cframe = Mouse.Target.Parent.MainCFrame.Value
+else
+Cframe = Mouse.Target.Parent.PrimaryPart.CFrame
+end
+if Mouse.Target.Parent ~= nil then
+game.ReplicatedStorage.PlaceStructure.ClientPlacedStructure:FireServer(Mouse.Target.Parent.ItemName.Value, Cframe, game.Players.LocalPlayer, woodtype, Mouse.Target.Parent, false)
+end
+else
+--do nothing
+end
+end)
+end)
+
+tool.Unequipped:connect(function(mouse)
+ColorPicker.Enabled = false
+end)
+
+
+Birch.MouseButton1Click:Connect(function()
+CurrentColor.Image = Birch.Image
+woodtype = "Birch"
+end)
+
+Grey.MouseButton1Click:Connect(function()
+CurrentColor.Image = Grey.Image
+woodtype = nil
+end)
+
+Walnut.MouseButton1Click:Connect(function()
+CurrentColor.Image = Walnut.Image
+woodtype = "Walnut"
+end)
+
+Generic.MouseButton1Click:Connect(function()
+CurrentColor.Image = Generic.Image
+woodtype = "Generic"
+end)
+
+Oak.MouseButton1Click:Connect(function()
+CurrentColor.Image = Oak.Image
+woodtype = "Oak"
+end)
+
+Pine.MouseButton1Click:Connect(function()
+CurrentColor.Image = Pine.Image
+woodtype = "Pine"
+end)
+
+Palm.MouseButton1Click:Connect(function()
+CurrentColor.Image = Palm.Image
+woodtype = "Palm"
+end)
+
+Koa.MouseButton1Click:Connect(function()
+CurrentColor.Image = Koa.Image
+woodtype = "Koa"
+end)
+
+Volcano.MouseButton1Click:Connect(function()
+CurrentColor.Image = Volcano.Image
+woodtype = "Volcano"
+end)
+
+GreenSwampy.MouseButton1Click:Connect(function()
+CurrentColor.Image = GreenSwampy.Image
+woodtype = "GreenSwampy"
+end)
+
+GoldSwampy.MouseButton1Click:Connect(function()
+CurrentColor.Image = GoldSwampy.Image
+woodtype = "GoldSwampy"
+end)
+
+GenericSpecial.MouseButton1Click:Connect(function()
+CurrentColor.Image = GenericSpecial.Image
+woodtype = "GenericSpecial"
+end)
+
+SnowGlow.MouseButton1Click:Connect(function()
+CurrentColor.Image = SnowGlow.Image
+woodtype = "SnowGlow"
+end)
+
+Frost.MouseButton1Click:Connect(function()
+CurrentColor.Image = Frost.Image
+woodtype = "Frost"
+end)
+
+CaveCrawler.MouseButton1Click:Connect(function()
+CurrentColor.Image = CaveCrawler.Image
+woodtype = "CaveCrawler"
+end)
+
+LoneCave.MouseButton1Click:Connect(function()
+CurrentColor.Image = LoneCave.Image
+woodtype = "LoneCave"
+end)
+
+Spooky.MouseButton1Click:Connect(function()
+CurrentColor.Image = Spooky.Image
+woodtype = "Spooky"
+end)
+
+SpookyNeon.MouseButton1Click:Connect(function()
+CurrentColor.Image = SpookyNeon.Image
+woodtype = "SpookyNeon"
+end)
+
+--bring up menu
+CurrentColor.MouseButton1Click:Connect(function()
+if Picker.Visible == false then
+Picker.Visible = true
+else
+Picker.Visible = false
+end
+end)
+end)
+
+BringWoodButton.Name = "BringWoodButton"
+BringWoodButton.Parent = OtherFrame
+BringWoodButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BringWoodButton.Position = UDim2.new(0.0233333334, 0, 0.178571418, 0)
+BringWoodButton.Size = UDim2.new(0, 125, 0, 40)
+BringWoodButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BringWoodButton.Font = Enum.Font.SourceSans
+BringWoodButton.Text = "Bring Wood"
+BringWoodButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+BringWoodButton.TextSize = 23
+BringWoodButton.TextWrapped = true
+BringWoodButton.MouseButton1Down:connect(function()
+	   for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+        if Log.Name:sub(1,6) == "Loose_" and Log:findFirstChild("Owner") then
+            if Log.Owner.Value == game.Players.LocalPlayer then
+                Log:MoveTo(game.Players.LocalPlayer.Character.Torso.Position + Vector3.new(0,20,0))
+            end
+        end
+    end
+end)
+
+
+BringPlanksButton.Name = "BringPlanksButton"
+BringPlanksButton.Parent = OtherFrame
+BringPlanksButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BringPlanksButton.Position = UDim2.new(0.530000031, 0, 0.178571418, 0)
+BringPlanksButton.Size = UDim2.new(0, 125, 0, 40)
+BringPlanksButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BringPlanksButton.Font = Enum.Font.SourceSans
+BringPlanksButton.Text = "Sell Wood"
+BringPlanksButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+BringPlanksButton.TextSize = 23
+BringPlanksButton.TextWrapped = true
+BringPlanksButton.MouseButton1Click:Connect(function()
+    for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+        if Log.Name:sub(1, 6) == "Loose_" and Log:findFirstChild("Owner") then
+            if Log.Owner.Value == game.Players.LocalPlayer then
+                for i,v in pairs(Log:GetChildren()) do
+                    if v.Name=="WoodSection" then
+                        spawn(function()
+                            for i=1,10 do
+                                wait()
+                                v.CFrame=CFrame.new(Vector3.new(315, -0.296, 85.791))*CFrame.Angles(math.rad(90),0,0)
+                            end
+                        end)
+                    end
+                end
+                spawn(function()
+                    for i=1,20 do
+                        wait()
+                        game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Log)
+                    end
+                end)
+            end
+        end
+    end
+end)
+
+TpLooseButton.Name = "TpLooseButton"
+TpLooseButton.Parent = OtherFrame
+TpLooseButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TpLooseButton.Position = UDim2.new(0.530000031, 0, 0.346428573, 0)
+TpLooseButton.Size = UDim2.new(0, 125, 0, 40)
+TpLooseButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+TpLooseButton.Font = Enum.Font.SourceSans
+TpLooseButton.Text = "Sell Planks"
+TpLooseButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+TpLooseButton.TextSize = 23
+TpLooseButton.TextWrapped = true
+TpLooseButton.MouseButton1Down:connect(function()
+   for _, Plank in pairs(game.Workspace.PlayerModels:GetChildren()) do
+        if Plank.Name=="Plank" and Plank:findFirstChild("Owner") then
+            if Plank.Owner.Value == game.Players.LocalPlayer then
+                for i,v in pairs(Plank:GetChildren()) do
+                    if v.Name=="WoodSection" then
+                        spawn(function()
+                            for i=1,10 do
+                                wait()
+                                v.CFrame=CFrame.new(Vector3.new(315, -0.296, 85.791))*CFrame.Angles(math.rad(90),0,0)
+                            end
+                        end)
+                    end
+                end
+                spawn(function()
+                    for i=1,20 do
+                        wait()
+                        game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Plank)
+                    end
+                end)
+            end
+        end
+    end
+end)
+
+TpGiftsButton.Name = "TpGiftsButton"
+TpGiftsButton.Parent = OtherFrame
+TpGiftsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TpGiftsButton.Position = UDim2.new(0.0233333334, 0, 0.346428573, 0)
+TpGiftsButton.Size = UDim2.new(0, 125, 0, 40)
+TpGiftsButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+TpGiftsButton.Font = Enum.Font.SourceSans
+TpGiftsButton.Text = "Bring Planks"
+TpGiftsButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+TpGiftsButton.TextSize = 23
+TpGiftsButton.TextWrapped = true
+
+TpGiftsButton.MouseButton1Down:connect(function()
+	for i,models in pairs(game.Workspace.PlayerModels:GetChildren()) do
+    if string.match(models.Name:lower(), "plank") then
+    if models.Owner.Value == game.Players.LocalPlayer then    
+    spawn(function()
+    for i=1, 5 do
+    models.WoodSection.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame + Vector3.new(0,10,0)
+    game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(models.WoodSection)
+    wait()
+    end
+    end)
+    end
+    end
+    end
+end)
+
+
+TpAxesButton.Name = "TpAxesButton"
+TpAxesButton.Parent = OtherFrame
+TpAxesButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TpAxesButton.Position = UDim2.new(0.276666701, 0, 0.521428585, 0)
+TpAxesButton.Size = UDim2.new(0, 125, 0, 40)
+TpAxesButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+TpAxesButton.Font = Enum.Font.SourceSans
+TpAxesButton.Text = "Leaked Items"
+TpAxesButton.TextColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+TpAxesButton.TextSize = 23
+TpAxesButton.TextWrapped = true
+TpAxesButton.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Purchasables:Clone().Parent = game.Workspace.PlayerModels
+end)
+
+Close4.Name = "Close4"
+Close4.Parent = OtherFrame
+Close4.BackgroundColor3 = Color3.new(1, 1, 1)
+Close4.BackgroundTransparency = 1
+Close4.Position = UDim2.new(0.933855414, 0, -0.03259179, 0)
+Close4.Size = UDim2.new(0, 33, 0, 32)
+Close4.Font = Enum.Font.SourceSans
+Close4.Text = "X"
+Close4.TextColor3 = Color3.new(1, 1, 1)
+Close4.TextSize = 25
+Close4.MouseButton1Down:connect(function()
+	OtherFrame.Visible = false
+end)

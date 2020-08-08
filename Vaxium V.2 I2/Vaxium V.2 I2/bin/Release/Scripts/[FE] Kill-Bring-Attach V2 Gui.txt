@@ -1,0 +1,218 @@
+-- Objects
+
+local GUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Attach = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Bring = Instance.new("TextButton")
+local Kill = Instance.new("TextButton")
+local SaveT = Instance.new("TextButton")
+local LoadT = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+
+-- Properties
+
+GUI.Name = "GUI"
+GUI.Parent = game.Players.LocalPlayer.PlayerGui
+GUI.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = GUI
+Main.Active = true
+Main.BackgroundColor3 = Color3.new(1, 1, 1)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 1, -245)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 368, 0, 245)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.934693873, 0)
+TextLabel.Size = UDim2.new(0, 368, 0, 16)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "Tools Required | GUI by: Hoofer | Scripts by: illremember"
+TextLabel.TextSize = 14
+
+Attach.Name = "Attach"
+Attach.Parent = Main
+Attach.BackgroundColor3 = Color3.new(0.27451, 0.709804, 1)
+Attach.BorderSizePixel = 0
+Attach.Position = UDim2.new(0, 0, 0.751020432, 0)
+Attach.Size = UDim2.new(0, 266, 0, 37)
+Attach.Font = Enum.Font.SourceSansLight
+Attach.Text = "Attach Player"
+Attach.TextColor3 = Color3.new(1, 1, 1)
+Attach.TextSize = 14
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.new(0.862745, 0.862745, 0.862745)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 0, 0.0938775539, 0)
+TextBox.Size = UDim2.new(0, 368, 0, 21)
+TextBox.Font = Enum.Font.SourceSansLight
+TextBox.PlaceholderColor3 = Color3.new(0, 0, 0)
+TextBox.PlaceholderText = "Player Name"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 14
+
+Bring.Name = "Bring"
+Bring.Parent = Main
+Bring.BackgroundColor3 = Color3.new(0.27451, 0.709804, 1)
+Bring.BorderSizePixel = 0
+Bring.Position = UDim2.new(0, 0, 0.59795922, 0)
+Bring.Size = UDim2.new(0, 368, 0, 37)
+Bring.Font = Enum.Font.SourceSansLight
+Bring.Text = "Bring Player"
+Bring.TextColor3 = Color3.new(1, 1, 1)
+Bring.TextSize = 14
+
+Kill.Name = "Kill"
+Kill.Parent = Main
+Kill.BackgroundColor3 = Color3.new(0.27451, 0.709804, 1)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0, 0, 0.446938813, 0)
+Kill.Size = UDim2.new(0, 368, 0, 37)
+Kill.Font = Enum.Font.SourceSansLight
+Kill.Text = "Kill Player"
+Kill.TextColor3 = Color3.new(1, 1, 1)
+Kill.TextSize = 14
+
+SaveT.Name = "SaveT"
+SaveT.Parent = Main
+SaveT.BackgroundColor3 = Color3.new(0.262745, 0.643137, 1)
+SaveT.BorderSizePixel = 0
+SaveT.Position = UDim2.new(0, 0, 0.224489793, 0)
+SaveT.Size = UDim2.new(0, 368, 0, 21)
+SaveT.Font = Enum.Font.SourceSansLight
+SaveT.Text = "Save Tools"
+SaveT.TextColor3 = Color3.new(1, 1, 1)
+SaveT.TextSize = 14
+
+LoadT.Name = "LoadT"
+LoadT.Parent = Main
+LoadT.BackgroundColor3 = Color3.new(0.262745, 0.643137, 1)
+LoadT.BorderSizePixel = 0
+LoadT.Position = UDim2.new(0, 0, 0.310204089, 0)
+LoadT.Size = UDim2.new(0, 368, 0, 21)
+LoadT.Font = Enum.Font.SourceSansLight
+LoadT.Text = "Load Tools"
+LoadT.TextColor3 = Color3.new(1, 1, 1)
+LoadT.TextSize = 14
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 368, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSansLight
+TextLabel_2.Text = "FE Attach/Bring/Kill Others"
+TextLabel_2.TextSize = 14
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.new(0.27451, 0.709804, 1)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.747282624, 0, 0.779591858, 0)
+Exit.Size = UDim2.new(0, 93, 0, 30)
+Exit.Font = Enum.Font.SourceSansLight
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.new(1, 1, 1)
+Exit.TextSize = 14
+
+-- Scripts
+
+Kill.MouseButton1Click:connect(function()
+-- illremember's cool new kill script for fe
+-- requires 2 tools, replace TARGET name with person you want
+-- NO FE GODMODE!!
+TARGET = TextBox.Text
+
+lplayer = game:GetService("Players").LocalPlayer
+for i,v in pairs(lplayer.Backpack:GetChildren())do
+lplayer.Character.Humanoid:EquipTool(v)
+end
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+if v:IsA("Tool") then
+v.Parent = lplayer.Character
+wait()
+v.Parent = game:GetService("Players")[TARGET].Character
+end
+end
+wait(1)
+lplayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(100000, 0, 100000))
+end)
+
+Bring.MouseButton1Click:connect(function()
+-- illremember's cool new bring script
+-- requires 2 tools, replace TARGET name with person you want
+TARGET = TextBox.Text
+
+lplayer = game:GetService("Players").LocalPlayer
+for i,v in pairs(lplayer.Backpack:GetChildren())do
+lplayer.Character.Humanoid:EquipTool(v)
+end
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+if v:IsA("Tool") then
+v.Parent = lplayer.Character
+wait()
+v.Parent = game:GetService("Players")[TARGET].Character
+end
+end
+wait(1)
+local function getout(player,player2)
+local char1,char2=player.Character,player2.Character
+if char1 and char2 then
+char1:MoveTo(char2.Head.Position)
+end
+end
+getout(lplayer, lplayer)
+end)
+
+Attach.MouseButton1Click:connect(function()
+-- illremember's cool new attach script
+-- requires 2 tools, replace TARGET name with person you want
+TARGET = TextBox.Text
+
+lplayer = game:GetService("Players").LocalPlayer
+for i,v in pairs(lplayer.Backpack:GetChildren())do
+lplayer.Character.Humanoid:EquipTool(v)
+end
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+if v:IsA("Tool") then
+v.Parent = lplayer.Character
+wait()
+v.Parent = game:GetService("Players")[TARGET].Character
+end
+
+end
+end)
+
+Exit.MouseButton1Click:connect(function()
+GUI:Destroy()
+end)
+
+SaveT.MouseButton1Click:connect(function()
+-- EQUIP TOOL BEFORE EXECUTING THIS SCRIPT
+-- save tool
+LP = game:GetService("Players").LocalPlayer
+
+for i,v in pairs(LP.Character:GetDescendants()) do
+if v:IsA("Tool") then
+v.Parent = LP
+end
+end
+end)
+
+LoadT.MouseButton1Click:connect(function()
+-- load tool (Use after using save tool script)
+LP = game:GetService("Players").LocalPlayer
+
+for i,v in pairs(LP:GetChildren()) do
+if v:IsA("Tool") then
+v.Parent = LP.Backpack
+end
+end
+end)

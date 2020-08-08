@@ -1,0 +1,99 @@
+--[[
+
+**R6 Animations**
+rbxassetid://181526230 - Faint
+rbxassetid://313762630 - Levitate
+rbxassetid://188632011 - ** Spinner
+rbxassetid://179224234 - Float Sit
+rbxassetid://180612465 - Scared
+rbxassetid://121572214 - Floating Head
+rbxassetid://182724289 - Crouch
+rbxassetid://429703734 - Moving Dance
+rbxassetid://313762630 - Glitch Levitate
+rbxassetid://429730430 - ** Spin Dance
+rbxassetid://186934910 - ** Spin Dance 2
+rbxassetid://181525546 - Floor Faint
+rbxassetid://181525546 - Super Faint
+rbxassetid://204292303 - Bow Down
+rbxassetid://204295235 - Sword Slam
+rbxassetid://33796059  - Insane
+rbxassetid://184574340 - Mega Insane
+rbxassetid://35978879  - Sword Slice
+rbxassetid://35154961  - ** Head Throw
+rbxassetid://282574440 - Floor Crawl
+rbxassetid://204328711 - Dino Walk
+rbxassetid://35154961  - ** Loop Head
+rbxassetid://184574340 - Hero Jump
+rbxassetid://215384594 - Weird Move Back
+rbxassetid://215384594 - Clone Illusion
+rbxassetid://45834924  - Moon Dance
+rbxassetid://204062532 - Full Punch
+rbxassetid://218504594 - Full Swing
+rbxassetid://259438880 - Arm Turbine
+rbxassetid://136801964 - Barrel Roll
+rbxassetid://33169583  - ** Arm Detach
+rbxassetid://27432691  - ** Insane Arms
+
+
+**R15 Animations**
+rbxassetid://754658275 - Spinner
+rbxassetid://582855105 - Open
+rbxassetid://698251653 - Circle Arm
+rbxassetid://754656200 - Fling Arms
+rbxassetid://674871189 - Crazy Slash
+rbxassetid://717879555 - Float Slash
+rbxassetid://746398327 - Down Slash
+rbxassetid://675025570 - Rotate Slash
+rbxassetid://696096087 - Bend
+rbxassetid://582384156 - Arms out
+rbxassetid://708553116 - Zombie Attack
+rbxassetid://675025795 - Pull
+
+]]
+
+
+
+function keyBindAnim(animID, keybind, keybindDestroy, LoopValue)
+
+print('Added New Animation on KeyBind:', keybind)
+local plr = game.Players.LocalPlayer
+local m = plr:GetMouse()
+local Anim = Instance.new("Animation", game.Lighting)
+Anim.AnimationId = animID
+local track = plr.Character.Humanoid:LoadAnimation(Anim)
+local active = false
+
+plr.CharacterAdded:connect(function(character)
+   track = character:WaitForChild('Humanoid'):LoadAnimation(Anim)
+   active = false
+end)
+
+m.KeyDown:connect(function(key)
+   if key == keybind and Anim.Parent ~= nil then
+       active = not active
+       if active and LoopValue == false then
+           track:Play(.1, 1, 1)
+       elseif active and LoopValue == true then
+           while active do
+               wait(.1)
+               if track.IsPlaying == false then
+                   track:Play(.1, 1, 1)
+                   wait()
+               end
+           end
+       elseif not active and Anim.Parent ~= nil then
+           track:Stop()
+       end
+   elseif key == keybindDestroy and Anim.Parent ~= nil then
+       active = false
+       track:Stop()
+       Anim:Destroy()
+       print('Animation stopped on Keybind: ', keybind)
+   end
+end)
+end
+
+--keyBindAnim(Animation Id, KeyBind, DestroyBind, LoopValue)
+--Example: keyBindAnim('rbxassetid://179224234' , 'x', 'z', true)
+
+keyBindAnim('rbxassetid://188632011' ,'x', 'z', true)

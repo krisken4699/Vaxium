@@ -1,0 +1,18 @@
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\Vaxium V.2 I2.exe.config
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\Vaxium V.2 I2.exe
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\Vaxium V.2 I2.pdb
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\Bunifu_UI_v1.5.3.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\CircularProgressBar.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\FastColoredTextBox.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\FlatUI.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\Guna.UI.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\WeAreDevs_API.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\bin\Release\WinFormAnimation.dll
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.csprojAssemblyReference.cache
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium_V._2_I2.Form1.resources
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium_V._2_I2.Properties.Resources.resources
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.csproj.GenerateResource.cache
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.csproj.CoreCompileInputs.cache
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.csproj.CopyComplete
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.exe
+D:\Programming\Vaxium\Vaxium V.2 I2\Vaxium V.2 I2\obj\Release\Vaxium V.2 I2.pdb

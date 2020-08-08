@@ -1,0 +1,148 @@
+-- Objects
+
+local GUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local Btools = Instance.new("TextButton")
+local ReceiveTool = Instance.new("TextButton")
+local DropTool = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Savetool = Instance.new("TextButton")
+
+-- Properties
+
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+
+Frame.Parent = GUI
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(0.262745, 0.262745, 0.262745)
+Frame.BorderSizePixel = 0
+Frame.Draggable = true
+Frame.Position = UDim2.new(0, 448, 0, 176)
+Frame.Size = UDim2.new(0, 375, 0, 295)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 35, 0, 295)
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 344, 0, 0)
+Frame_3.Size = UDim2.new(0, 31, 0, 295)
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0, 260)
+Frame_4.Size = UDim2.new(0, 375, 0, 35)
+
+Frame_5.Parent = Frame
+Frame_5.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Frame_5.BorderSizePixel = 0
+Frame_5.Size = UDim2.new(0, 375, 0, 35)
+
+Btools.Name = "Btools"
+Btools.Parent = Frame
+Btools.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Btools.BorderSizePixel = 0
+Btools.Position = UDim2.new(0, 88, 0, 40)
+Btools.Size = UDim2.new(0, 200, 0, 35)
+Btools.Font = Enum.Font.SciFi
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.new(1, 0, 0)
+Btools.TextSize = 30
+Btools.TextWrapped = true
+
+ReceiveTool.Name = "ReceiveTool"
+ReceiveTool.Parent = Frame
+ReceiveTool.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+ReceiveTool.BorderSizePixel = 0
+ReceiveTool.Position = UDim2.new(0, 88, 0, 83)
+ReceiveTool.Size = UDim2.new(0, 200, 0, 35)
+ReceiveTool.Font = Enum.Font.SciFi
+ReceiveTool.Text = "Receive Tool"
+ReceiveTool.TextColor3 = Color3.new(1, 0, 0)
+ReceiveTool.TextSize = 30
+ReceiveTool.TextWrapped = true
+
+
+DropTool.Name = "DropTool"
+DropTool.Parent = Frame
+DropTool.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+DropTool.BorderSizePixel = 0
+DropTool.Position = UDim2.new(0, 88, 0, 128)
+DropTool.Size = UDim2.new(0, 200, 0, 38)
+DropTool.Font = Enum.Font.SciFi
+DropTool.Text = "Drop Tool"
+DropTool.TextColor3 = Color3.new(1, 0, 0)
+DropTool.TextSize = 30
+DropTool.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 5
+TextLabel.Position = UDim2.new(0, 88, 0, 256)
+TextLabel.Size = UDim2.new(0, 200, 0, 39)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Gui Made By Jag Gaming #0060"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 25
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 5
+TextLabel_2.Position = UDim2.new(0, 88, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 39)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Scripts By  DrPoppadopolist#1337"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 25
+
+Savetool.Name = "Savetool"
+Savetool.Parent = Frame
+Savetool.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Savetool.BorderSizePixel = 0
+Savetool.Position = UDim2.new(0, 88, 0, 172)
+Savetool.Size = UDim2.new(0, 200, 0, 38)
+Savetool.Font = Enum.Font.SciFi
+Savetool.Text = "Save Tool"
+Savetool.TextColor3 = Color3.new(1, 0, 0)
+Savetool.TextSize = 30
+Savetool.TextWrapped = true
+
+---------------Functions---------------
+DropTool.MouseButton1Click:connect(function()
+for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+v.Parent = workspace
+end
+end)
+
+ReceiveTool.MouseButton1Click:connect(function()
+for _,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer.Backpack
+end
+end
+end)
+
+Savetool.MouseButton1Click:connect(function()
+for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer
+end
+end
+end)
+
+Btools.MouseButton1Click:connect(function()
+Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 2
+Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 3
+Instance.new('HopperBin', game.Players.LocalPlayer.Backpack).BinType = 4
+end)

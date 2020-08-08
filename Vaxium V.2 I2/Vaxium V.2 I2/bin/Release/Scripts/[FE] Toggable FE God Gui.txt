@@ -1,0 +1,2 @@
+-- Use _G.Destroy = true and hit the "On" button for self destruction or if fe god doesn't work and just re-execute.
+loadstring(game:HttpGet("https://pastebin.com/raw/f7S7fy1E",true))()

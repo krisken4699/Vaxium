@@ -1,0 +1,22 @@
+local hello = game.Players.LocalPlayer:GetMouse()
+
+game.Players.LocalPlayer.Character.Humanoid:Destroy()
+Instance.new("Humanoid",game.Players.LocalPlayer.Character)
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Head
+for _,x in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+if x.Name == "Head" or x.Name == "Humanoid" or x.Name == "Mesh" then
+--no
+else
+
+x:Destroy()
+end
+end
+wait(.2)
+
+hello.KeyDown:connect(function(UODELEOOOOOO)
+local bs = string.lower(UODELEOOOOOO)
+
+if bs == "q" then
+game.Players.LocalPlayer.Character.Head.CFrame = hello.hit
+end
+end)

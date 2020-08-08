@@ -1,0 +1,3186 @@
+-- FeX was created by snakez on v3rm or snakez#7611 on discord..
+-- As always vouches are appreciated!
+-- If you use this in a video, make sure to credit me.
+-- Enjoy Exploiting Users!
+
+--|-----------------------------------------------------------|--
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FeX has successfully loaded.." ,"All")
+wait(0.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FeX is now active, enjoy exploiting." ,"All")
+
+ 
+ -- Objects
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local fekill = Instance.new("TextButton")
+local feanim = Instance.new("TextButton")
+local epixfe = Instance.new("TextButton")
+local fedab = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local FuckFE = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local clicktp = Instance.new("TextButton")
+local btools = Instance.new("TextButton")
+local openFrame = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local jmpower = Instance.new("TextButton")
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0, 289, 0, 12)
+Frame.Size = UDim2.new(0, 485, 0, 491)
+Frame.Selectable = true
+Frame.Draggable = true
+Frame.Visible = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0.752941, 1, 0.760784)
+TextLabel.Size = UDim2.new(0, 485, 0, 54)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "|-- FeX --|"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 1
+TextButton.Position = UDim2.new(0, 451, 0, 0)
+TextButton.Size = UDim2.new(0, 34, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+TextButton.Visible = true
+TextButton.MouseButton1Click:connect(function()
+	Frame.Visible = false
+end)
+
+fekill.Name = "fekill"
+fekill.Parent = Frame
+fekill.BackgroundColor3 = Color3.new(1, 1, 1)
+fekill.Position = UDim2.new(0, 0, 0, 66)
+fekill.Size = UDim2.new(0, 242, 0, 50)
+fekill.Font = Enum.Font.SourceSans
+fekill.Text = "FE Kill"
+fekill.TextColor3 = Color3.new(0, 0, 0)
+fekill.TextScaled = true
+fekill.TextSize = 14
+fekill.TextWrapped = true
+
+feanim.Name = "feanim"
+feanim.Parent = Frame
+feanim.BackgroundColor3 = Color3.new(1, 1, 1)
+feanim.Position = UDim2.new(0, 259, 0, 82)
+feanim.Size = UDim2.new(0, 226, 0, 50)
+feanim.Font = Enum.Font.SourceSans
+feanim.Text = "FE Animations"
+feanim.TextColor3 = Color3.new(0, 0, 0)
+feanim.TextScaled = true
+feanim.TextSize = 14
+feanim.TextWrapped = true
+
+epixfe.Name = "epixfe"
+epixfe.Parent = Frame
+epixfe.BackgroundColor3 = Color3.new(1, 1, 1)
+epixfe.Position = UDim2.new(0, 0, 0, 152)
+epixfe.Size = UDim2.new(0, 243, 0, 50)
+epixfe.Font = Enum.Font.SourceSans
+epixfe.Text = "Epix FE GUI"
+epixfe.TextColor3 = Color3.new(0, 0, 0)
+epixfe.TextScaled = true
+epixfe.TextSize = 14
+epixfe.TextWrapped = true
+
+fedab.Name = "fedab"
+fedab.Parent = Frame
+fedab.BackgroundColor3 = Color3.new(1, 1, 1)
+fedab.Position = UDim2.new(0, 261, 0, 171)
+fedab.Size = UDim2.new(0, 224, 0, 50)
+fedab.Font = Enum.Font.SourceSans
+fedab.Text = "FE Dab / Hammer"
+fedab.TextColor3 = Color3.new(0, 0, 0)
+fedab.TextScaled = true
+fedab.TextSize = 14
+fedab.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(0.752941, 1, 0.760784)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0, 0, 0, 446)
+TextLabel_2.Size = UDim2.new(0, 485, 0, 30)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "|-- Developed and Designed By Snakez --|"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+FuckFE.Name = "Fuck FE"
+FuckFE.Parent = Frame
+FuckFE.BackgroundColor3 = Color3.new(1, 1, 1)
+FuckFE.Position = UDim2.new(0, 0, 0, 240)
+FuckFE.Size = UDim2.new(0, 243, 0, 50)
+FuckFE.Font = Enum.Font.SourceSans
+FuckFE.Text = "Walkspeed"
+FuckFE.TextColor3 = Color3.new(0, 0, 0)
+FuckFE.TextScaled = true
+FuckFE.TextSize = 14
+FuckFE.TextWrapped = true
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_2.Position = UDim2.new(0, 262, 0, 260)
+TextButton_2.Size = UDim2.new(0, 223, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Jumpower"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.new(0.752941, 1, 0.760784)
+TextLabel_3.Position = UDim2.new(0, 0, 0, 429)
+TextLabel_3.Size = UDim2.new(0, 485, 0, 12)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.new(0.752941, 1, 0.760784)
+TextLabel_4.Position = UDim2.new(0, 0, 0, 479)
+TextLabel_4.Size = UDim2.new(0, 485, 0, 12)
+TextLabel_4.Font = Enum.Font.Cartoon
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+
+clicktp.Name = "clicktp"
+clicktp.Parent = Frame
+clicktp.BackgroundColor3 = Color3.new(1, 1, 1)
+clicktp.Position = UDim2.new(0, 0, 0, 332)
+clicktp.Size = UDim2.new(0, 243, 0, 50)
+clicktp.Font = Enum.Font.SourceSans
+clicktp.Text = "Click Teleport"
+clicktp.TextColor3 = Color3.new(0, 0, 0)
+clicktp.TextScaled = true
+clicktp.TextSize = 14
+clicktp.TextWrapped = true
+
+btools.Name = "btools"
+btools.Parent = Frame
+btools.BackgroundColor3 = Color3.new(1, 1, 1)
+btools.Position = UDim2.new(0, 260, 0, 351)
+btools.Size = UDim2.new(0, 225, 0, 50)
+btools.Font = Enum.Font.SourceSans
+btools.Text = "Btools"
+btools.TextColor3 = Color3.new(0, 0, 0)
+btools.TextScaled = true
+btools.TextSize = 14
+btools.TextWrapped = true
+
+openFrame.Name = "openFrame"
+openFrame.Parent = ScreenGui
+openFrame.Active = true
+openFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+openFrame.Position = UDim2.new(0, 0, 0, 444)
+openFrame.Selectable = true
+openFrame.Size = UDim2.new(0, 211, 0, 42)
+openFrame.Selectable = true
+openFrame.Draggable = true
+openFrame.Visible = true
+
+
+TextButton_3.Parent = openFrame
+TextButton_3.BackgroundColor3 = Color3.new(0.654902, 1, 0.752941)
+TextButton_3.Size = UDim2.new(0, 211, 0, 42)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "OPEN"
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14
+TextButton_3.TextWrapped = true
+TextButton_3.Visible = true
+TextButton_3.MouseButton1Click:connect(function()
+	Frame.Visible = true
+end)
+
+-- Scripts 
+
+fekill.MouseButton1Click:connect(function()
+	-- Made By JackMcJagger15
+local FlingKill = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("Frame")
+local Shadow = Instance.new("Frame")
+local StartKill = Instance.new("TextButton")
+local StopKill = Instance.new("TextButton")
+local Instructions = Instance.new("TextLabel")
+local CurrentPower = Instance.new("TextLabel")
+local Recomendation = Instance.new("TextLabel")
+local NameOfGui = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local UPArrow = Instance.new("TextButton")
+local DownArrow = Instance.new("TextButton")
+
+-- Properties
+
+FlingKill.Name = "Fling/Kill"
+FlingKill.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = FlingKill
+Main.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.702554762, 0, 0.446640313, 0)
+Main.Size = UDim2.new(0, 217, 0, 233)
+Main.Selectable = true
+Main.Active = true
+Main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Label.BorderSizePixel = 0
+Label.Size = UDim2.new(0, 217, 0, 27)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Main
+Shadow.BackgroundColor3 = Color3.new(0.67451, 0.694118, 0.705882)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(0, 0, 0.115879826, 0)
+Shadow.Size = UDim2.new(0, 217, 0, 9)
+
+StartKill.Name = "StartKill"
+StartKill.Parent = Main
+StartKill.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+StartKill.BorderSizePixel = 0
+StartKill.Position = UDim2.new(0.195852548, 0, 0.227467805, 0)
+StartKill.Size = UDim2.new(0, 126, 0, 23)
+StartKill.Font = Enum.Font.Cartoon
+StartKill.Text = "FE Kill/Fling"
+StartKill.TextColor3 = Color3.new(0, 0, 0)
+StartKill.TextSize = 14
+
+StopKill.Name = "StopKill"
+StopKill.Parent = Main
+StopKill.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+StopKill.BorderSizePixel = 0
+StopKill.Position = UDim2.new(0.207373276, 0, 0.38197428, 0)
+StopKill.Size = UDim2.new(0, 124, 0, 23)
+StopKill.Font = Enum.Font.Cartoon
+StopKill.Text = "Stop FE Kill/Fling"
+StopKill.TextColor3 = Color3.new(0, 0, 0)
+StopKill.TextSize = 14
+
+Instructions.Name = "Instructions"
+Instructions.Parent = Main
+Instructions.BackgroundColor3 = Color3.new(1, 1, 1)
+Instructions.BackgroundTransparency = 1
+Instructions.Position = UDim2.new(0.0391705073, 0, 0.549356222, 0)
+Instructions.Size = UDim2.new(0, 200, 0, 32)
+Instructions.Font = Enum.Font.Cartoon
+Instructions.Text = "Just touch someone to watch the fly to their death!"
+Instructions.TextColor3 = Color3.new(0, 0, 0)
+Instructions.TextSize = 14
+Instructions.TextWrapped = true
+
+CurrentPower.Name = "CurrentPower"
+CurrentPower.Parent = Main
+CurrentPower.BackgroundColor3 = Color3.new(1, 1, 1)
+CurrentPower.BackgroundTransparency = 1
+CurrentPower.Position = UDim2.new(0.276497692, 0, 0.686695278, 0)
+CurrentPower.Size = UDim2.new(0, 98, 0, 36)
+CurrentPower.Font = Enum.Font.Cartoon
+CurrentPower.Text = "Current Power = 5"
+CurrentPower.TextColor3 = Color3.new(0, 0, 0)
+CurrentPower.TextSize = 14
+
+Recomendation.Name = "Recomendation"
+Recomendation.Parent = Main
+Recomendation.BackgroundColor3 = Color3.new(1, 1, 1)
+Recomendation.BackgroundTransparency = 1
+Recomendation.Position = UDim2.new(0.0414746553, 0, 0.884120166, 0)
+Recomendation.Size = UDim2.new(0, 200, 0, 21)
+Recomendation.Font = Enum.Font.Cartoon
+Recomendation.Text = "Recommended Power is 5"
+Recomendation.TextColor3 = Color3.new(0, 0, 0)
+Recomendation.TextSize = 14
+
+NameOfGui.Name = "NameOfGui"
+NameOfGui.Parent = Main
+NameOfGui.BackgroundColor3 = Color3.new(1, 1, 1)
+NameOfGui.BackgroundTransparency = 1
+NameOfGui.Position = UDim2.new(0.0806451589, 0, 0, 0)
+NameOfGui.Size = UDim2.new(0, 154, 0, 27)
+NameOfGui.Font = Enum.Font.Cartoon
+NameOfGui.Text = "FE Kill/Fling By JackMcJagger15"
+NameOfGui.TextColor3 = Color3.new(0, 0, 0)
+NameOfGui.TextSize = 14
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.new(1, 1, 1)
+Exit.BackgroundTransparency = 1
+Exit.Position = UDim2.new(0.907834113, 0, 0, 0)
+Exit.Size = UDim2.new(0, 20, 0, 27)
+Exit.Font = Enum.Font.Cartoon
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(0, 0, 0)
+Exit.TextSize = 14
+
+UPArrow.Name = "UPArrow"
+UPArrow.Parent = Main
+UPArrow.BackgroundColor3 = Color3.new(1, 1, 1)
+UPArrow.BackgroundTransparency = 1
+UPArrow.Position = UDim2.new(0.0783410147, 0, 0.716738224, 0)
+UPArrow.Size = UDim2.new(0, 26, 0, 23)
+UPArrow.Font = Enum.Font.Cartoon
+UPArrow.Text = "Up"
+UPArrow.TextColor3 = Color3.new(0, 0, 0)
+UPArrow.TextSize = 12
+UPArrow.TextWrapped = true
+
+DownArrow.Name = "DownArrow"
+DownArrow.Parent = Main
+DownArrow.BackgroundColor3 = Color3.new(1, 1, 1)
+DownArrow.BackgroundTransparency = 1
+DownArrow.Position = UDim2.new(0.792626739, 0, 0.714592278, 0)
+DownArrow.Size = UDim2.new(0, 26, 0, 23)
+DownArrow.Font = Enum.Font.Cartoon
+DownArrow.Text = "Down"
+DownArrow.TextColor3 = Color3.new(0, 0, 0)
+DownArrow.TextSize = 12
+DownArrow.TextWrapped = true
+
+power = 500
+active = false
+local val = Instance.new("IntValue")
+val.Name = "Number"
+val.Parent = game.Players.LocalPlayer
+val.Value = 5
+
+Exit.MouseButton1Click:connect(function()
+FlingKill.Enabled = false
+end)
+
+StartKill.MouseButton1Click:connect(function()
+game:GetService('RunService').Stepped:connect(function()
+if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.Torso.CanCollide = false
+game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+else
+if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end
+end
+end)
+wait(.1)
+local bambam = Instance.new("BodyThrust")
+bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bambam.Force = Vector3.new(power,0,power)
+bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+end)
+
+StopKill.MouseButton1Click:connect(function()
+active = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.BodyThrust:Remove()
+end)
+
+UPArrow.MouseButton1Click:connect(function()
+power = power + 100
+game.Players.LocalPlayer.Number.Value = game.Players.LocalPlayer.Number.Value + 1
+CurrentPower.Text = "Current Power = " .. game.Players.LocalPlayer.Number.Value
+end)
+
+DownArrow.MouseButton1Click:connect(function()
+power = power - 100
+game.Players.LocalPlayer.Number.Value = game.Players.LocalPlayer.Number.Value - 1
+CurrentPower.Text = "Current Power = " .. game.Players.LocalPlayer.Number.Value
+end)
+end)
+
+feanim.MouseButton1Click:connect(function()
+	-- Energize by illremember, fe animations
+-- DO NOT COPY AND CLAIM AS OWN, if you are using some of the script for your own, credit is highly appreciated!
+-- Thank you, and enjoy.
+
+-- Objects
+
+local Energize = Instance.new("ScreenGui") -- The actual GUI
+local SideFrame = Instance.new("Frame") -- Visible when GUI is closed
+local OpenGUI = Instance.new("TextButton") -- Part of SideFrame
+local SideFrameTitle = Instance.new("TextLabel") -- Part of SideFrame
+local MainFrame = Instance.new("Frame") -- All of the stuff on the main frame
+local GuiBottomFrame = Instance.new("Frame") -- Part of Active Frame
+local Credits = Instance.new("TextLabel") -- Credits to illremember, hello there
+local ScrollingFrame = Instance.new("ScrollingFrame") -- The scrolling frame of animations
+local CheckR = Instance.new("TextLabel") -- Check if R15 or R6
+local ScrollingFrameR15 = Instance.new("ScrollingFrame") -- The scrolling frame of R15 animations
+
+local CrazySlash = Instance.new("TextButton")--COMPLETE
+local Open = Instance.new("TextButton")--COMPLETE
+local R15Spinner = Instance.new("TextButton")--COMPLETE
+local ArmsOut = Instance.new("TextButton")--COMPLETE
+local FloatSlash = Instance.new("TextButton")--COMPLETE
+local WeirdZombie = Instance.new("TextButton")--COMPLETE
+local DownSlash = Instance.new("TextButton")--COMPLETE
+local Pull = Instance.new("TextButton")--COMPLETE
+local CircleArm = Instance.new("TextButton")--COMPLETE
+local Bend = Instance.new("TextButton")--COMPLETE
+local RotateSlash = Instance.new("TextButton")--COMPLETE
+local FlingArms = Instance.new("TextButton")--COMPLETE
+
+local FullSwing = Instance.new("TextButton")--COMPLETE
+local GlitchLevitate = Instance.new("TextButton")--COMPLETE
+local MoonDance = Instance.new("TextButton")--COMPLETE
+local FullPunch = Instance.new("TextButton")--COMPLETE
+local Crouch = Instance.new("TextButton")--COMPLETE
+local SpinDance = Instance.new("TextButton")--COMPLETE
+local FloorFaint = Instance.new("TextButton")--COMPLETE
+local JumpingJacks = Instance.new("TextButton")--COMPLETE
+local Spinner = Instance.new("TextButton")--COMPLETE
+local MegaInsane = Instance.new("TextButton")--COMPLETE
+local ArmDetach = Instance.new("TextButton")--COMPLETE
+local WeirdMove = Instance.new("TextButton")--COMPLETE
+local Faint = Instance.new("TextButton")--COMPLETE
+local CloneIllusion = Instance.new("TextButton")--COMPLETE
+local Levitate = Instance.new("TextButton")--COMPLETE
+local DinoWalk = Instance.new("TextButton")--COMPLETE
+local FloorCrawl = Instance.new("TextButton")--COMPLETE
+local SwordSlam = Instance.new("TextButton")--COMPLETE
+local LoopHead = Instance.new("TextButton")--COMPLETE
+local HeroJump = Instance.new("TextButton")--COMPLETE
+local Insane = Instance.new("TextButton")--COMPLETE
+local FloatingHead = Instance.new("TextButton")--COMPLETE
+local HeadThrow = Instance.new("TextButton")--COMPLETE
+local MovingDance = Instance.new("TextButton")--COMPLETE
+local SuperPunch = Instance.new("TextButton")--COMPLETE
+local ArmTurbine = Instance.new("TextButton")--COMPLETE
+local Dab = Instance.new("TextButton")--COMPLETE
+local FloatSit = Instance.new("TextButton")--COMPLETE
+local SuperFaint = Instance.new("TextButton")--COMPLETE
+local BarrelRoll = Instance.new("TextButton")--COMPLETE
+local Scared = Instance.new("TextButton")--COMPLETE
+local InsaneArms = Instance.new("TextButton")--COMPLETE
+local SwordSlice = Instance.new("TextButton")--COMPLETE
+local SpinDance2 = Instance.new("TextButton")--COMPLETE
+local BowDown = Instance.new("TextButton")--COMPLETE
+local LoopSlam = Instance.new("TextButton")--COMPLETE
+
+local GuiTopFrame = Instance.new("Frame") -- Top of the main frame
+local CloseGUI = Instance.new("TextButton") -- To close the GUI
+local Title = Instance.new("TextLabel") -- Actual title of GUI, Energize
+
+-- Properties
+
+Energize.Name = "Energize"
+Energize.Parent = game.Players.LocalPlayer.PlayerGui
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = Energize
+SideFrame.Active = true
+SideFrame.BackgroundColor3 = Color3.new(1, 0.329412, 0.329412)
+SideFrame.Draggable = true
+SideFrame.Position = UDim2.new(0, 376, 0, 125)
+SideFrame.Size = UDim2.new(0, 460, 0, 32)
+SideFrame.Visible = false
+
+OpenGUI.Name = "OpenGUI"
+OpenGUI.Parent = SideFrame
+OpenGUI.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenGUI.BackgroundTransparency = 1
+OpenGUI.Position = UDim2.new(0, 426, 0, 0)
+OpenGUI.Size = UDim2.new(0, 34, 0, 32)
+OpenGUI.Font = Enum.Font.SourceSans
+OpenGUI.FontSize = Enum.FontSize.Size48
+OpenGUI.Text = "X"
+OpenGUI.TextColor3 = Color3.new(0.333333, 0, 0)
+OpenGUI.TextSize = 40
+OpenGUI.TextWrapped = true
+
+SideFrameTitle.Name = "SideFrameTitle"
+SideFrameTitle.Parent = SideFrame
+SideFrameTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+SideFrameTitle.BackgroundTransparency = 1
+SideFrameTitle.Position = UDim2.new(0, 170, 0, 0)
+SideFrameTitle.Size = UDim2.new(0, 119, 0, 31)
+SideFrameTitle.Font = Enum.Font.Arial
+SideFrameTitle.FontSize = Enum.FontSize.Size24
+SideFrameTitle.Text = "-Energize-"
+SideFrameTitle.TextSize = 21
+SideFrameTitle.TextStrokeColor3 = Color3.new(0.27451, 0.92549, 0.905882)
+SideFrameTitle.TextStrokeTransparency = 0.69999998807907
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Energize
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BackgroundTransparency = 1
+MainFrame.Draggable = true
+MainFrame.Position = UDim2.new(0, 376, 0, 125)
+MainFrame.Size = UDim2.new(0, 444, 0, 280)
+
+GuiBottomFrame.Name = "Gui BottomFrame"
+GuiBottomFrame.Parent = MainFrame
+GuiBottomFrame.BackgroundColor3 = Color3.new(1, 0.329412, 0.329412)
+GuiBottomFrame.BorderColor3 = Color3.new(0.243137, 0.243137, 0.243137)
+GuiBottomFrame.Position = UDim2.new(0, 0, 0, 247)
+GuiBottomFrame.Size = UDim2.new(0, 460, 0, 32)
+
+Credits.Name = "Credits"
+Credits.Parent = GuiBottomFrame
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.Size = UDim2.new(0, 460, 0, 32)
+Credits.FontSize = Enum.FontSize.Size14
+Credits.Text = "By illremember -FE Animations Gui"
+Credits.TextColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+Credits.TextSize = 14
+Credits.TextStrokeColor3 = Color3.new(0.141176, 0.870588, 0.713726)
+Credits.TextStrokeTransparency = 0.69999998807907
+Credits.TextWrapped = true
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 0.564706, 0.564706)
+ScrollingFrame.Position = UDim2.new(0, 0, 0, 32)
+ScrollingFrame.Size = UDim2.new(0, 460, 0, 215)
+ScrollingFrame.ScrollBarThickness = 13
+
+FullSwing.Name = "FullSwing"
+FullSwing.Parent = ScrollingFrame
+FullSwing.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FullSwing.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FullSwing.Position = UDim2.new(0, 17, 0, 322)
+FullSwing.Size = UDim2.new(0, 119, 0, 34)
+FullSwing.Font = Enum.Font.Highway
+FullSwing.FontSize = Enum.FontSize.Size24
+FullSwing.Text = "Full Swing"
+FullSwing.TextSize = 20
+FullSwing.TextWrapped = true
+
+GlitchLevitate.Name = "GlitchLevitate"
+GlitchLevitate.Parent = ScrollingFrame
+GlitchLevitate.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+GlitchLevitate.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+GlitchLevitate.Position = UDim2.new(0, 319, 0, 322)
+GlitchLevitate.Size = UDim2.new(0, 119, 0, 34)
+GlitchLevitate.Font = Enum.Font.Highway
+GlitchLevitate.FontSize = Enum.FontSize.Size24
+GlitchLevitate.Text = "Glitch Levitate"
+GlitchLevitate.TextSize = 20
+GlitchLevitate.TextWrapped = true
+
+MoonDance.Name = "MoonDance"
+MoonDance.Parent = ScrollingFrame
+MoonDance.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+MoonDance.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+MoonDance.Position = UDim2.new(0, 319, 0, 280)
+MoonDance.Size = UDim2.new(0, 119, 0, 34)
+MoonDance.Font = Enum.Font.Highway
+MoonDance.FontSize = Enum.FontSize.Size24
+MoonDance.Text = "Moon Dance"
+MoonDance.TextSize = 20
+MoonDance.TextWrapped = true
+
+FullPunch.Name = "FullPunch"
+FullPunch.Parent = ScrollingFrame
+FullPunch.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FullPunch.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FullPunch.Position = UDim2.new(0, 17, 0, 280)
+FullPunch.Size = UDim2.new(0, 119, 0, 34)
+FullPunch.Font = Enum.Font.Highway
+FullPunch.FontSize = Enum.FontSize.Size24
+FullPunch.Text = "Full Punch"
+FullPunch.TextSize = 20
+FullPunch.TextWrapped = true
+
+Crouch.Name = "Crouch"
+Crouch.Parent = ScrollingFrame
+Crouch.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Crouch.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Crouch.Position = UDim2.new(0, 168, 0, 280)
+Crouch.Size = UDim2.new(0, 119, 0, 34)
+Crouch.Font = Enum.Font.Highway
+Crouch.FontSize = Enum.FontSize.Size24
+Crouch.Text = "Crouch"
+Crouch.TextSize = 20
+Crouch.TextWrapped = true
+
+SpinDance.Name = "SpinDance"
+SpinDance.Parent = ScrollingFrame
+SpinDance.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SpinDance.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SpinDance.Position = UDim2.new(0, 168, 0, 236)
+SpinDance.Size = UDim2.new(0, 119, 0, 34)
+SpinDance.Font = Enum.Font.Highway
+SpinDance.FontSize = Enum.FontSize.Size24
+SpinDance.Text = "Spin Dance"
+SpinDance.TextSize = 20
+SpinDance.TextWrapped = true
+
+FloorFaint.Name = "FloorFaint"
+FloorFaint.Parent = ScrollingFrame
+FloorFaint.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FloorFaint.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FloorFaint.Position = UDim2.new(0, 17, 0, 236)
+FloorFaint.Size = UDim2.new(0, 119, 0, 34)
+FloorFaint.Font = Enum.Font.Highway
+FloorFaint.FontSize = Enum.FontSize.Size24
+FloorFaint.Text = "Floor Faint"
+FloorFaint.TextSize = 20
+FloorFaint.TextWrapped = true
+
+JumpingJacks.Name = "JumpingJacks"
+JumpingJacks.Parent = ScrollingFrame
+JumpingJacks.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+JumpingJacks.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+JumpingJacks.Position = UDim2.new(0, 319, 0, 236)
+JumpingJacks.Size = UDim2.new(0, 119, 0, 34)
+JumpingJacks.Font = Enum.Font.Highway
+JumpingJacks.FontSize = Enum.FontSize.Size24
+JumpingJacks.Text = "Jumping Jacks"
+JumpingJacks.TextSize = 20
+JumpingJacks.TextWrapped = true
+
+Spinner.Name = "Spinner"
+Spinner.Parent = ScrollingFrame
+Spinner.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Spinner.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Spinner.Position = UDim2.new(0, 17, 0, 192)
+Spinner.Size = UDim2.new(0, 119, 0, 34)
+Spinner.Font = Enum.Font.Highway
+Spinner.FontSize = Enum.FontSize.Size24
+Spinner.Text = "Spinner"
+Spinner.TextSize = 20
+Spinner.TextWrapped = true
+
+MegaInsane.Name = "MegaInsane"
+MegaInsane.Parent = ScrollingFrame
+MegaInsane.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+MegaInsane.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+MegaInsane.Position = UDim2.new(0, 168, 0, 192)
+MegaInsane.Size = UDim2.new(0, 119, 0, 34)
+MegaInsane.Font = Enum.Font.Highway
+MegaInsane.FontSize = Enum.FontSize.Size24
+MegaInsane.Text = "Mega Insane"
+MegaInsane.TextSize = 20
+MegaInsane.TextWrapped = true
+
+ArmDetach.Name = "ArmDetach"
+ArmDetach.Parent = ScrollingFrame
+ArmDetach.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+ArmDetach.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ArmDetach.Position = UDim2.new(0, 319, 0, 192)
+ArmDetach.Size = UDim2.new(0, 119, 0, 34)
+ArmDetach.Font = Enum.Font.Highway
+ArmDetach.FontSize = Enum.FontSize.Size24
+ArmDetach.Text = "Arm Detach"
+ArmDetach.TextSize = 20
+ArmDetach.TextWrapped = true
+
+WeirdMove.Name = "WeirdMove"
+WeirdMove.Parent = ScrollingFrame
+WeirdMove.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+WeirdMove.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+WeirdMove.Position = UDim2.new(0, 168, 0, 148)
+WeirdMove.Size = UDim2.new(0, 119, 0, 34)
+WeirdMove.Font = Enum.Font.Highway
+WeirdMove.FontSize = Enum.FontSize.Size24
+WeirdMove.Text = "Weird Move"
+WeirdMove.TextSize = 20
+WeirdMove.TextWrapped = true
+
+Faint.Name = "Faint"
+Faint.Parent = ScrollingFrame
+Faint.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Faint.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Faint.Position = UDim2.new(0, 17, 0, 148)
+Faint.Size = UDim2.new(0, 119, 0, 34)
+Faint.Font = Enum.Font.Highway
+Faint.FontSize = Enum.FontSize.Size24
+Faint.Text = "Faint"
+Faint.TextSize = 20
+Faint.TextWrapped = true
+
+CloneIllusion.Name = "CloneIllusion"
+CloneIllusion.Parent = ScrollingFrame
+CloneIllusion.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+CloneIllusion.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+CloneIllusion.Position = UDim2.new(0, 319, 0, 148)
+CloneIllusion.Size = UDim2.new(0, 119, 0, 34)
+CloneIllusion.Font = Enum.Font.Highway
+CloneIllusion.FontSize = Enum.FontSize.Size24
+CloneIllusion.Text = "Clone Illusion"
+CloneIllusion.TextSize = 20
+CloneIllusion.TextWrapped = true
+
+Levitate.Name = "Levitate"
+Levitate.Parent = ScrollingFrame
+Levitate.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Levitate.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Levitate.Position = UDim2.new(0, 17, 0, 104)
+Levitate.Size = UDim2.new(0, 119, 0, 34)
+Levitate.Font = Enum.Font.Highway
+Levitate.FontSize = Enum.FontSize.Size24
+Levitate.Text = "Levitate"
+Levitate.TextSize = 20
+Levitate.TextWrapped = true
+
+DinoWalk.Name = "DinoWalk"
+DinoWalk.Parent = ScrollingFrame
+DinoWalk.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+DinoWalk.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+DinoWalk.Position = UDim2.new(0, 168, 0, 104)
+DinoWalk.Size = UDim2.new(0, 119, 0, 34)
+DinoWalk.Font = Enum.Font.Highway
+DinoWalk.FontSize = Enum.FontSize.Size24
+DinoWalk.Text = "Dino Walk"
+DinoWalk.TextSize = 20
+DinoWalk.TextWrapped = true
+
+FloorCrawl.Name = "FloorCrawl"
+FloorCrawl.Parent = ScrollingFrame
+FloorCrawl.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FloorCrawl.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FloorCrawl.Position = UDim2.new(0, 319, 0, 104)
+FloorCrawl.Size = UDim2.new(0, 119, 0, 34)
+FloorCrawl.Font = Enum.Font.Highway
+FloorCrawl.FontSize = Enum.FontSize.Size24
+FloorCrawl.Text = "Floor Crawl"
+FloorCrawl.TextSize = 20
+FloorCrawl.TextWrapped = true
+
+SwordSlam.Name = "SwordSlam"
+SwordSlam.Parent = ScrollingFrame
+SwordSlam.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SwordSlam.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SwordSlam.Position = UDim2.new(0, 319, 0, 60)
+SwordSlam.Size = UDim2.new(0, 119, 0, 34)
+SwordSlam.Font = Enum.Font.Highway
+SwordSlam.FontSize = Enum.FontSize.Size24
+SwordSlam.Text = "Sword Slam"
+SwordSlam.TextSize = 20
+SwordSlam.TextWrapped = true
+
+LoopHead.Name = "LoopHead"
+LoopHead.Parent = ScrollingFrame
+LoopHead.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+LoopHead.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+LoopHead.Position = UDim2.new(0, 168, 0, 60)
+LoopHead.Size = UDim2.new(0, 119, 0, 34)
+LoopHead.Font = Enum.Font.Highway
+LoopHead.FontSize = Enum.FontSize.Size24
+LoopHead.Text = "Loop Head"
+LoopHead.TextSize = 20
+LoopHead.TextWrapped = true
+
+HeroJump.Name = "HeroJump"
+HeroJump.Parent = ScrollingFrame
+HeroJump.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+HeroJump.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+HeroJump.Position = UDim2.new(0, 17, 0, 60)
+HeroJump.Size = UDim2.new(0, 119, 0, 34)
+HeroJump.Font = Enum.Font.Highway
+HeroJump.FontSize = Enum.FontSize.Size24
+HeroJump.Text = "Hero Jump"
+HeroJump.TextSize = 20
+HeroJump.TextWrapped = true
+
+Insane.Name = "Insane"
+Insane.Parent = ScrollingFrame
+Insane.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Insane.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Insane.Position = UDim2.new(0, 319, 0, 16)
+Insane.Size = UDim2.new(0, 119, 0, 34)
+Insane.Font = Enum.Font.Highway
+Insane.FontSize = Enum.FontSize.Size24
+Insane.Text = "Insane"
+Insane.TextSize = 20
+Insane.TextWrapped = true
+
+FloatingHead.Name = "FloatingHead"
+FloatingHead.Parent = ScrollingFrame
+FloatingHead.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FloatingHead.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FloatingHead.Position = UDim2.new(0, 168, 0, 16)
+FloatingHead.Size = UDim2.new(0, 119, 0, 34)
+FloatingHead.Font = Enum.Font.Highway
+FloatingHead.FontSize = Enum.FontSize.Size24
+FloatingHead.Text = "Floating Head"
+FloatingHead.TextSize = 20
+FloatingHead.TextWrapped = true
+
+HeadThrow.Name = "HeadThrow"
+HeadThrow.Parent = ScrollingFrame
+HeadThrow.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+HeadThrow.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+HeadThrow.Position = UDim2.new(0, 17, 0, 16)
+HeadThrow.Size = UDim2.new(0, 119, 0, 34)
+HeadThrow.Font = Enum.Font.Highway
+HeadThrow.FontSize = Enum.FontSize.Size24
+HeadThrow.Text = "Head Throw"
+HeadThrow.TextSize = 20
+HeadThrow.TextWrapped = true
+
+MovingDance.Name = "MovingDance"
+MovingDance.Parent = ScrollingFrame
+MovingDance.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+MovingDance.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+MovingDance.Position = UDim2.new(0, 168, 0, 324)
+MovingDance.Size = UDim2.new(0, 119, 0, 34)
+MovingDance.Font = Enum.Font.Highway
+MovingDance.FontSize = Enum.FontSize.Size24
+MovingDance.Text = "Moving Dance"
+MovingDance.TextSize = 20
+MovingDance.TextWrapped = true
+
+SuperPunch.Name = "SuperPunch"
+SuperPunch.Parent = ScrollingFrame
+SuperPunch.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SuperPunch.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SuperPunch.Position = UDim2.new(0, 168, 0, 366)
+SuperPunch.Size = UDim2.new(0, 119, 0, 34)
+SuperPunch.Font = Enum.Font.Highway
+SuperPunch.FontSize = Enum.FontSize.Size24
+SuperPunch.Text = "Super Punch"
+SuperPunch.TextSize = 20
+SuperPunch.TextWrapped = true
+
+ArmTurbine.Name = "ArmTurbine"
+ArmTurbine.Parent = ScrollingFrame
+ArmTurbine.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+ArmTurbine.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ArmTurbine.Position = UDim2.new(0, 319, 0, 366)
+ArmTurbine.Size = UDim2.new(0, 119, 0, 34)
+ArmTurbine.Font = Enum.Font.Highway
+ArmTurbine.FontSize = Enum.FontSize.Size24
+ArmTurbine.Text = "Arm Turbine"
+ArmTurbine.TextSize = 20
+ArmTurbine.TextWrapped = true
+
+Dab.Name = "Dab"
+Dab.Parent = ScrollingFrame
+Dab.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Dab.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Dab.Position = UDim2.new(0, 17, 0, 366)
+Dab.Size = UDim2.new(0, 119, 0, 34)
+Dab.Font = Enum.Font.Highway
+Dab.FontSize = Enum.FontSize.Size24
+Dab.Text = "Dab"
+Dab.TextSize = 20
+Dab.TextWrapped = true
+
+FloatSit.Name = "FloatSit"
+FloatSit.Parent = ScrollingFrame
+FloatSit.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+FloatSit.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FloatSit.Position = UDim2.new(0, 168, 0, 410)
+FloatSit.Size = UDim2.new(0, 119, 0, 34)
+FloatSit.Font = Enum.Font.Highway
+FloatSit.FontSize = Enum.FontSize.Size24
+FloatSit.Text = "Float Sit"
+FloatSit.TextSize = 20
+FloatSit.TextWrapped = true
+
+SuperFaint.Name = "SuperFaint"
+SuperFaint.Parent = ScrollingFrame
+SuperFaint.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SuperFaint.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SuperFaint.Position = UDim2.new(0, 17, 0, 498)
+SuperFaint.Size = UDim2.new(0, 119, 0, 34)
+SuperFaint.Font = Enum.Font.Highway
+SuperFaint.FontSize = Enum.FontSize.Size24
+SuperFaint.Text = "Super Faint"
+SuperFaint.TextSize = 20
+SuperFaint.TextWrapped = true
+
+BarrelRoll.Name = "BarrelRoll"
+BarrelRoll.Parent = ScrollingFrame
+BarrelRoll.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+BarrelRoll.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+BarrelRoll.Position = UDim2.new(0, 319, 0, 410)
+BarrelRoll.Size = UDim2.new(0, 119, 0, 34)
+BarrelRoll.Font = Enum.Font.Highway
+BarrelRoll.FontSize = Enum.FontSize.Size24
+BarrelRoll.Text = "Barrel Roll"
+BarrelRoll.TextSize = 20
+BarrelRoll.TextWrapped = true
+
+Scared.Name = "Scared"
+Scared.Parent = ScrollingFrame
+Scared.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Scared.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Scared.Position = UDim2.new(0, 319, 0, 454)
+Scared.Size = UDim2.new(0, 119, 0, 34)
+Scared.Font = Enum.Font.Highway
+Scared.FontSize = Enum.FontSize.Size24
+Scared.Text = "Scared"
+Scared.TextSize = 20
+Scared.TextWrapped = true
+
+InsaneArms.Name = "InsaneArms"
+InsaneArms.Parent = ScrollingFrame
+InsaneArms.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+InsaneArms.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+InsaneArms.Position = UDim2.new(0, 17, 0, 454)
+InsaneArms.Size = UDim2.new(0, 119, 0, 34)
+InsaneArms.Font = Enum.Font.Highway
+InsaneArms.FontSize = Enum.FontSize.Size24
+InsaneArms.Text = "Insane Arms"
+InsaneArms.TextSize = 20
+InsaneArms.TextWrapped = true
+
+SwordSlice.Name = "SwordSlice"
+SwordSlice.Parent = ScrollingFrame
+SwordSlice.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SwordSlice.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SwordSlice.Position = UDim2.new(0, 168, 0, 454)
+SwordSlice.Size = UDim2.new(0, 119, 0, 34)
+SwordSlice.Font = Enum.Font.Highway
+SwordSlice.FontSize = Enum.FontSize.Size24
+SwordSlice.Text = "Sword Slice"
+SwordSlice.TextSize = 20
+SwordSlice.TextWrapped = true
+
+SpinDance2.Name = "SpinDance2"
+SpinDance2.Parent = ScrollingFrame
+SpinDance2.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+SpinDance2.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+SpinDance2.Position = UDim2.new(0, 168, 0, 498)
+SpinDance2.Size = UDim2.new(0, 119, 0, 34)
+SpinDance2.Font = Enum.Font.Highway
+SpinDance2.FontSize = Enum.FontSize.Size24
+SpinDance2.Text = "Spin Dance 2"
+SpinDance2.TextSize = 20
+SpinDance2.TextWrapped = true
+
+BowDown.Name = "BowDown"
+BowDown.Parent = ScrollingFrame
+BowDown.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+BowDown.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+BowDown.Position = UDim2.new(0, 319, 0, 498)
+BowDown.Size = UDim2.new(0, 119, 0, 34)
+BowDown.Font = Enum.Font.Highway
+BowDown.FontSize = Enum.FontSize.Size24
+BowDown.Text = "Bow Down"
+BowDown.TextSize = 20
+BowDown.TextWrapped = true
+
+LoopSlam.Name = "LoopSlam"
+LoopSlam.Parent = ScrollingFrame
+LoopSlam.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+LoopSlam.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+LoopSlam.Position = UDim2.new(0, 17, 0, 410)
+LoopSlam.Size = UDim2.new(0, 119, 0, 34)
+LoopSlam.Font = Enum.Font.Highway
+LoopSlam.FontSize = Enum.FontSize.Size24
+LoopSlam.Text = "Loop Slam"
+LoopSlam.TextSize = 20
+LoopSlam.TextWrapped = true
+
+GuiTopFrame.Name = "Gui TopFrame"
+GuiTopFrame.Parent = MainFrame
+GuiTopFrame.BackgroundColor3 = Color3.new(1, 0.329412, 0.329412)
+GuiTopFrame.BorderColor3 = Color3.new(0.243137, 0.243137, 0.243137)
+GuiTopFrame.Size = UDim2.new(0, 460, 0, 32)
+
+CloseGUI.Name = "CloseGUI"
+CloseGUI.Parent = GuiTopFrame
+CloseGUI.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseGUI.BackgroundTransparency = 1
+CloseGUI.Position = UDim2.new(0, 426, 0, 0)
+CloseGUI.Size = UDim2.new(0, 34, 0, 32)
+CloseGUI.Font = Enum.Font.SourceSans
+CloseGUI.FontSize = Enum.FontSize.Size48
+CloseGUI.Text = "X"
+CloseGUI.TextColor3 = Color3.new(0.333333, 0, 0)
+CloseGUI.TextSize = 40
+CloseGUI.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = GuiTopFrame
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(0, 460, 0, 32)
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "-Energize-"
+Title.TextColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Title.TextSize = 14
+Title.TextStrokeColor3 = Color3.new(0.384314, 0.917647, 1)
+Title.TextStrokeTransparency = 0.69999998807907
+Title.TextWrapped = true
+
+CheckR.Name = "CheckR"
+CheckR.Parent = GuiTopFrame
+CheckR.BackgroundColor3 = Color3.new(1, 1, 1)
+CheckR.BackgroundTransparency = 1
+CheckR.Size = UDim2.new(0, 171, 0, 32)
+CheckR.Font = Enum.Font.SourceSansBold
+CheckR.FontSize = Enum.FontSize.Size14
+CheckR.Text = "Text"
+CheckR.TextScaled = true
+CheckR.TextSize = 14
+CheckR.TextWrapped = true
+
+ScrollingFrameR15.Name = "ScrollingFrameR15"
+ScrollingFrameR15.Parent = MainFrame
+ScrollingFrameR15.BackgroundColor3 = Color3.new(1, 0.564706, 0.564706)
+ScrollingFrameR15.Position = UDim2.new(0, 0, 0, 32)
+ScrollingFrameR15.Size = UDim2.new(0, 460, 0, 215)
+ScrollingFrameR15.Visible = false
+ScrollingFrameR15.ScrollBarThickness = 13
+
+CrazySlash.Name = "CrazySlash"
+CrazySlash.Parent = ScrollingFrameR15
+CrazySlash.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+CrazySlash.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+CrazySlash.Position = UDim2.new(0, 17, 0, 16)
+CrazySlash.Size = UDim2.new(0, 119, 0, 34)
+CrazySlash.Font = Enum.Font.Highway
+CrazySlash.FontSize = Enum.FontSize.Size24
+CrazySlash.Text = "CrazySlash"
+CrazySlash.TextSize = 20
+CrazySlash.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = ScrollingFrameR15
+Open.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+Open.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Open.Position = UDim2.new(0, 168, 0, 16)
+Open.Size = UDim2.new(0, 119, 0, 34)
+Open.Font = Enum.Font.Highway
+Open.FontSize = Enum.FontSize.Size24
+Open.Text = "Open"
+Open.TextSize = 20
+Open.TextWrapped = true
+
+R15Spinner.Name = "R15Spinner"
+R15Spinner.Parent = ScrollingFrameR15
+R15Spinner.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+R15Spinner.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+R15Spinner.Position = UDim2.new(0, 17, 0, 60)
+R15Spinner.Size = UDim2.new(0, 119, 0, 34)
+R15Spinner.Font = Enum.Font.Highway
+R15Spinner.FontSize = Enum.FontSize.Size24
+R15Spinner.Text = "Spinner"
+R15Spinner.TextSize = 20
+R15Spinner.TextWrapped = true
+
+ArmsOut.Name = "ArmsOut"
+ArmsOut.Parent = ScrollingFrameR15
+ArmsOut.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+ArmsOut.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ArmsOut.Position = UDim2.new(0, 319, 0, 16)
+ArmsOut.Size = UDim2.new(0, 119, 0, 34)
+ArmsOut.Font = Enum.Font.Highway
+ArmsOut.FontSize = Enum.FontSize.Size24
+ArmsOut.Text = "ArmsOut"
+ArmsOut.TextSize = 20
+ArmsOut.TextWrapped = true
+
+FloatSlash.Name = "FloatSlash"
+FloatSlash.Parent = ScrollingFrameR15
+FloatSlash.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+FloatSlash.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FloatSlash.Position = UDim2.new(0, 168, 0, 148)
+FloatSlash.Size = UDim2.new(0, 119, 0, 34)
+FloatSlash.Font = Enum.Font.Highway
+FloatSlash.FontSize = Enum.FontSize.Size24
+FloatSlash.Text = "FloatSlash"
+FloatSlash.TextSize = 20
+FloatSlash.TextWrapped = true
+
+WeirdZombie.Name = "WeirdZombie"
+WeirdZombie.Parent = ScrollingFrameR15
+WeirdZombie.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+WeirdZombie.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+WeirdZombie.Position = UDim2.new(0, 17, 0, 148)
+WeirdZombie.Size = UDim2.new(0, 119, 0, 34)
+WeirdZombie.Font = Enum.Font.Highway
+WeirdZombie.FontSize = Enum.FontSize.Size24
+WeirdZombie.Text = "WeirdZombie"
+WeirdZombie.TextSize = 20
+WeirdZombie.TextWrapped = true
+
+DownSlash.Name = "DownSlash"
+DownSlash.Parent = ScrollingFrameR15
+DownSlash.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+DownSlash.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+DownSlash.Position = UDim2.new(0, 319, 0, 148)
+DownSlash.Size = UDim2.new(0, 119, 0, 34)
+DownSlash.Font = Enum.Font.Highway
+DownSlash.FontSize = Enum.FontSize.Size24
+DownSlash.Text = "DownSlash"
+DownSlash.TextSize = 20
+DownSlash.TextWrapped = true
+
+Pull.Name = "Pull"
+Pull.Parent = ScrollingFrameR15
+Pull.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+Pull.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Pull.Position = UDim2.new(0, 17, 0, 104)
+Pull.Size = UDim2.new(0, 119, 0, 34)
+Pull.Font = Enum.Font.Highway
+Pull.FontSize = Enum.FontSize.Size24
+Pull.Text = "Pull"
+Pull.TextSize = 20
+Pull.TextWrapped = true
+
+CircleArm.Name = "CircleArm"
+CircleArm.Parent = ScrollingFrameR15
+CircleArm.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+CircleArm.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+CircleArm.Position = UDim2.new(0, 168, 0, 104)
+CircleArm.Size = UDim2.new(0, 119, 0, 34)
+CircleArm.Font = Enum.Font.Highway
+CircleArm.FontSize = Enum.FontSize.Size24
+CircleArm.Text = "CircleArm"
+CircleArm.TextSize = 20
+CircleArm.TextWrapped = true
+
+Bend.Name = "Bend"
+Bend.Parent = ScrollingFrameR15
+Bend.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+Bend.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Bend.Position = UDim2.new(0, 319, 0, 104)
+Bend.Size = UDim2.new(0, 119, 0, 34)
+Bend.Font = Enum.Font.Highway
+Bend.FontSize = Enum.FontSize.Size24
+Bend.Text = "Bend"
+Bend.TextSize = 20
+Bend.TextWrapped = true
+
+RotateSlash.Name = "RotateSlash"
+RotateSlash.Parent = ScrollingFrameR15
+RotateSlash.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+RotateSlash.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+RotateSlash.Position = UDim2.new(0, 319, 0, 60)
+RotateSlash.Size = UDim2.new(0, 119, 0, 34)
+RotateSlash.Font = Enum.Font.Highway
+RotateSlash.FontSize = Enum.FontSize.Size24
+RotateSlash.Text = "RotateSlash"
+RotateSlash.TextSize = 20
+RotateSlash.TextWrapped = true
+
+FlingArms.Name = "FlingArms"
+FlingArms.Parent = ScrollingFrameR15
+FlingArms.BackgroundColor3 = Color3.new(0.682353, 0.701961, 0.792157)
+FlingArms.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+FlingArms.Position = UDim2.new(0, 168, 0, 60)
+FlingArms.Size = UDim2.new(0, 119, 0, 34)
+FlingArms.Font = Enum.Font.Highway
+FlingArms.FontSize = Enum.FontSize.Size24
+FlingArms.Text = "FlingArms"
+FlingArms.TextSize = 20
+FlingArms.TextWrapped = true
+
+-- Buttons
+col = Color3.new(0.886275, 0.776471, 0.368627)
+loc = Color3.new(1, 0.906471, 0.568627)
+rcol = Color3.new(0.682353, 0.701961, 0.792157)
+rloc = Color3.new(0.882353, 0.901961, 0.992157)
+
+CloseGUI.MouseButton1Click:connect(function()
+MainFrame.Visible = false
+SideFrame.Visible = true
+SideFrame.Position = MainFrame.Position
+end)
+
+OpenGUI.MouseButton1Click:connect(function()
+MainFrame.Visible = true
+SideFrame.Visible = false
+MainFrame.Position = SideFrame.Position
+end)
+
+if (game:GetService"Players".LocalPlayer.Character:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15) then
+	ScrollingFrame.Visible = false
+	ScrollingFrameR15.Visible = true
+	CheckR.Text = "Showing R15 Animations"
+else
+	ScrollingFrame.Visible = true
+	ScrollingFrameR15.Visible = false
+	CheckR.Text = "Showing R6 Animations"
+end
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://35154961"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local HeadThrowACTIVE = false
+HeadThrow.MouseButton1Click:connect(function()
+	HeadThrowACTIVE = not HeadThrowACTIVE
+	if HeadThrowACTIVE then
+		HeadThrow.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if HeadThrowACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		HeadThrow.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://121572214"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloatingHeadACTIVE = false
+FloatingHead.MouseButton1Click:connect(function()
+	FloatingHeadACTIVE = not FloatingHeadACTIVE
+	if FloatingHeadACTIVE then
+		track:Play(.1, 1, 1)
+		FloatingHead.BackgroundColor3 = loc
+	else
+		track:Stop()
+		FloatingHead.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://182724289"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local CrouchACTIVE = false
+Crouch.MouseButton1Click:connect(function()
+	CrouchACTIVE = not CrouchACTIVE
+	if CrouchACTIVE then
+		track:Play(.1, 1, 1)
+		Crouch.BackgroundColor3 = loc
+	else
+		track:Stop()
+		Crouch.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://282574440"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloorCrawlACTIVE = false
+FloorCrawl.MouseButton1Click:connect(function()
+	FloorCrawlACTIVE = not FloorCrawlACTIVE
+	if FloorCrawlACTIVE then
+		track:Play(.1, 1, 1)
+		FloorCrawl.BackgroundColor3 = loc
+	else
+		track:Stop()
+		FloorCrawl.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://204328711"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local DinoWalkACTIVE = false
+DinoWalk.MouseButton1Click:connect(function()
+	DinoWalkACTIVE = not DinoWalkACTIVE
+	if DinoWalkACTIVE then
+		track:Play(.1, 1, 1)
+		DinoWalk.BackgroundColor3 = loc
+	else
+		track:Stop()
+		DinoWalk.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://429681631"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local JumpingJacksACTIVE = false
+JumpingJacks.MouseButton1Click:connect(function()
+	JumpingJacksACTIVE = not JumpingJacksACTIVE
+	if JumpingJacksACTIVE then
+		track:Play(.1, 1, 1)
+		JumpingJacks.BackgroundColor3 = loc
+	else
+		track:Stop()
+		JumpingJacks.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://35154961"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local LoopHeadACTIVE = false
+LoopHead.MouseButton1Click:connect(function()
+	LoopHeadACTIVE = not LoopHeadACTIVE
+	if LoopHeadACTIVE then
+		LoopHead.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if LoopHeadACTIVE then
+				track:Play(.5, 1, 1e6)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		LoopHead.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://184574340"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local HeroJumpACTIVE = false
+HeroJump.MouseButton1Click:connect(function()
+	HeroJumpACTIVE = not HeroJumpACTIVE
+	if HeroJumpACTIVE then
+		HeroJump.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if HeroJumpACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		HeroJump.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181526230"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FaintACTIVE = false
+Faint.MouseButton1Click:connect(function()
+	FaintACTIVE = not FaintACTIVE
+	if FaintACTIVE then
+		track:Play(.1, 1, 1)
+		Faint.BackgroundColor3 = loc
+	else
+		track:Stop()
+		Faint.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181525546"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloorFaintACTIVE = false
+FloorFaint.MouseButton1Click:connect(function()
+	FloorFaintACTIVE = not FloorFaintACTIVE
+	if FloorFaintACTIVE then
+		FloorFaint.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if FloorFaintACTIVE then
+				track:Play(.1, 1, 2)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		FloorFaint.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://181525546"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SuperFaintACTIVE = false
+SuperFaint.MouseButton1Click:connect(function()
+	SuperFaintACTIVE = not SuperFaintACTIVE
+	if SuperFaintACTIVE then
+		SuperFaint.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SuperFaintACTIVE then
+				track:Play(.1, 0.5, 40)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		SuperFaint.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://313762630"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local LevitateACTIVE = false
+Levitate.MouseButton1Click:connect(function()
+	LevitateACTIVE = not LevitateACTIVE
+	if LevitateACTIVE then
+		track:Play(.1, 1, 1)
+		Levitate.BackgroundColor3 = loc
+	else
+		track:Stop()
+		Levitate.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://183412246"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local DabACTIVE = false
+Dab.MouseButton1Click:connect(function()
+	DabACTIVE = not DabACTIVE
+	if DabACTIVE then
+		Dab.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if DabACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Dab.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://188632011"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SpinACTIVE = false
+Spinner.MouseButton1Click:connect(function()
+	SpinACTIVE = not SpinACTIVE
+	if SpinACTIVE then
+		Spinner.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SpinACTIVE then
+				track:Play(.1, 1, 2)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Spinner.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://179224234"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloatSitACTIVE = false
+FloatSit.MouseButton1Click:connect(function()
+	FloatSitACTIVE = not FloatSitACTIVE
+	if FloatSitACTIVE then
+		track:Play(.1, 1, 1)
+		FloatSit.BackgroundColor3 = loc
+	else
+		track:Stop()
+		FloatSit.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://429703734"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local MovingDanceACTIVE = false
+MovingDance.MouseButton1Click:connect(function()
+	MovingDanceACTIVE = not MovingDanceACTIVE
+	if MovingDanceACTIVE then
+		MovingDance.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if MovingDanceACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		MovingDance.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://215384594"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local WeirdMoveACTIVE = false
+WeirdMove.MouseButton1Click:connect(function()
+	WeirdMoveACTIVE = not WeirdMoveACTIVE
+	if WeirdMoveACTIVE then
+		track:Play(.1, 1, 1)
+		WeirdMove.BackgroundColor3 = loc
+	else
+		track:Stop()
+		WeirdMove.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://215384594"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local CloneIllusionACTIVE = false
+CloneIllusion.MouseButton1Click:connect(function()
+	CloneIllusionACTIVE = not CloneIllusionACTIVE
+	if CloneIllusionACTIVE then
+		track:Play(.5, 1, 1e7)
+		CloneIllusion.BackgroundColor3 = loc
+	else
+		track:Stop()
+		CloneIllusion.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://313762630"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local GlitchLevitateACTIVE = false
+GlitchLevitate.MouseButton1Click:connect(function()
+	GlitchLevitateACTIVE = not GlitchLevitateACTIVE
+	if GlitchLevitateACTIVE then
+		track:Play(.5, 1, 1e7)
+		GlitchLevitate.BackgroundColor3 = loc
+	else
+		track:Stop()
+		GlitchLevitate.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://429730430"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SpinDanceACTIVE = false
+SpinDance.MouseButton1Click:connect(function()
+	SpinDanceACTIVE = not SpinDanceACTIVE
+	if SpinDanceACTIVE then
+		SpinDance.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SpinDanceACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		SpinDance.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://45834924"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local MoonDanceACTIVE = false
+MoonDance.MouseButton1Click:connect(function()
+	MoonDanceACTIVE = not MoonDanceACTIVE
+	if MoonDanceACTIVE then
+		MoonDance.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if MoonDanceACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		MoonDance.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://204062532"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FullPunchACTIVE = false
+FullPunch.MouseButton1Click:connect(function()
+	FullPunchACTIVE = not FullPunchACTIVE
+	if FullPunchACTIVE then
+		FullPunch.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if FullPunchACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		FullPunch.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://186934910"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SpinDance2ACTIVE = false
+SpinDance2.MouseButton1Click:connect(function()
+	SpinDance2ACTIVE = not SpinDance2ACTIVE
+	if SpinDance2ACTIVE then
+		SpinDance2.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SpinDance2ACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		SpinDance2.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://204292303"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local BowDownACTIVE = false
+BowDown.MouseButton1Click:connect(function()
+	BowDownACTIVE = not BowDownACTIVE
+	if BowDownACTIVE then
+		BowDown.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if BowDownACTIVE then
+				track:Play(.1, 1, 3)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		BowDown.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://204295235"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SwordSlamACTIVE = false
+SwordSlam.MouseButton1Click:connect(function()
+	SwordSlamACTIVE = not SwordSlamACTIVE
+	if SwordSlamACTIVE then
+		SwordSlam.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SwordSlamACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		SwordSlam.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://204295235"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local LoopSlamACTIVE = false
+LoopSlam.MouseButton1Click:connect(function()
+	LoopSlamACTIVE = not LoopSlamACTIVE
+	if LoopSlamACTIVE then
+		LoopSlam.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if LoopSlamACTIVE then
+				track:Play(.1, 1, 1e4)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		LoopSlam.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://184574340"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local MegaInsaneACTIVE = false
+MegaInsane.MouseButton1Click:connect(function()
+	MegaInsaneACTIVE = not MegaInsaneACTIVE
+	if MegaInsaneACTIVE then
+		MegaInsane.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if MegaInsaneACTIVE then
+				track:Play(.1, 0.5, 40)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		MegaInsane.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://126753849"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SuperPunchACTIVE = false
+SuperPunch.MouseButton1Click:connect(function()
+	SuperPunchACTIVE = not SuperPunchACTIVE
+	if SuperPunchACTIVE then
+		SuperPunch.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if SuperPunchACTIVE then
+				track:Play(.1, 1, 3)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		SuperPunch.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://218504594"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FullSwingACTIVE = false
+FullSwing.MouseButton1Click:connect(function()
+	FullSwingACTIVE = not FullSwingACTIVE
+	if FullSwingACTIVE then
+		FullSwing.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if FullSwingACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		FullSwing.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://259438880"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local ArmTurbineACTIVE = false
+ArmTurbine.MouseButton1Click:connect(function()
+	ArmTurbineACTIVE = not ArmTurbineACTIVE
+	if ArmTurbineACTIVE then
+		track:Play(.1, 1, 1e3)
+		ArmTurbine.BackgroundColor3 = loc
+	else
+		track:Stop()
+		ArmTurbine.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://136801964"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local BarrelRollACTIVE = false
+BarrelRoll.MouseButton1Click:connect(function()
+	BarrelRollACTIVE = not BarrelRollACTIVE
+	if BarrelRollACTIVE then
+		BarrelRoll.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if BarrelRollACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		BarrelRoll.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://180612465"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local ScaredACTIVE = false
+Scared.MouseButton1Click:connect(function()
+	ScaredACTIVE = not ScaredACTIVE
+	if ScaredACTIVE then
+		Scared.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if ScaredACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Scared.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://33796059"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local InsaneACTIVE = false
+Insane.MouseButton1Click:connect(function()
+	InsaneACTIVE = not InsaneACTIVE
+	if InsaneACTIVE then
+		track:Play(.1, 1, 1e8)
+		Insane.BackgroundColor3 = loc
+	else
+		track:Stop()
+		Insane.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://33169583"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local ArmDetachACTIVE = false
+ArmDetach.MouseButton1Click:connect(function()
+	ArmDetachACTIVE = not ArmDetachACTIVE
+	if ArmDetachACTIVE then
+		ArmDetach.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if ArmDetachACTIVE then
+				track:Play(.1, 1, 1e6)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		ArmDetach.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://35978879"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local SwordSliceACTIVE = false
+SwordSlice.MouseButton1Click:connect(function()
+	SwordSliceACTIVE = not SwordSliceACTIVE
+	if SwordSliceACTIVE then
+		track:Play(.1, 1, 1)
+		SwordSlice.BackgroundColor3 = loc
+	else
+		track:Stop()
+		SwordSlice.BackgroundColor3 = col
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://27432691"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local InsaneArmsACTIVE = false
+InsaneArms.MouseButton1Click:connect(function()
+	InsaneArmsACTIVE = not InsaneArmsACTIVE
+	if InsaneArmsACTIVE then
+		InsaneArms.BackgroundColor3 = loc
+		while wait() do
+		 if track.IsPlaying == false then
+			if InsaneArmsACTIVE then
+				track:Play(.1, 1, 1e4)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		InsaneArms.BackgroundColor3 = col
+	end
+end)
+-- R15
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://674871189"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local CrazySlashACTIVE = false
+CrazySlash.MouseButton1Click:connect(function()
+	CrazySlashACTIVE = not CrazySlashACTIVE
+	if CrazySlashACTIVE then
+		CrazySlash.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if CrazySlashACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		CrazySlash.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://582855105"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local OpenACTIVE = false
+Open.MouseButton1Click:connect(function()
+	OpenACTIVE = not OpenACTIVE
+	if OpenACTIVE then
+		Open.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if OpenACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Open.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://754658275"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local R15SpinnerACTIVE = false
+R15Spinner.MouseButton1Click:connect(function()
+	R15SpinnerACTIVE = not R15SpinnerACTIVE
+	if R15SpinnerACTIVE then
+		R15Spinner.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if R15SpinnerACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		R15Spinner.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://582384156"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local ArmsOutACTIVE = false
+ArmsOut.MouseButton1Click:connect(function()
+	ArmsOutACTIVE = not ArmsOutACTIVE
+	if ArmsOutACTIVE then
+		ArmsOut.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if ArmsOutACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		ArmsOut.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://717879555"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloatSlashACTIVE = false
+FloatSlash.MouseButton1Click:connect(function()
+	FloatSlashACTIVE = not FloatSlashACTIVE
+	if FloatSlashACTIVE then
+		FloatSlash.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if FloatSlashACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		FloatSlash.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://708553116"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+WeirdZombieACTIVE = false
+WeirdZombie.MouseButton1Click:connect(function()
+	WeirdZombieACTIVE = not WeirdZombieACTIVE
+	if WeirdZombieACTIVE then
+		WeirdZombie.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if WeirdZombieACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		WeirdZombie.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://746398327"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+DownSlashACTIVE = false
+DownSlash.MouseButton1Click:connect(function()
+	DownSlashACTIVE = not DownSlashACTIVE
+	if DownSlashACTIVE then
+		DownSlash.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if DownSlashACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		DownSlash.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://675025795"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+PullACTIVE = false
+Pull.MouseButton1Click:connect(function()
+	PullACTIVE = not PullACTIVE
+	if PullACTIVE then
+		Pull.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if PullACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Pull.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://698251653"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+CircleArmACTIVE = false
+CircleArm.MouseButton1Click:connect(function()
+	CircleArmACTIVE = not CircleArmACTIVE
+	if CircleArmACTIVE then
+		CircleArm.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if CircleArmACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		CircleArm.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://696096087"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+BendACTIVE = false
+Bend.MouseButton1Click:connect(function()
+	BendACTIVE = not BendACTIVE
+	if BendACTIVE then
+		Bend.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if BendACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		Bend.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://675025570"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+RotateSlashACTIVE = false
+RotateSlash.MouseButton1Click:connect(function()
+	RotateSlashACTIVE = not RotateSlashACTIVE
+	if RotateSlashACTIVE then
+		RotateSlash.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if RotateSlashACTIVE then
+				track:Play(.1, 1, 1)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		RotateSlash.BackgroundColor3 = rcol
+	end
+end)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://754656200"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+FlingArmsACTIVE = false
+FlingArms.MouseButton1Click:connect(function()
+	FlingArmsACTIVE = not FlingArmsACTIVE
+	if FlingArmsACTIVE then
+		FlingArms.BackgroundColor3 = rloc
+		while wait() do
+		 if track.IsPlaying == false then
+			if FlingArmsACTIVE then
+				track:Play(.1, 1, 10)
+			end
+		 end
+		end
+	else
+		track:Stop()
+		FlingArms.BackgroundColor3 = rcol
+	end
+end)
+
+end)
+
+epixfe.MouseButton1Click:connect(function()
+	local wsmode = 1
+local jpmode = 1
+local gothrough = false
+local lotptog = false
+local bodyang = nil
+local cameratoggle = false
+local spintoggle = false
+local flytoggle = false
+local scg = Instance.new('ScreenGui',game.Players.LocalPlayer.PlayerGui)
+scg.ResetOnSpawn = false
+local frm = Instance.new('Frame',scg)
+frm.BorderSizePixel = 0
+frm.BackgroundColor3 = Color3.new(255/255,122/255,122/255)
+frm.Size = UDim2.new(0.3,0,0.3,0)
+frm.Position = UDim2.new(0.35,0,0.35,0)
+frm.Draggable = true
+ 
+ 
+local topl = Instance.new('TextLabel',frm)
+topl.BorderSizePixel = 0
+topl.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+topl.Size = UDim2.new(0.9,1,0.2,0)
+topl.Position = UDim2.new(0,0,0,0)
+topl.TextScaled = true
+topl.Font = "SourceSansLight"
+topl.TextColor3 = Color3.new(1,1,1)
+topl.Text = "Epix's FE Gui V1.1"
+topl.Draggable = true
+ 
+local scrl = Instance.new('ScrollingFrame',frm)
+scrl.BorderSizePixel = 0
+scrl.BackgroundColor3 = Color3.new(255/255,122/255,122/255)
+scrl.Size = UDim2.new(1,0,0.8,0)
+scrl.Position = UDim2.new(0,0,0.2,0)
+scrl.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+scrl.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+ 
+ 
+ 
+ 
+ 
+ 
+local plr = Instance.new('TextBox',scrl)
+plr.BorderSizePixel = 0
+plr.BackgroundColor3 = Color3.new(255/255,150/255,150/255)
+plr.Size = UDim2.new(0.425,0,0.1,0)
+plr.Position = UDim2.new(0.05,0,0.025,0)
+plr.TextScaled = true
+plr.Font = "SourceSansLight"
+plr.TextColor3 = Color3.new(1,1,1)
+plr.Text = "Player Specify"
+ 
+ 
+local plrsp = Instance.new('TextButton',scrl)
+plrsp.BorderSizePixel = 0
+plrsp.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+plrsp.Size = UDim2.new(0.425,0,0.1,0)
+plrsp.Position = UDim2.new(0.5,0,0.025,0)
+plrsp.TextScaled = true
+plrsp.Font = "SourceSansLight"
+plrsp.TextColor3 = Color3.new(1,1,1)
+plrsp.Text = "Spawn Blocks"
+ 
+ 
+local minim = Instance.new('TextButton',frm)
+minim.BorderSizePixel = 0
+minim.BackgroundColor3 = Color3.new(200/255,50/255,50/255)
+minim.Size = UDim2.new(0.1,0,0.2,0)
+minim.Position = UDim2.new(0.9,0,0,0)
+minim.TextScaled = true
+minim.Font = "SourceSansLight"
+minim.TextColor3 = Color3.new(1,1,1)
+minim.Text = "-"
+ 
+ 
+ 
+ 
+ 
+function sblock()
+for i=1,20 do
+wait(1)
+        for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if v:IsA'Accoutrement' then
+v.Parent=game.Players.LocalPlayer.Character
+v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v:IsA'Accoutrement' then
+for ape,hax in pairs(v.Handle:GetChildren()) do
+hax:Destroy()
+end
+wait'.1'
+v.Parent=game.Players.LocalPlayer.StarterGear
+end
+end
+for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+v:Destroy()
+end
+local prt=Instance.new("Model", workspace);
+        Instance.new("Part", prt).Name="Torso";
+        Instance.new("Part", prt).Name="Head";
+        Instance.new("Humanoid", prt).Name="Humanoid";
+        game.Players.LocalPlayer.Character=prt
+ 
+repeat wait(1) until game.Players.LocalPlayer.Character:FindFirstChild'Head'
+for lol,dad in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if dad:IsA'Accoutrement' then
+dad.Parent = game.Players.LocalPlayer.StarterGear
+end
+end
+for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+v:Destroy()
+end
+local prt2=Instance.new("Model", workspace);
+        Instance.new("Part", prt).Name="Torso";
+        Instance.new("Part", prt).Name="Head";
+        Instance.new("Humanoid", prt).Name="Humanoid";
+        game.Players.LocalPlayer.Character=prt
+end
+end
+plrsp.MouseButton1Click:connect(sblock)
+ 
+ 
+ 
+ 
+ 
+local spin = Instance.new('TextButton',scrl)
+spin.BorderSizePixel = 0
+spin.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+spin.Size = UDim2.new(0.425,0,0.1,0)
+spin.Position = UDim2.new(0.05,0,0.15,0)
+spin.TextScaled = true
+spin.Font = "SourceSansLight"
+spin.TextColor3 = Color3.new(1,1,1)
+spin.Text = "Crazy Spin: OFF"
+ 
+local fly = Instance.new('TextButton',scrl)
+fly.BorderSizePixel = 0
+fly.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+fly.Size = UDim2.new(0.425,0,0.1,0)
+fly.Position = UDim2.new(0.5,0,0.15,0)
+fly.TextScaled = true
+fly.Font = "SourceSansLight"
+fly.TextColor3 = Color3.new(1,1,1)
+fly.Text = "Fly: OFF"
+ 
+ 
+ 
+ 
+local seethr = Instance.new('TextButton',scrl)
+seethr.BorderSizePixel = 0
+seethr.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+seethr.Size = UDim2.new(0.425,0,0.1,0)
+seethr.Position = UDim2.new(0.05,0,0.275,0)
+seethr.TextScaled = true
+seethr.Font = "SourceSansLight"
+seethr.TextColor3 = Color3.new(1,1,1)
+seethr.Text = "See-Through: OFF"
+ 
+local tpto = Instance.new('TextButton',scrl)
+tpto.BorderSizePixel = 0
+tpto.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+tpto.Size = UDim2.new(0.425,0,0.1,0)
+tpto.Position = UDim2.new(0.5,0,0.275,0)
+tpto.TextScaled = true
+tpto.Font = "SourceSansLight"
+tpto.TextColor3 = Color3.new(1,1,1)
+tpto.Text = "Teleport To"
+ 
+ 
+ 
+local ws = Instance.new('TextButton',scrl)
+ws.BorderSizePixel = 0
+ws.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+ws.Size = UDim2.new(0.425,0,0.1,0)
+ws.Position = UDim2.new(0.05,0,0.4,0)
+ws.TextScaled = true
+ws.Font = "SourceSansLight"
+ws.TextColor3 = Color3.new(1,1,1)
+ws.Text = "WalkSpeed: Normal"
+ 
+local jp = Instance.new('TextButton',scrl)
+jp.BorderSizePixel = 0
+jp.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+jp.Size = UDim2.new(0.425,0,0.1,0)
+jp.Position = UDim2.new(0.5,0,0.4,0)
+jp.TextScaled = true
+jp.Font = "SourceSansLight"
+jp.TextColor3 = Color3.new(1,1,1)
+jp.Text = "JumpPower: Normal"
+ 
+ 
+ 
+ 
+ 
+local lotp = Instance.new('TextButton',scrl)
+lotp.BorderSizePixel = 0
+lotp.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+lotp.Size = UDim2.new(0.425,0,0.1,0)
+lotp.Position = UDim2.new(0.05,0,0.525,0)
+lotp.TextScaled = true
+lotp.Font = "SourceSansLight"
+lotp.TextColor3 = Color3.new(1,1,1)
+lotp.Text = "Loop-Teleport: OFF"
+ 
+local sb = Instance.new('TextButton',scrl)
+sb.BorderSizePixel = 0
+sb.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+sb.Size = UDim2.new(0.425,0,0.1,0)
+sb.Position = UDim2.new(0.5,0,0.525,0)
+sb.TextScaled = true
+sb.Font = "SourceSansLight"
+sb.TextColor3 = Color3.new(1,1,1)
+sb.Text = "Noclip"
+ 
+ 
+local cr = Instance.new('TextLabel',scrl)
+cr.BorderSizePixel = 0
+cr.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+cr.Size = UDim2.new(0.875,0,0.225,0)
+cr.Position = UDim2.new(0.05,0,0.65,0)
+cr.TextScaled = true
+cr.Font = "SourceSansLight"
+cr.TextColor3 = Color3.new(1,1,1)
+cr.Text = "Gui Created by Epix#2044 on Discord."
+ 
+ 
+local fl = Instance.new('TextLabel',scrl)
+fl.BorderSizePixel = 0
+fl.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+fl.Size = UDim2.new(0.875,0,0.075,0)
+fl.Position = UDim2.new(0.05,0,0.9,0)
+fl.TextScaled = true
+fl.Font = "SourceSansLight"
+fl.TextColor3 = Color3.new(1,1,1)
+if game.Workspace.FilteringEnabled == true then
+fl.Text = "Filtering is Enabled"
+else
+fl.Text = "Filtering is Disabled"
+end
+ 
+ 
+ 
+ 
+local gui2 = Instance.new('ScreenGui',game.Players.LocalPlayer.PlayerGui)
+gui2.ResetOnSpawn = false
+ 
+ 
+local oc = Instance.new('TextButton',gui2)
+oc.BorderSizePixel = 0
+oc.BackgroundColor3 = Color3.new(255/255,70/255,70/255)
+oc.Size = UDim2.new(0,50,0,50)
+oc.Position = UDim2.new(0,0,0,0)
+oc.TextScaled = true
+oc.Font = "SourceSansLight"
+oc.TextColor3 = Color3.new(1,1,1)
+oc.Text = "Close"
+oc.Draggable = true
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+local speed = 50 -- This is the fly speed. Change it to whatever you like. The variable can be changed while running
+ 
+local c
+local h
+local bv
+local bav
+local cam
+local flying
+local p = game.Players.LocalPlayer
+local buttons = {W = false, S = false, A = false, D = false, Moving = false}
+ 
+local startFly = function () -- Call this function to begin flying
+    if not p.Character or not p.Character.Head or flying then return end
+    c = p.Character
+    h = c.Humanoid
+    h.PlatformStand = true
+    cam = workspace:WaitForChild('Camera')
+    bv = Instance.new("BodyVelocity")
+    bav = Instance.new("BodyAngularVelocity")
+    bv.Velocity, bv.MaxForce, bv.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+    bav.AngularVelocity, bav.MaxTorque, bav.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+    bv.Parent = c.Head
+    bav.Parent = c.Head
+    flying = true
+    h.Died:connect(function() flying = false end)
+end
+ 
+local endFly = function () -- Call this function to stop flying
+    if not p.Character or not flying then return end
+    h.PlatformStand = false
+    bv:Destroy()
+    bav:Destroy()
+    flying = false
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(function (input, GPE)
+    if GPE then return end
+    for i, e in pairs(buttons) do
+        if i ~= "Moving" and input.KeyCode == Enum.KeyCode[i] then
+            buttons[i] = true
+            buttons.Moving = true
+        end
+    end
+end)
+ 
+game:GetService("UserInputService").InputEnded:connect(function (input, GPE)
+    if GPE then return end
+    local a = false
+    for i, e in pairs(buttons) do
+        if i ~= "Moving" then
+            if input.KeyCode == Enum.KeyCode[i] then
+                buttons[i] = false
+            end
+            if buttons[i] then a = true end
+        end
+    end
+    buttons.Moving = a
+end)
+ 
+local setVec = function (vec)
+    return vec * (speed / vec.Magnitude)
+end
+ 
+game:GetService("RunService").Heartbeat:connect(function (step) -- The actual fly function, called every frame
+    if flying and c and c.PrimaryPart then
+        local p = c.PrimaryPart.Position
+        local cf = cam.CFrame
+        local ax, ay, az = cf:toEulerAnglesXYZ()
+        c:SetPrimaryPartCFrame(CFrame.new(p.x, p.y, p.z) * CFrame.Angles(ax, ay, az))
+        if buttons.Moving then
+            local t = Vector3.new()
+            if buttons.W then t = t + (setVec(cf.lookVector)) end
+            if buttons.S then t = t - (setVec(cf.lookVector)) end
+            if buttons.A then t = t - (setVec(cf.rightVector)) end
+            if buttons.D then t = t + (setVec(cf.rightVector)) end
+            c:TranslateBy(t * step)
+        end
+    end
+end)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+function spintogl()
+    if spintoggle == true then
+        spintoggle = false
+        spin.Text = "Crazy Spin: OFF"
+    else
+        spintoggle = true
+        spin.Text = "Crazy Spin: ON"
+        local bodyang = Instance.new('BodyAngularVelocity',game.Players.LocalPlayer.Character.PrimaryPart)
+        bodyang.AngularVelocity = Vector3.new(90,999,0)
+        bodyang.MaxTorque = Vector3.new(60000,100,3000)
+        bodyang.P = 5000000
+        repeat
+            wait(0.001)
+        until spintoggle == false
+        bodyang:Destroy()
+    end
+end
+spin.MouseButton1Click:connect(spintogl)
+ 
+ 
+function flytogl()
+    if flytoggle == true then
+        flytoggle = false
+        fly.Text = "Fly: OFF"
+    else
+        flytoggle = true
+        fly.Text = "Fly: ON"
+        startFly()
+        repeat
+            wait(0.001)
+        until flytoggle == false
+        endFly()
+    end
+end
+fly.MouseButton1Click:connect(flytogl)
+ 
+ 
+ 
+function opctogl()
+    if scg.Enabled == true then
+        scg.Enabled = false
+        oc.Text = "Open"
+    else
+        scg.Enabled = true
+        oc.Text = "Close"
+    end
+end
+oc.MouseButton1Click:connect(opctogl)
+function telep()
+    game.Players.LocalPlayer.Character:MoveTo(game.Players:FindFirstChild(plr.Text).Character.PrimaryPart.Position)
+end
+tpto.MouseButton1Click:connect(telep)
+ 
+ 
+function camtogl()
+    if cameratoggle == false then
+        cameratoggle = true
+        game.Workspace.CurrentCamera.CameraType = "Follow"
+        seethr.Text = "See-Through: ON"
+    else
+        cameratoggle = false
+        game.Workspace.CurrentCamera.CameraType = "Custom"
+        seethr.Text = "See-Through: OFF"
+    end
+end
+seethr.MouseButton1Click:connect(camtogl)
+ 
+ 
+ 
+ 
+ 
+ 
+function wsp()
+    if wsmode ~= 5 then
+        wsmode = wsmode + 1
+    else
+        wsmode = 1
+    end
+    if wsmode == 1 then
+        ws.Text = "WalkSpeed: Normal"
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+    if wsmode == 2 then
+        ws.Text = "WalkSpeed: Fast"
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+    end
+    if wsmode == 3 then
+        ws.Text = "WalkSpeed: FASTER"
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+    end
+    if wsmode == 4 then
+        ws.Text = "WalkSpeed: EXTREME"
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+    end
+    if wsmode == 5 then
+        ws.Text = "WalkSpeed: The Speed of Light"
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 4357234785243
+    end
+end
+ws.MouseButton1Click:connect(wsp)
+ 
+ 
+ 
+ 
+ 
+function jpp()
+    if jpmode ~= 5 then
+        jpmode = jpmode + 1
+    else
+        jpmode = 1
+    end
+    if jpmode == 1 then
+        jp.Text = "JumpPower: Normal"
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+    if jpmode == 2 then
+        jp.Text = "JumpPower: Trampoline"
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    end
+    if jpmode == 3 then
+        jp.Text = "JumpPower: Big Trampoline"
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+    end
+    if jpmode == 4 then
+        jp.Text = "JumpPower: Bigger Trampoline"
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 400
+    end
+    if jpmode == 5 then
+        jp.Text = "JumpPower: The Speed of Light"
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80000
+    end
+end
+jp.MouseButton1Click:connect(jpp)
+ 
+function spawnblock()
+    if gothrough == false then
+        gothrough = true
+        sb.Text = "Noclip"
+        local gc = game.Players.LocalPlayer.Character:GetChildren()
+        for i = 1,#gc,1 do
+            if (gc[i].ClassName == "Part") or (gc[i].ClassName == "MeshPart") then
+            gc[i].CollisionGroupId = 29
+            end
+        end
+        game:service("RunService").Stepped:wait()
+    else
+        gothrough = false
+        sb.Text = "Noclip"
+        local gc = game.Players.LocalPlayer.Character:GetChildren()
+        for i = 1,#gc,1 do
+            if (gc[i].ClassName == "Part") or (gc[i].ClassName == "MeshPart") then
+            gc[i].CollisionGroupId = 1
+            game:service("RunService").Stepped:wait()
+            end
+        end
+    end
+end
+sb.MouseButton1Click:connect(spawnblock)
+function looptelep()
+    if lotptog == false then
+        lotptog = true
+        lotp.Text = "Loop-Teleport: ON"
+        repeat
+            game.Players.LocalPlayer.Character:MoveTo(game.Players:FindFirstChild(plr.Text).Character.PrimaryPart.Position)
+            wait(0.001)
+        until lotptog == false
+    else
+        lotptog = false
+        lotp.Text = "Loop-Teleport: OFF"
+    end
+end
+lotp.MouseButton1Click:connect(looptelep)
+ 
+ 
+function minimi()
+    scg.Enabled = false
+    oc.Text = "Open"
+end
+minim.MouseButton1Click:connect(minimi)
+end)
+
+fedab.MouseButton1Click:connect(function()
+	--All scripts included in this GUI are NOT made by XeX, they where all taken from different GUIs and v3rm posts to make 1 GUI.
+--Oh i forgot to mention, this was made by XeX, im shit at scripting btw.
+
+local Music = Instance.new("Sound", game.Workspace)
+Music.SoundId = "rbxassetid://869859606"
+Music.Volume = 1
+Music.Pitch = 1
+Music:Play()
+wait(1)
+
+local GUI = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local FEHT = Instance.new("TextButton")
+local Dab = Instance.new("TextButton")
+local CloseButton = Instance.new("TextButton")
+local MinimizeButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Dance = Instance.new("TextButton")
+local Spas = Instance.new("TextButton")
+local God = Instance.new("TextButton")
+local Brick = Instance.new("TextButton")
+local NC = Instance.new("TextButton")
+
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = GUI
+OpenFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenFrame.BorderColor3 = Color3.new(0, 0, 0)
+OpenFrame.Position = UDim2.new(0, 0, 0, 609)
+OpenFrame.Size = UDim2.new(0, 241, 0, 58)
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = OpenFrame
+OpenButton.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenButton.BackgroundTransparency = 1
+OpenButton.Size = UDim2.new(0, 241, 0, 58)
+OpenButton.Font = Enum.Font.SourceSansLight
+OpenButton.FontSize = Enum.FontSize.Size14
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.new(0, 0, 0)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrapped = true
+
+ScrollingFrame.Parent = GUI
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.Position = UDim2.new(0, 509, 0, 180)
+ScrollingFrame.Size = UDim2.new(0, 587, 0, 375)
+ScrollingFrame.Visible = false
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0.850000024, 0)
+ScrollingFrame.ScrollBarThickness = 0
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 375, 0, 64)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.FontSize = Enum.FontSize.Size14
+TextLabel.Text = "100/100 GUI fam"
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = ScrollingFrame
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0, 70)
+ImageLabel.Size = UDim2.new(0, 251, 0, 153)
+ImageLabel.Image = "rbxassetid://982367808"
+
+FEHT.Name = "FEHT"
+FEHT.Parent = ScrollingFrame
+FEHT.BackgroundColor3 = Color3.new(1, 1, 1)
+FEHT.BorderColor3 = Color3.new(0, 0, 0)
+FEHT.Position = UDim2.new(0, 24, 0, 260)
+FEHT.Size = UDim2.new(0, 253, 0, 78)
+FEHT.Font = Enum.Font.SourceSansLight
+FEHT.FontSize = Enum.FontSize.Size14
+FEHT.Text = "FE Hammer Tool {For Cafes}"
+FEHT.TextScaled = true
+FEHT.TextSize = 14
+FEHT.TextWrapped = true
+
+Dab.Name = "Dab"
+Dab.Parent = ScrollingFrame
+Dab.BackgroundColor3 = Color3.new(1, 1, 1)
+Dab.BorderColor3 = Color3.new(0, 0, 0)
+Dab.Position = UDim2.new(0, 310, 0, 262)
+Dab.Size = UDim2.new(0, 253, 0, 78)
+Dab.Font = Enum.Font.SourceSansLight
+Dab.FontSize = Enum.FontSize.Size14
+Dab.Text = "Cancer \"dance\" {Dab}"
+Dab.TextScaled = true
+Dab.TextSize = 14
+Dab.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = ScrollingFrame
+CloseButton.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseButton.Position = UDim2.new(0, 534, 0, 0)
+CloseButton.Size = UDim2.new(0, 53, 0, 45)
+CloseButton.Font = Enum.Font.SourceSansLight
+CloseButton.FontSize = Enum.FontSize.Size14
+CloseButton.Text = "X"
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrapped = true
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = ScrollingFrame
+MinimizeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+MinimizeButton.BorderColor3 = Color3.new(0, 0, 0)
+MinimizeButton.Position = UDim2.new(0, 481, 0, 0)
+MinimizeButton.Size = UDim2.new(0, 53, 0, 45)
+MinimizeButton.Font = Enum.Font.SourceSansLight
+MinimizeButton.FontSize = Enum.FontSize.Size14
+MinimizeButton.Text = "_"
+MinimizeButton.TextScaled = true
+MinimizeButton.TextSize = 14
+MinimizeButton.TextWrapped = true
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 250, 0, 56)
+TextLabel_2.Size = UDim2.new(0, 322, 0, 149)
+TextLabel_2.Font = Enum.Font.SourceSansLight
+TextLabel_2.FontSize = Enum.FontSize.Size14
+TextLabel_2.Text = "All scripts in this GUI where taken from all different GUIs and scripts found on v3rm to make a one GUI. All credits go to their creators."
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+Dance.Name = "Dance"
+Dance.Parent = ScrollingFrame
+Dance.BackgroundColor3 = Color3.new(1, 1, 1)
+Dance.BorderColor3 = Color3.new(0, 0, 0)
+Dance.Position = UDim2.new(0, 22, 0, 375)
+Dance.Size = UDim2.new(0, 253, 0, 78)
+Dance.Font = Enum.Font.SourceSansLight
+Dance.FontSize = Enum.FontSize.Size14
+Dance.Text = "Dance 'till you're dead, lol."
+Dance.TextScaled = true
+Dance.TextSize = 14
+Dance.TextWrapped = true
+
+Spas.Name = "Spas"
+Spas.Parent = ScrollingFrame
+Spas.BackgroundColor3 = Color3.new(1, 1, 1)
+Spas.BorderColor3 = Color3.new(0, 0, 0)
+Spas.Position = UDim2.new(0, 312, 0, 375)
+Spas.Size = UDim2.new(0, 253, 0, 78)
+Spas.Font = Enum.Font.SourceSansLight
+Spas.FontSize = Enum.FontSize.Size14
+Spas.Text = "Have a spasm attack"
+Spas.TextScaled = true
+Spas.TextSize = 14
+Spas.TextWrapped = true
+
+God.Name = "God"
+God.Parent = ScrollingFrame
+God.BackgroundColor3 = Color3.new(1, 1, 1)
+God.BorderColor3 = Color3.new(0, 0, 0)
+God.Position = UDim2.new(0, 21, 0, 491)
+God.Size = UDim2.new(0, 253, 0, 78)
+God.Font = Enum.Font.SourceSansLight
+God.FontSize = Enum.FontSize.Size14
+God.Text = "God Mode {May glitch out items}"
+God.TextScaled = true
+God.TextSize = 14
+God.TextWrapped = true
+
+Brick.Name = "Brick"
+Brick.Parent = ScrollingFrame
+Brick.BackgroundColor3 = Color3.new(1, 1, 1)
+Brick.BorderColor3 = Color3.new(0, 0, 0)
+Brick.Position = UDim2.new(0, 309, 0, 490)
+Brick.Size = UDim2.new(0, 253, 0, 78)
+Brick.Font = Enum.Font.SourceSansLight
+Brick.FontSize = Enum.FontSize.Size14
+Brick.Text = "Brick the mother fuckin' place"
+Brick.TextScaled = true
+Brick.TextSize = 14
+Brick.TextWrapped = true
+
+NC.Name = "NC"
+NC.Parent = ScrollingFrame
+NC.BackgroundColor3 = Color3.new(1, 1, 1)
+NC.BorderColor3 = Color3.new(0, 0, 0)
+NC.Position = UDim2.new(0, 24, 0, 601)
+NC.Size = UDim2.new(0, 544, 0, 78)
+NC.Font = Enum.Font.SourceSansLight
+NC.FontSize = Enum.FontSize.Size14
+NC.Text = "Noclip {Use the Keybind M to toggle it}"
+NC.TextScaled = true
+NC.TextSize = 14
+NC.TextWrapped = true
+
+OpenButton.MouseButton1Click:connect(function()
+	game.CoreGui.GUI.OpenFrame.Visible = false
+	game.CoreGui.GUI.ScrollingFrame.Visible = true
+end)
+
+MinimizeButton.MouseButton1Click:connect(function()
+	game.CoreGui.GUI.OpenFrame.Visible = true
+	game.CoreGui.GUI.ScrollingFrame.Visible = false
+end)
+
+CloseButton.MouseButton1Click:connect(function()
+	game.CoreGui.GUI.OpenFrame.Visible = false
+	game.CoreGui.GUI.ScrollingFrame.Visible = false
+end)
+
+FEHT.MouseButton1Click:connect(function()
+		--fe cafe hammertool script cuz im gay--
+maind = nil
+if workspace:FindFirstChild'GiveSystem' then
+	if workspace.GiveSystem:FindFirstChild'GiveItem' then
+		maind = workspace.GiveSystem.GiveItem
+	end
+end
+if workspace:FindFirstChild'HandToCentre' then
+	if workspace.HandToCentre:FindFirstChild'SendItem' then
+		maind = workspace.HandToCentre.SendItem
+	end
+end
+if maind == nil then
+	print'could not find give event :('
+	return
+end
+tool = Instance.new'Tool'
+me = game:GetService'Players'.LocalPlayer
+tool.RequiresHandle = false
+tool.TextureId = 'http://www.roblox.com/asset/?id=12223874'
+tool.Name = 'ya like jazz?'
+tool.Parent = me.Backpack
+buttonf = nil
+tool.Equipped:connect(function()
+	local m = game:GetService'Players'.LocalPlayer:GetMouse()
+	m.Icon = 'rbxasset://textures/HammerCursor.png'
+	buttonf = m.Button1Down:connect(function()
+		if m.Target == nil then return end
+		local ob = m.Target
+		if ob:IsA'BasePart' or ob:IsA'WedgePart' then
+			if ob:IsDescendantOf(me.Character) then return end
+			m.Icon = 'rbxasset://textures/HammerOverCursor.png'
+			local ex = Instance.new'Explosion'
+			ex.BlastRadius = 0
+			ex.Position = ob.Position
+			ex.Parent = workspace
+			maind:FireServer(workspace, ob)
+			wait(0.3)
+			m.Icon = 'rbxasset://textures/HammerCursor.png'
+		end
+	end)
+end)
+tool.Unequipped:connect(function()
+	if buttonf ~= nil then
+		buttonf:Disconnect()
+		buttonf = nil
+	end
+	local m = game:GetService'Players'.LocalPlayer:GetMouse()
+	m.Icon = ''
+end)
+end)
+
+Dab.MouseButton1Click:connect(function()
+		Player = "LocalPlayer"
+AnimationId = "248263260"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players[Player].Character.Humanoid:LoadAnimation(Anim)
+k:Play() --Play the animation
+k:AdjustSpeed(1) --Set '1' to any value you want to adjust the animation speed.
+end)
+
+God.MouseButton1Click:connect(function()
+	local player = game.Players.LocalPlayer
+
+if player.Character then
+
+if player.Character:FindFirstChild("Humanoid") then
+
+player.Character.Humanoid.Name = "1"
+
+end
+
+local l = player.Character["1"]:Clone()
+
+l.Parent = player.Character
+
+l.Name = "Humanoid"; wait(0.1)
+
+player.Character["1"]:Destroy()
+
+workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+
+player.Character.Animate.Disabled = true; wait(0.1)
+
+player.Character.Animate.Disabled = false
+
+end
+end)
+
+Dance.MouseButton1Click:connect(function()
+		Player = "LocalPlayer"
+AnimationId = "33796059"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players[Player].Character.Humanoid:LoadAnimation(Anim)
+k:Play() --Play the animation
+k:AdjustSpeed(1) --Set '1' to any value you want to adjust the animation speed.
+end)
+
+NC.MouseButton1Click:connect(function()
+	--Script by Kohltastrophe / Toggle made by Kujo ; )
+game.Players.LocalPlayer.DevCameraOcclusionMode = 'Invisicam' --INVISCAM!!!
+local mouse = game.Players.LocalPlayer:GetMouse() 
+local torso = game.Players.LocalPlayer.Character.Torso 
+local dir = {w = 0, s = 0, a = 0, d = 0} 
+local spd = 2 mouse.KeyDown:connect(function(key) 
+if key:lower() == "w" then dir.w = 1 
+elseif key:lower() == "s" then dir.s = 1
+elseif key:lower() == "a" then dir.a = 1 
+elseif key:lower() == "d" then dir.d = 1 
+elseif key:lower() == "q" then spd = spd + 1 
+elseif key:lower() == "e" then spd = spd - 1 
+end end) 
+mouse.KeyUp:connect(function(key) 
+if key:lower() == "w" then 
+dir.w = 0 
+elseif key:lower() == "s" then dir.s = 0 
+elseif key:lower() == "a" then dir.a = 0 
+elseif key:lower() == "d" then dir.d = 0 
+end end)
+
+
+enabled = false
+mouse.keyDown:connect(function(key)
+if (key) == "m" and enabled == false then
+enabled = true
+repeat wait(1/44)
+game.Players.LocalPlayer.Character.Torso.Anchored = true
+game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
+torso.CFrame = CFrame.new(torso.Position, game.Workspace.CurrentCamera.CoordinateFrame.p) * CFrame.Angles(0,math.rad(180),0) * CFrame.new((dir.d-dir.a)*spd,0,(dir.s-dir.w)*spd)
+until enabled == false
+elseif enabled == false then
+game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+game.Players.LocalPlayer.Character.Torso.Anchored = false
+end
+if (key) == "m" and enabled == true then
+enabled = false
+game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+game.Players.LocalPlayer.Character.Torso.Anchored = false
+
+
+end
+
+end)
+end)
+
+Spas.MouseButton1Click:connect(function()
+		Player = "LocalPlayer"
+AnimationId = "33796059"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players[Player].Character.Humanoid:LoadAnimation(Anim)
+k:Play() --Play the animation
+k:AdjustSpeed(99) --Set '1' to any value you want to adjust the animation speed.
+end)
+
+Brick.MouseButton1Click:connect(function()
+		for i=1,20 do
+wait(1)
+        for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if v:IsA'Accoutrement' then
+v.Parent=game.Players.LocalPlayer.Character
+v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v:IsA'Accoutrement' then
+for ape,hax in pairs(v.Handle:GetChildren()) do
+hax:Destroy()
+end
+wait'.1'
+v.Parent=game.Players.LocalPlayer.StarterGear
+end
+end
+for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+v:Destroy()
+end
+local prt=Instance.new("Model", workspace);
+        Instance.new("Part", prt).Name="Torso";
+        Instance.new("Part", prt).Name="Head";
+        Instance.new("Humanoid", prt).Name="Humanoid";
+        game.Players.LocalPlayer.Character=prt
+
+repeat wait(1) until game.Players.LocalPlayer.Character:FindFirstChild'Head'
+for lol,dad in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if dad:IsA'Accoutrement' then
+dad.Parent = game.Players.LocalPlayer.StarterGear
+end
+end
+for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+v:Destroy()
+end
+local prt2=Instance.new("Model", workspace);
+        Instance.new("Part", prt).Name="Torso";
+        Instance.new("Part", prt).Name="Head";
+        Instance.new("Humanoid", prt).Name="Humanoid";
+        game.Players.LocalPlayer.Character=prt
+end
+end)
+end)
+
+FuckFE.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+   
+   game.StarterGui:SetCore("SendNotification", {
+       Title = "FeX";
+       Text = "Walkspeed was set to 70. Reset if you do not want this change.";
+})  
+end)
+
+TextButton_2.MouseButton1Click:connect(function()
+	game:service('Players').LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+
+clicktp.MouseButton1Click:connect(function()
+    local UIS = game:GetService("UserInputService")
+
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+
+
+function GetCharacter()
+   return game.Players.LocalPlayer.Character
+end
+
+function Teleport(pos)
+   local Char = GetCharacter()
+   if Char then
+       Char:MoveTo(pos)
+   end
+end
+
+
+UIS.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+       Teleport(Mouse.Hit.p)
+   end
+end)
+
+
+end)
+
+
+btools.MouseButton1Click:connect(function()
+	loadstring(game:GetObjects("rbxassetid://536904585")[1].Source)()
+end)
+
+TextButton_2.MouseButton1Click:connect(function()
+	game:service('Players').LocalPlayer.Character.Humanoid.JumpPower = 100
+	
+	game.StarterGui:SetCore("SendNotification", {
+       Title = "FeX";
+       Text = "Jumpower was set to 70. Reset if you do not want this change.";
+})  
+end)
+
+------ FeX was created by snakez on v3rm!
+------ The GUI's in the script were not created by me, all credits go to their owners.
+------ You may use the scripts within the code.

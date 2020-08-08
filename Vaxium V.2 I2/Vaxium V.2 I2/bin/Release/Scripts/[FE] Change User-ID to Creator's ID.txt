@@ -1,0 +1,3 @@
+game:GetService("Players").LocalPlayer.UserId = game.CreatorId
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+print("[UserId Changer] Operation completed successfully")

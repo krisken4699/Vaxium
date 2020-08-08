@@ -1,0 +1,212 @@
+-- Farewell infortality 
+-- Revamp by ImFrostic, Version 2.8 
+ 
+ -- Objects
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Name = Instance.new("TextBox")
+local Shutdown = Instance.new("TextButton")
+local Goto = Instance.new("TextButton")
+local Lego = Instance.new("TextLabel")
+local Remotes = Instance.new("TextButton")
+local Kill = Instance.new("TextButton")
+local Important = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local p = game.Players.LocalPlayer
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+Frame.BackgroundTransparency = 0.5
+Frame.Position = UDim2.new(0.667438269, 0, 0.415647924, 0)
+Frame.Size = UDim2.new(0.194444448, 0, 0.281173587, 0)
+Frame.Selectable = true
+Frame.Active = true
+Frame.Draggable = true
+
+Name.Name = "Name"
+Name.Parent = Frame
+Name.BackgroundColor3 = Color3.new(0, 0, 0)
+Name.BackgroundTransparency = 0.40000000596046
+Name.Position = UDim2.new(0.226190478, 0, 0.11304348, 0)
+Name.Size = UDim2.new(0, 200, 0, 50)
+Name.Font = Enum.Font.Arial
+Name.Text = "Name here"
+Name.TextColor3 = Color3.new(0, 0, 0)
+Name.TextSize = 20
+Name.TextWrapped = true
+
+Shutdown.Name = "Shutdown"
+Shutdown.Parent = Frame
+Shutdown.BackgroundColor3 = Color3.new(0, 0, 0)
+Shutdown.BackgroundTransparency = 0.40000000596046
+Shutdown.Position = UDim2.new(0.0357142873, 0, 0.699999988, 0)
+Shutdown.Size = UDim2.new(0.408730149, 0, 0.152173907, 0)
+Shutdown.Font = Enum.Font.SourceSans
+Shutdown.Text = "Shutdown"
+Shutdown.TextColor3 = Color3.new(0, 0, 0)
+Shutdown.TextScaled = true
+Shutdown.TextSize = 30
+Shutdown.TextWrapped = true
+
+Goto.Name = "Goto"
+Goto.Parent = Frame
+Goto.BackgroundColor3 = Color3.new(0, 0, 0)
+Goto.BackgroundTransparency = 0.40000000596046
+Goto.Position = UDim2.new(0.0357142873, 0, 0.456521749, 0)
+Goto.Size = UDim2.new(0.408730149, 0, 0.152173907, 0)
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.new(0, 0, 0)
+Goto.TextScaled = true
+Goto.TextSize = 30
+Goto.TextWrapped = true
+
+Lego.Name = "Lego"
+Lego.Parent = Frame
+Lego.BackgroundColor3 = Color3.new(1, 1, 1)
+Lego.BackgroundTransparency = 1
+Lego.Position = UDim2.new(0.123015873, 0, -0.0304347817, 0)
+Lego.Size = UDim2.new(0.738095224, 0, 0.121739127, 0)
+Lego.Font = Enum.Font.SourceSans
+Lego.Text = "Made by Balkus/Spent"
+Lego.TextColor3 = Color3.new(0, 0, 0)
+Lego.TextSize = 30
+
+Remotes.Name = "Remotes"
+Remotes.Parent = Frame
+Remotes.BackgroundColor3 = Color3.new(0, 0, 0)
+Remotes.BackgroundTransparency = 0.40000000596046
+Remotes.Position = UDim2.new(0.508000016, 0, 0.699999988, 0)
+Remotes.Size = UDim2.new(0.408730149, 0, 0.152173907, 0)
+Remotes.Font = Enum.Font.SourceSans
+Remotes.Text = "Remotes"
+Remotes.TextColor3 = Color3.new(0, 0, 0)
+Remotes.TextScaled = true
+Remotes.TextSize = 30
+Remotes.TextWrapped = true
+
+Kill.Name = "Kill"
+Kill.Parent = Frame
+Kill.BackgroundColor3 = Color3.new(0, 0, 0)
+Kill.BackgroundTransparency = 0.40000000596046
+Kill.Position = UDim2.new(0.508000016, 0, 0.456999987, 0)
+Kill.Size = UDim2.new(0.408730149, 0, 0.152173907, 0)
+Kill.Font = Enum.Font.SourceSans
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.new(0, 0, 0)
+Kill.TextScaled = true
+Kill.TextSize = 30
+Kill.TextWrapped = true
+
+Important.Name = "Important"
+Important.Parent = ScreenGui
+Important.BackgroundColor3 = Color3.new(0, 0, 0)
+Important.BackgroundTransparency = 0.5
+Important.Position = UDim2.new(0.22453703, 0, 0.342298299, 0)
+Important.Size = UDim2.new(0.273919761, 0, 0.376528114, 0)
+Important.Font = Enum.Font.SourceSans
+Important.Text = "When using kill you must have atleast 1 tool!"
+Important.TextColor3 = Color3.new(0.666667, 0.333333, 0)
+Important.TextScaled = true
+Important.TextSize = 1
+Important.TextWrapped = true
+Important.Selectable = true
+Important.Active = true
+Important.Draggable = true
+
+Exit.Name = "Exit"
+Exit.Parent = Important
+Exit.BackgroundColor3 = Color3.new(1, 1, 1)
+Exit.BackgroundTransparency = 1.0199999809265
+Exit.Position = UDim2.new(0.892957747, 0, -0.0487012975, 0)
+Exit.Size = UDim2.new(0.125, 0, 0.212713942, 0)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(1, 0, 0)
+Exit.TextSize = 25
+
+Kill.MouseButton1Down:connect(function()
+ Name = (Name.Text)
+
+game.Players.LocalPlayer.Character.Humanoid.Name = 1
+local l = game.Players.LocalPlayer.Character["1"]:Clone()
+l.Parent = game.Players.LocalPlayer.Character
+l.Name = "Humanoid"
+wait(0.1)
+game.Players.LocalPlayer.Character["1"]:Destroy()
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+wait(0.1)
+game.Players.LocalPlayer.Character.Animate.Disabled = false
+game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+for i,v in pairs(game:GetService'Players'.LocalPlayer.Backpack:GetChildren())do
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+end
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Name].Character.HumanoidRootPart.CFrame
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Name].Character.HumanoidRootPart.CFrame
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-10000,-100, -10000))
+end)
+
+
+Shutdown.MouseButton1Down:connect(function()
+	loadstring('\102\111\114\32\105\61\49\44\32\52\56\32\100\111\10\32\32\32\32\115\112\97\119\110\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\112\114\105\110\116\40\34\65\68\68\69\68\32\76\79\79\80\34\41\10\32\32\32\32\32\32\32\32\119\104\105\108\101\32\116\114\117\101\32\100\111\10\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\58\115\101\114\118\105\99\101\40\34\82\117\110\83\101\114\118\105\99\101\34\41\46\82\101\110\100\101\114\83\116\101\112\112\101\100\58\119\97\105\116\40\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\102\111\114\32\105\61\49\44\32\54\52\32\100\111\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\103\97\109\101\46\80\108\97\121\101\114\115\58\67\104\97\116\40\34\47\101\32\105\32\108\111\118\101\32\114\111\98\108\111\120\34\41\10\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\32\32\32\32\32\32\32\32\101\110\100\10\32\32\32\32\32\32\32\32\101\110\100\41\10\32\32\32\32\119\97\105\116\40\41\10\101\110\100')()
+end)
+
+Goto.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(Name.Text).Character.HumanoidRootPart.Position)
+end)
+
+Remotes.MouseButton1Down:connect(function()
+	local ToFind = {
+   RemoteFunction = true,
+   RemoteEvent = true,
+   BindableFunction = true,
+   BindableEvent = true
+}
+
+local Found = {}
+
+local function Search(Parent, Arguments)
+   Parent = Parent:GetChildren()
+   for index, child in next, Parent do
+       for class in next, Arguments do
+           if child.ClassName == class then
+               if Found[class] then
+                   local Directory = Found[class]
+                   Found[class][#Directory + 1] = child
+               else
+                   Found[class] = {child}
+               end
+           end
+       end
+       if #Parent > 0 then
+           Search(child, Arguments)
+       end
+   end
+end
+
+Search(workspace, ToFind)
+Search(game:GetService("ReplicatedStorage"), ToFind)
+
+for index, value in next, Found do
+   warn(index .. "(s)")
+   for _, child in next, value do
+       print(child:GetFullName())
+   end
+   warn("End of " .. index .. "(s)")
+end
+end)
+
+Exit.MouseButton1Down:connect(function()
+	game.CoreGui.ScreenGui.Important.Visible = false
+	game.CoreGui.ScreenGui.Exit.Visible = false
+
+end)

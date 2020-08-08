@@ -1,0 +1,7 @@
+while wait() do
+for _,a in pairs(game.Workspace:GetChildren()) do 
+    if string.find(a.Name,"Chest") then 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = a.CFrame
+    end
+    end
+    end

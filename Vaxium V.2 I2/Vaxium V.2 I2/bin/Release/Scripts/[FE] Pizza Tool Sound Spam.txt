@@ -1,0 +1,6 @@
+if game.Players.LocalPlayer.Character:findFirstChild("Pizza") then
+while true do
+game.Players.LocalPlayer.Character.Pizza.Handle.OpenSound:Play()
+wait(0.5)
+end
+end
